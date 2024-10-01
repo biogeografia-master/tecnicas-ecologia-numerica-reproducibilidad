@@ -1,0 +1,2046 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="ind_esp_Acanthaceae" id="ind_esp_Acanthaceae">
+	<SimpleField name="h3_address" type="string"></SimpleField>
+</Schema>
+<Folder><name>ind_esp_Acanthaceae</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd64bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.6929676458094,18.644257739242 -71.7418398740028,18.5885414881872 -71.7046540383496,18.5187186382879 -71.6186071105488,18.5046727596744 -71.569793394592,18.5604354754496 -71.6069679972016,18.6301976129709 -71.6929676458094,18.644257739242</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd6b7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.6421836495326,18.7231601397237 -70.6904004199757,18.6680570118859 -70.6532802007869,18.5984276258986 -70.5679575745633,18.5839635337443 -70.5198023908291,18.6391126656162 -70.5569081537708,18.7086798966846 -70.6421836495326,18.7231601397237</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd0d3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.5308338883656,18.5142488244985 -70.5790182993793,18.4589358360592 -70.5418766754243,18.3890737648562 -70.456565364282,18.3745874246813 -70.4084429545136,18.4299464213228 -70.4455697620377,18.4997457617856 -70.5308338883656,18.5142488244985</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c894bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.6114953053155,19.5142475792593 -71.6601611223986,19.4596765944699 -71.6230987160138,19.3909044668121 -71.5373818089141,19.3767624737317 -71.4887743724076,19.4313795543996 -71.5258253666652,19.5000925387958 -71.6114953053155,19.5142475792593</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf247fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.4210242310976,19.7488803447152 -70.4689177586867,19.6952016570458 -70.4319548612301,19.6268176799729 -70.3471133539074,19.6121727900514 -70.2992815664615,19.6658970593695 -70.3362294553052,19.7342206466498 -70.4210242310976,19.7488803447152</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd467fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.2643171038093,18.5954597986622 -70.3123188071642,18.5403825917682 -70.2752072145347,18.4706461023618 -70.1901094381586,18.4560498021898 -70.1421704529122,18.5111728900076 -70.1792664345017,18.5808464096182 -70.2643171038093,18.5954597986622</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c89b7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.5648241891186,19.5875640370786 -70.6128370566016,19.5336050432671 -70.5758417559197,19.4650123626505 -70.4908480916551,19.4504392064783 -70.442896633587,19.5044438943629 -70.4798773387343,19.57297605393 -70.5648241891186,19.5875640370786</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd4d3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.4538495644145,19.3817589310546 -70.5018300337373,19.3275910630767 -70.4648136699889,19.258762744438 -70.3798316973711,19.2441634104674 -70.3319130468393,19.2983770101269 -70.368914458734,19.3671442224183 -70.4538495644145,19.3817589310546</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">856725b3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.7046540383496,18.5187186382879 -71.7535558770056,18.4628384717422 -71.7163523541848,18.3928659096741 -71.630258102596,18.3788344527611 -71.5814147947923,18.4347611281755 -71.6186071105488,18.5046727596744 -71.7046540383496,18.5187186382879</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc64ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.8531933815468,18.5366575939994 -68.900283891635,18.4822241426505 -68.8632925864279,18.4126104471567 -68.7792304552737,18.3974953628339 -68.7322064750983,18.4519741435673 -68.7691780107276,18.5215226964355 -68.8531933815468,18.5366575939994</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd617fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.0322435430065,18.7255622471963 -71.0807013976799,18.6702698037272 -71.0435580520648,18.6006031776351 -70.9579700244499,18.5862905690863 -70.9095726231742,18.6416291749615 -70.9467027017318,18.7112342368028 -71.0322435430065,18.7255622471963</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd683fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.0096491421,18.9745432091212 -71.0580483190998,18.9195782438857 -71.0209405786122,18.8502089310223 -70.9354468785918,18.8358657033206 -70.8871081093152,18.8908767456076 -70.9242025383017,18.9601849479617 -71.0096491421,18.9745432091212</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8917fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.9533642925493,19.5915286453305 -71.0016173144365,19.537380728269 -70.964598340308,19.4687562809086 -70.8793396721379,19.4543397104475 -70.8311469431208,19.5085334542087 -70.8681524962372,19.5770979501223 -70.9533642925493,19.5915286453305</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd433fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.9878689839393,18.8001203831936 -70.0356577932428,18.7454426672383 -69.998595828325,18.6759786768334 -69.9137613770569,18.6612553844137 -69.8660359582539,18.7159788267025 -69.9030815101416,18.785379848083 -69.9878689839393,18.8001203831936</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8983fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.93093046396,19.8361366001651 -70.9791252385561,19.7823147291865 -70.9421416726229,19.713988731312 -70.8569767034552,19.6995440909434 -70.8088421755263,19.7534116741648 -70.8458122772761,19.8216781934893 -70.93093046396,19.8361366001651</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc61bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.5814435462109,18.7382214005798 -68.6283153044336,18.6841873664503 -68.5913821279754,18.6148474187169 -68.5075976257669,18.5996066322698 -68.4607929830185,18.6536858707626 -68.4977056429745,18.7229607089373 -68.5814435462109,18.7382214005798</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf357fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.5595892097438,19.2880014749931 -69.607013947049,19.2341670817903 -69.5700564730457,19.1653301587802 -69.4856917882986,19.1503902233353 -69.4383313682775,19.2042700643241 -69.4752712279377,19.2730444062738 -69.5595892097438,19.2880014749931</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8b33fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.7810048817611,19.1022735779407 -71.8298465093826,19.0470949963011 -71.7927203650714,18.9778123353838 -71.7067634175011,18.9637679638572 -71.6579798356277,19.0189928817068 -71.6950950587451,19.0882158416234 -71.7810048817611,19.1022735779407</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd64ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.569793394592,18.5604354754496 -71.6186071105488,18.5046727596744 -71.5814147947923,18.4347611281755 -71.4954202898788,18.4206732813205 -71.4466654968305,18.476482434708 -71.4838461891619,18.5463330057399 -71.569793394592,18.5604354754496</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd6bbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.8983346319187,18.7664090204583 -70.9467027017318,18.7112342368028 -70.9095726231742,18.6416291749615 -70.8240880534165,18.6272605932345 -70.7757808101591,18.6824814729189 -70.8128972162893,18.7520248484743 -70.8983346319187,18.7664090204583</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd0d7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.4084429545136,18.4299464213228 -70.456565364282,18.3745874246813 -70.4194205847956,18.3046410711156 -70.3341684992815,18.2901168053555 -70.2861084778499,18.3455217763739 -70.3232380614034,18.4154050511888 -70.4084429545136,18.4299464213228</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c894ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.4887743724076,19.4313795543996 -71.5373818089141,19.3767624737317 -71.5003131973586,19.3078993657834 -71.4146488519097,19.2937128360723 -71.3661002010601,19.3483760039599 -71.4031570146141,19.4171796213956 -71.4887743724076,19.4313795543996</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf24bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.6757355104319,19.7926597747713 -70.7237803712212,19.7389094373446 -70.6868063930247,19.6705537263742 -70.6018017016622,19.6560082964483 -70.5538178401983,19.7098042810044 -70.5907775789079,19.7781000571888 -70.6757355104319,19.7926597747713</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd46bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.5198023908291,18.6391126656162 -70.5679575745633,18.5839635337443 -70.5308338883656,18.5142488244985 -70.4455697620377,18.4997457617856 -70.3974765535766,18.5549408688601 -70.4345854037389,18.6245930750804 -70.5198023908291,18.6391126656162</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c89bbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.8199888830807,19.6311285540723 -70.8681524962372,19.5770979501223 -70.8311469431208,19.5085334542087 -70.7459915055171,19.4940596340956 -70.6978885526798,19.5481360020504 -70.7348802845249,19.6166404348324 -70.8199888830807,19.6311285540723</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd4d7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.3319130468393,19.2983770101269 -70.3798316973711,19.2441634104674 -70.3428124154522,19.1752484699121 -70.257889718893,19.1606085941139 -70.2100332688767,19.2148679103157 -70.2470372239131,19.2837213966642 -70.3319130468393,19.2983770101269</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd21bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.3696205738502,17.8867530476401 -71.418434430726,17.8302410362769 -71.3811589059596,17.7595599290536 -71.295081732895,17.7454534638728 -71.2463276977578,17.8020119822814 -71.283590917368,17.8726304691069 -71.3696205738502,17.8867530476401</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf323fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.0749472710276,18.9523572806353 -69.1221125722003,18.8983412271153 -69.0851554574335,18.8291755539833 -69.0010520252662,18.8140899187839 -68.9539524781854,18.8681513252593 -68.9908905231642,18.9372530295351 -69.0749472710276,18.9523572806353</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">856725b7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.5814147947923,18.4347611281755 -71.630258102596,18.3788344527611 -71.5930480599599,18.3087734428461 -71.5070062108109,18.2947003956611 -71.4582218453371,18.3506735501299 -71.4954202898788,18.4206732813205 -71.5814147947923,18.4347611281755</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc653fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.8330260116362,18.7838301176492 -68.8800594513511,18.7297233876721 -68.8431045283773,18.6603974912815 -68.7591358714029,18.6452430027659 -68.7121688899287,18.6993950244643 -68.7491040220774,18.7686562596563 -68.8330260116362,18.7838301176492</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd61bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.2891816595536,18.7683510456007 -71.3377886504431,18.7129872293764 -71.3006377586005,18.6433468998442 -71.2148922539163,18.6291314879402 -71.1663449375841,18.6845415596005 -71.2034833560434,18.7541207966493 -71.2891816595536,18.7683510456007</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd687fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.8871081093152,18.8908767456076 -70.9354468785918,18.8358657033206 -70.8983346319187,18.7664090204583 -70.8128972162893,18.7520248484743 -70.7646192499288,18.8070819457036 -70.8017178026415,18.8764771699415 -70.8871081093152,18.8908767456076</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c88affffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.5651993544076,20.0044840414641 -71.6137478960939,19.9505653190958 -71.5767557222928,19.8823952021255 -71.4912264240558,19.8682020296513 -71.4427361866733,19.9221665921373 -71.4797168481648,19.9902784927376 -71.5651993544076,20.0044840414641</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c891bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.2093150443353,19.6346178596609 -71.2577166827647,19.580398531229 -71.2206897418959,19.5118041838429 -71.1352737054422,19.4974886633284 -71.0869315922999,19.5517538894428 -71.1239458962135,19.6202887459171 -71.2093150443353,19.6346178596609</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd437fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.8660359582539,18.7159788267025 -69.9137613770569,18.6612553844137 -69.8766977966407,18.5917081543452 -69.7919254931982,18.5769476967697 -69.7442638390437,18.6317168359607 -69.7813106340332,18.7012007493952 -69.8660359582539,18.7159788267025</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8987fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.8088421755263,19.7534116741648 -70.8569767034552,19.6995440909434 -70.8199888830807,19.6311285540723 -70.7348802845249,19.6166404348324 -70.6868063930247,19.6705537263742 -70.7237803712212,19.7389094373446 -70.8088421755263,19.7534116741648</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd4a3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.8447449834944,18.9635907537488 -69.8924125641465,18.9091944009384 -69.8553850258686,18.8399396971397 -69.7707066349627,18.825144204561 -69.7231027591129,18.8795861910938 -69.7601134800543,18.9487780495962 -69.8447449834944,18.9635907537488</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">85672583fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.9512669458158,18.6862381273407 -72.000284603385,18.6304510591143 -71.9630951765785,18.5606574328914 -71.876898417079,18.5467111165013 -71.827938461143,18.6025447465834 -71.8651174651665,18.6722781381482 -71.9512669458158,18.6862381273407</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd253fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.6280192176146,17.9289310740601 -71.6769812028371,17.8723480512186 -71.6397001151558,17.801690815584 -71.5534684405136,17.7876787476382 -71.5045654748319,17.8443083928706 -71.5418350667315,17.9149034929998 -71.6280192176146,17.9289310740601</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf35bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.8128900369834,19.332685096226 -69.8604710917912,19.2787785960453 -69.8234975049679,19.2099634362 -69.7389596391406,19.1951169169021 -69.6914421992069,19.2490689398913 -69.7283989214178,19.3178219717929 -69.8128900369834,19.332685096226</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8b37fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.6579798356277,19.0189928817068 -71.7067634175011,18.9637679638572 -71.6696305616505,18.8943948881193 -71.5837253378472,18.8803067861349 -71.5350002120721,18.935578023264 -71.5721217575374,19.0048910503858 -71.6579798356277,19.0189928817068</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd653fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.5465861203732,18.8108439572361 -71.5953407453567,18.7554089664267 -71.5581838421713,18.6857964319261 -71.4722838915238,18.6716795155433 -71.4235881504651,18.7271608545082 -71.460733379859,18.7967127697208 -71.5465861203732,18.8108439572361</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8ba3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.6347139299183,19.2672476621496 -71.6834385680603,19.2123498978518 -71.6463409640918,19.1432771387229 -71.5605299873227,19.1291617495465 -71.5118637676131,19.1841057255591 -71.5489500101292,19.2531188859414 -71.6347139299183,19.2672476621496</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd0dbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.6643881015095,18.4733835853211 -70.7126634079047,18.4179527392802 -70.6755073682853,18.3480280592388 -70.5900903447488,18.3335968455737 -70.5418766754243,18.3890737648562 -70.5790182993793,18.4589358360592 -70.6643881015095,18.4733835853211</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd403fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.2317135241208,18.9680367857671 -70.2796279827985,18.9134506016546 -70.2425702748773,18.8441551607579 -70.1576136826039,18.8295081892649 -70.1097618592475,18.8841401517386 -70.1468039019252,18.9533733192291 -70.2317135241208,18.9680367857671</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8953fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.4657318905619,19.6773997137544 -71.5142806664012,19.6231091186092 -71.4772472757889,19.5545463227609 -71.3916768613086,19.5403331580123 -71.343186831501,19.5946697215598 -71.3802083751036,19.6631734881214 -71.4657318905619,19.6773997137544</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf24ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.5538178401983,19.7098042810044 -70.6018017016622,19.6560082964483 -70.5648241891186,19.5875640370786 -70.4798773387343,19.57297605393 -70.4319548612301,19.6268176799729 -70.4689177586867,19.6952016570458 -70.5538178401983,19.7098042810044</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd46ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.3974765535766,18.5549408688601 -70.4455697620377,18.4997457617856 -70.4084429545136,18.4299464213228 -70.3232380614034,18.4154050511888 -70.2752072145347,18.4706461023618 -70.3123188071642,18.5403825917682 -70.3974765535766,18.5549408688601</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd4dbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.5868705569446,19.3421492053514 -70.6349415284863,19.2878638374336 -70.5979106085662,19.2189745241017 -70.5128231812997,19.2044315833933 -70.4648136699889,19.258762744438 -70.5018300337373,19.3275910630767 -70.5868705569446,19.3421492053514</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">856725bbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.8397017661389,18.4768276840669 -71.8886913812067,18.4208301240446 -71.851477069828,18.3507967629025 -71.7652838342162,18.3368217685332 -71.7163523541848,18.3928659096741 -71.7535558770056,18.4628384717422 -71.8397017661389,18.4768276840669</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf327fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.9539524781854,18.8681513252593 -69.0010520252662,18.8140899187839 -68.9640958391926,18.7448437843334 -68.8800594513511,18.7297233876721 -68.8330260116362,18.7838301176492 -68.8699627668318,18.8530119369125 -68.9539524781854,18.8681513252593</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc657fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.7121688899287,18.6993950244643 -68.7591358714029,18.6452430027659 -68.7221825453325,18.5758380481788 -68.6382823027473,18.5606501394182 -68.5913821279754,18.6148474187169 -68.6283153044336,18.6841873664503 -68.7121688899287,18.6993950244643</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd28bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.2234170383904,18.055725340524 -71.2721118555209,17.9994952003736 -71.2348665068253,17.9290247793734 -71.1489389881829,17.9148470492414 -71.1003043568337,17.971123596489 -71.1375369625115,18.0415314772309 -71.2234170383904,18.055725340524</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd5b3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.9844137715261,18.4973058984653 -69.0315990758356,18.4427543248727 -68.9945883735993,18.3730755938299 -68.9104116780261,18.3580134887937 -68.8632925864279,18.4126104471567 -68.900283891635,18.4822241426505 -68.9844137715261,18.4973058984653</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc6c3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.6921723415249,18.9455881364913 -68.7390824475573,18.8917624565242 -68.7021654937092,18.822645055651 -68.6183585188469,18.8074178716111 -68.5715151463983,18.861288768042 -68.6084119308989,18.9303416488192 -68.6921723415249,18.9455881364913</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd68bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.1435975599512,18.9338798748254 -71.1920860927716,18.8787973553413 -71.1549654469116,18.8093670524821 -71.0693690790049,18.7950802681741 -71.0209405786122,18.8502089310223 -71.0580483190998,18.9195782438857 -71.1435975599512,18.9338798748254</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd43bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.1205536750365,18.760128130158 -70.1684345213948,18.7053325476682 -70.1313565341945,18.6358057024206 -70.0464136322485,18.6211373071722 -69.998595828325,18.6759786768334 -70.0356577932428,18.7454426672383 -70.1205536750365,18.760128130158</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c898bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.0643458439763,19.796715254239 -71.1126296040167,19.7427761955734 -71.0756329749214,19.674390829389 -70.9903655555665,19.6600038978334 -70.9421416726229,19.713988731312 -70.9791252385561,19.7823147291865 -71.0643458439763,19.796715254239</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd4a7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.7231027591129,18.8795861910938 -69.7707066349627,18.825144204561 -69.7336778844961,18.755806264855 -69.6490623567389,18.7409735181595 -69.6015225560289,18.7954611120649 -69.6385341190537,18.8647358589694 -69.7231027591129,18.8795861910938</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">85672587fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.827938461143,18.6025447465834 -71.876898417079,18.5467111165013 -71.8397017661389,18.4768276840669 -71.7535558770056,18.4628384717422 -71.7046540383496,18.5187186382879 -71.7418398740028,18.5885414881872 -71.827938461143,18.6025447465834</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd513fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.3689325955592,18.5026926255837 -69.4163719237135,18.4479502943196 -69.3793234396199,18.3782218998347 -69.294853817699,18.3633003224637 -69.2474796945848,18.4180881901432 -69.2845099006157,18.4877521143973 -69.3689325955592,18.5026926255837</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd257fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.5045654748319,17.8443083928706 -71.5534684405136,17.7876787476382 -71.516181027094,17.7169351566181 -71.4300024395045,17.7028837045329 -71.3811589059596,17.7595599290536 -71.418434430726,17.8302410362769 -71.5045654748319,17.8443083928706</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd2c3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.4813699786292,18.0981167313394 -71.5302135820227,18.0418154166726 -71.4929617977607,17.9713689547112 -71.4068782520233,17.9572858756621 -71.3580940406367,18.0136337080397 -71.3953338861976,18.0840181112828 -71.4813699786292,18.0981167313394</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8b3bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.9158544189176,19.0610949954879 -71.9647832329522,19.0057991709374 -71.9276465843375,18.936456933917 -71.8415915286207,18.9224701039507 -71.7927203650714,18.9778123353838 -71.8298465093826,19.0470949963011 -71.9158544189176,19.0610949954879</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd657fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.4235881504651,18.7271608545082 -71.4722838915238,18.6716795155433 -71.4351209375715,18.601978218667 -71.3492742087768,18.5878192366669 -71.3006377586005,18.6433468998442 -71.3377886504431,18.7129872293764 -71.4235881504651,18.7271608545082</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8ba7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.5118637676131,19.1841057255591 -71.5605299873227,19.1291617495465 -71.5234261001734,19.0599986140278 -71.4376676461829,19.0458394082687 -71.3890602515747,19.1008295821557 -71.4261523901156,19.1699327713712 -71.5118637676131,19.1841057255591</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd6c3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.4005578244843,18.9765865532345 -71.4491946370932,18.9214327395083 -71.412067118447,18.8520303070352 -71.326314802447,18.8378422164199 -71.2777372399563,18.8930422616045 -71.3148526478072,18.9623841741241 -71.4005578244843,18.9765865532345</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd407fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.1097618592475,18.8841401517386 -70.1576136826039,18.8295081892649 -70.1205536750365,18.760128130158 -70.0356577932428,18.7454426672383 -69.9878689839393,18.8001203831936 -70.0249129518771,18.8694378210308 -70.1097618592475,18.8841401517386</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8957fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.343186831501,19.5946697215598 -71.3916768613086,19.5403331580123 -71.3546376896046,19.4716794341807 -71.2691206242644,19.4574216575384 -71.2206897418959,19.5118041838429 -71.2577166827647,19.580398531229 -71.343186831501,19.5946697215598</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd473fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.3755773740908,18.8039968946086 -70.4236122729537,18.7491293276297 -70.3865213655653,18.6796243703756 -70.3014107202008,18.6650493830309 -70.2534381293535,18.7199628269092 -70.2905137841799,18.7894053929975 -70.3755773740908,18.8039968946086</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c89c3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.3203200079855,19.83971106942 -71.3687515391401,19.7857006653301 -71.3317476099007,19.7173469136676 -71.2463243333791,19.7030624825365 -71.1979519082898,19.7571187276501 -71.234943559341,19.8254135696714 -71.3203200079855,19.83971106942</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf32bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.2062823591633,18.913391433308 -69.253541681739,18.8592575257648 -69.2165658718649,18.7900279886975 -69.132349347895,18.77499623834 -69.0851554574335,18.8291755539833 -69.1221125722003,18.8983412271153 -69.2062823591633,18.913391433308</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc65bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.9640958391926,18.7448437843334 -69.0112239411575,18.6906190904047 -68.9742495985198,18.6212286372951 -68.8901664878525,18.6061274512067 -68.8431045283773,18.6603974912815 -68.8800594513511,18.7297233876721 -68.9640958391926,18.7448437843334</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd5b7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.8632925864279,18.4126104471567 -68.9104116780261,18.3580134887937 -68.8734021583322,18.2882560838158 -68.7892932202924,18.2731610358298 -68.7422406944325,18.327803339041 -68.7792304552737,18.3974953628339 -68.8632925864279,18.4126104471567</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc6c7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.5715151463983,18.861288768042 -68.6183585188469,18.8074178716111 -68.5814435462109,18.7382214005798 -68.4977056429745,18.7229607089373 -68.4509293487333,18.776876790747 -68.4878237956522,18.8460083961639 -68.5715151463983,18.861288768042</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd623fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.9320830785399,18.3911332432551 -70.9805392356883,18.335466773303 -70.943355576176,18.2654172476747 -70.8577292724587,18.2510965630296 -70.8093340125629,18.3068092391353 -70.8465040647921,18.3767964045192 -70.9320830785399,18.3911332432551</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd68ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.0209405786122,18.8502089310223 -71.0693690790049,18.7950802681741 -71.0322435430065,18.7255622471963 -70.9467027017318,18.7112342368028 -70.8983346319187,18.7664090204583 -70.9354468785918,18.8358657033206 -71.0209405786122,18.8502089310223</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8923fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.8534971867055,19.2624071080771 -70.9017482395096,19.2078867486031 -70.8646894033493,19.1388757866526 -70.7793931792841,19.1244459605502 -70.731202858259,19.1790122388822 -70.7682479364006,19.2479624338039 -70.8534971867055,19.2624071080771</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c898ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.9421416726229,19.713988731312 -70.9903655555665,19.6600038978334 -70.9533642925493,19.5915286453305 -70.8681524962372,19.5770979501223 -70.8199888830807,19.6311285540723 -70.8569767034552,19.6995440909434 -70.9421416726229,19.713988731312</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd4abfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.9771531062647,18.9239519769392 -70.0249129518771,18.8694378210308 -69.9878689839393,18.8001203831936 -69.9030815101416,18.785379848083 -69.8553850258686,18.8399396971397 -69.8924125641465,18.9091944009384 -69.9771531062647,18.9239519769392</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf363fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.4591470751238,18.9583612348093 -69.506564902241,18.9041549414643 -69.4695709102957,18.8349434969731 -69.3851769558772,18.8200017706828 -69.3378238732105,18.8742535560087 -69.374799912834,18.9434015899812 -69.4591470751238,18.9583612348093</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd583fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.2268599216388,18.6663562900797 -69.2741765826641,18.6118955963624 -69.237164524023,18.5423763493624 -69.1528543873624,18.5273821549702 -69.1056032257786,18.5818883062316 -69.1425966144561,18.6513432100558 -69.2268599216388,18.6663562900797</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd2c7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.3580940406367,18.0136337080397 -71.4068782520233,17.9572858756621 -71.3696205738502,17.8867530476401 -71.283590917368,17.8726304691069 -71.2348665068253,17.9290247793734 -71.2721118555209,17.9994952003736 -71.3580940406367,18.0136337080397</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf3cffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.5491326357647,19.4103636516935 -69.5965286841564,19.3566922732206 -69.5595892097438,19.2880014749931 -69.4752712279377,19.2730444062738 -69.4279394653199,19.3267611944725 -69.4648613111185,19.3953896547301 -69.5491326357647,19.4103636516935</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd65bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.6812931593156,18.7694831669425 -71.7301358079183,18.7139307663783 -71.6929676458094,18.644257739242 -71.6069679972016,18.6301976129709 -71.5581838421713,18.6857964319261 -71.5953407453567,18.7554089664267 -71.6812931593156,18.7694831669425</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd6c7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.2777372399563,18.8930422616045 -71.326314802447,18.8378422164199 -71.2891816595536,18.7683510456007 -71.2034833560434,18.7541207966493 -71.1549654469116,18.8093670524821 -71.1920860927716,18.8787973553413 -71.2777372399563,18.8930422616045</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd40bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.3646445627945,18.9280584222725 -70.4126503532806,18.8733544945341 -70.3755773740908,18.8039968946086 -70.2905137841799,18.7894053929975 -70.2425702748773,18.8441551607579 -70.2796279827985,18.9134506016546 -70.3646445627945,18.9280584222725</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c895bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.5999036807915,19.6372770376432 -71.6485401332461,19.5828692885933 -71.6114953053155,19.5142475792593 -71.5258253666652,19.5000925387958 -71.4772472757889,19.5545463227609 -71.5142806664012,19.6231091186092 -71.5999036807915,19.6372770376432</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd477fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.2534381293535,18.7199628269092 -70.3014107202008,18.6650493830309 -70.2643171038093,18.5954597986622 -70.1792664345017,18.5808464096182 -70.1313565341945,18.6358057024206 -70.1684345213948,18.7053325476682 -70.2534381293535,18.7199628269092</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c89c7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.1979519082898,19.7571187276501 -71.2463243333791,19.7030624825365 -71.2093150443353,19.6346178596609 -71.1239458962135,19.6202887459171 -71.0756329749214,19.674390829389 -71.1126296040167,19.7427761955734 -71.1979519082898,19.7571187276501</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf32ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.0851554574335,18.8291755539833 -69.132349347895,18.77499623834 -69.0953741038724,18.7056858934108 -69.0112239411575,18.6906190904047 -68.9640958391926,18.7448437843334 -69.0010520252662,18.8140899187839 -69.0851554574335,18.8291755539833</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd293fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.0775710155033,18.2238520365265 -71.126146597015,18.1679037552598 -71.088931871651,18.0976438675309 -71.0031546467488,18.0833947251868 -70.9546396095163,18.1393893132421 -70.9918411578189,18.2095867474808 -71.0775710155033,18.2238520365265</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd5bbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.1158428386153,18.4577828113796 -69.1631226821214,18.4031130974728 -69.1260929578748,18.3333694395235 -69.0418023254581,18.3183604389187 -68.9945883735993,18.3730755938299 -69.0315990758356,18.4427543248727 -69.1158428386153,18.4577828113796</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc6cbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.8229578160694,18.9069554633433 -68.8699627668318,18.8530119369125 -68.8330260116362,18.7838301176492 -68.7491040220774,18.7686562596563 -68.7021654937092,18.822645055651 -68.7390824475573,18.8917624565242 -68.8229578160694,18.9069554633433</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd693fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.998369216719,19.0985650734723 -71.0467391011715,19.0437637172138 -71.0096491421,18.9745432091212 -70.9242025383017,18.9601849479617 -70.8758930386774,19.0150323353814 -70.9129696641634,19.0841919620121 -70.998369216719,19.0985650734723</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8927fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.731202858259,19.1790122388822 -70.7793931792841,19.1244459605502 -70.7423302905539,19.0553473328859 -70.6570911257626,19.0408761084299 -70.6089619271875,19.0954882892287 -70.6460106782316,19.1645258019077 -70.731202858259,19.1790122388822</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf223fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.9237376574693,19.538458489929 -69.9713531470475,19.4847605393613 -69.9343989419066,19.4161773016611 -69.8498456697344,19.4013535647973 -69.802293395346,19.4550970105592 -69.8392310888746,19.5236187096319 -69.9237376574693,19.538458489929</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd443fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.6200245292417,18.9716904825844 -70.6681828875548,18.9169147442957 -70.6310984311922,18.8475810976641 -70.5458700205022,18.8330848950431 -70.4977731984043,18.88790655941 -70.5348431582885,18.9571785109724 -70.6200245292417,18.9716904825844</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8993fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.919730650022,19.9579723243413 -70.9678963468251,19.9043132895909 -70.93093046396,19.8361366001651 -70.8458122772761,19.8216781934893 -70.7977068039835,19.875382880276 -70.8346592012142,19.9435003294721 -70.919730650022,19.9579723243413</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd4affffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.8553850258686,18.8399396971397 -69.9030815101416,18.785379848083 -69.8660359582539,18.7159788267025 -69.7813106340332,18.7012007493952 -69.7336778844961,18.755806264855 -69.7707066349627,18.825144204561 -69.8553850258686,18.8399396971397</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">8567258ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.9630951765785,18.5606574328914 -72.0121425102239,18.5047064820761 -71.9749354638785,18.4347625985341 -71.8886913812067,18.4208301240446 -71.8397017661389,18.4768276840669 -71.876898417079,18.5467111165013 -71.9630951765785,18.5606574328914</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd51bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.50090653112,18.462837001497 -69.5484395428134,18.4079765660032 -69.5113731623115,18.3381838132914 -69.4267915781792,18.3233158695809 -69.3793234396199,18.3782218998347 -69.4163719237135,18.4479502943196 -69.50090653112,18.462837001497</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf367fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.3378238732105,18.8742535560087 -69.3851769558772,18.8200017706828 -69.3481828280104,18.750708476103 -69.2638538482326,18.7357307392655 -69.2165658718649,18.7900279886975 -69.253541681739,18.8592575257648 -69.3378238732105,18.8742535560087</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd587fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.1056032257786,18.5818883062316 -69.1528543873624,18.5273821549702 -69.1158428386153,18.4577828113796 -69.0315990758356,18.4427543248727 -68.9844137715261,18.4973058984653 -69.0214062862129,18.5668405525222 -69.1056032257786,18.5818883062316</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd2cbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.616350254105,18.0558583315746 -71.6652825233857,17.9994394598291 -71.6280192176146,17.9289310740601 -71.5418350667315,17.9149034929998 -71.4929617977607,17.9713689547112 -71.5302135820227,18.0418154166726 -71.616350254105,18.0558583315746</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8baffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.6463409640918,19.1432771387229 -71.6950950587451,19.0882158416234 -71.6579798356277,19.0189928817068 -71.5721217575374,19.0048910503858 -71.5234261001734,19.0599986140278 -71.5605299873227,19.1291617495465 -71.6463409640918,19.1432771387229</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd6cbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.5350002120721,18.935578023264 -71.5837253378472,18.8803067861349 -71.5465861203732,18.8108439572361 -71.460733379859,18.7967127697208 -71.412067118447,18.8520303070352 -71.4491946370932,18.9214327395083 -71.5350002120721,18.935578023264</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd40ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.2425702748773,18.8441551607579 -70.2905137841799,18.7894053929975 -70.2534381293535,18.7199628269092 -70.1684345213948,18.7053325476682 -70.1205536750365,18.760128130158 -70.1576136826039,18.8295081892649 -70.2425702748773,18.8441551607579</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd47bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.5087821663276,18.7636652519812 -70.5569081537708,18.7086798966846 -70.5198023908291,18.6391126656162 -70.4345854037389,18.6245930750804 -70.3865213655653,18.6796243703756 -70.4236122729537,18.7491293276297 -70.5087821663276,18.7636652519812</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c89cbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.4542281998165,19.7999397816812 -71.5027476911715,19.7458122621244 -71.4657318905619,19.6773997137544 -71.3802083751036,19.6631734881214 -71.3317476099007,19.7173469136676 -71.3687515391401,19.7857006653301 -71.4542281998165,19.7999397816812</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf333fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.0647495292492,19.0752310775586 -69.1118862719224,19.0213781752406 -69.0749472710276,18.9523572806353 -68.9908905231642,18.9372530295351 -68.9438195001681,18.9911512573019 -68.980739419506,19.0601084260309 -69.0647495292492,19.0752310775586</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd553fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.7548606386744,18.5073179233491 -69.8025512284202,18.4523850711567 -69.7654682993365,18.3826095578137 -69.6807118324825,18.3678308085437 -69.6330854098577,18.4228093514896 -69.6701511975777,18.4925209673194 -69.7548606386744,18.5073179233491</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc6cffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.7021654937092,18.822645055651 -68.7491040220774,18.7686562596563 -68.7121688899287,18.6993950244643 -68.6283153044336,18.6841873664503 -68.5814435462109,18.7382214005798 -68.6183585188469,18.8074178716111 -68.7021654937092,18.822645055651</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd697fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.8758930386774,19.0150323353814 -70.9242025383017,18.9601849479617 -70.8871081093152,18.8908767456076 -70.8017178026415,18.8764771699415 -70.7534690822572,18.9313705690646 -70.7905497958404,19.0006175419107 -70.8758930386774,19.0150323353814</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c892bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.9871007857483,19.2222745279078 -71.0354414084576,19.1676366864256 -70.998369216719,19.0985650734723 -70.9129696641634,19.0841919620121 -70.8646894033493,19.1388757866526 -70.9017482395096,19.2078867486031 -70.9871007857483,19.2222745279078</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd447fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.4977731984043,18.88790655941 -70.5458700205022,18.8330848950431 -70.5087821663276,18.7636652519812 -70.4236122729537,18.7491293276297 -70.3755773740908,18.8039968946086 -70.4126503532806,18.8733544945341 -70.4977731984043,18.88790655941</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">85672527fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.7515190144173,18.0134266011982 -71.8005396044612,17.9568902415607 -71.763265196546,17.8863200685687 -71.6769812028371,17.8723480512186 -71.6280192176146,17.9289310740601 -71.6652825233857,17.9994394598291 -71.7515190144173,18.0134266011982</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8997fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.7977068039835,19.875382880276 -70.8458122772761,19.8216781934893 -70.8088421755263,19.7534116741648 -70.7237803712212,19.7389094373446 -70.6757355104319,19.7926597747713 -70.7126917491854,19.8608667066772 -70.7977068039835,19.875382880276</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd4b3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.8341158151711,19.086931996315 -69.8817545230675,19.0326990373145 -69.8447449834944,18.9635907537488 -69.7601134800543,18.9487780495962 -69.712538447005,19.0030566074786 -69.7495311534047,19.0721022835154 -69.8341158151711,19.086931996315</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf36bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.5910231304447,18.919059992048 -69.6385341190537,18.8647358589694 -69.6015225560289,18.7954611120649 -69.5170174871932,18.7805738146602 -69.4695709102957,18.8349434969731 -69.506564902241,18.9041549414643 -69.5910231304447,18.919059992048</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd58bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.3585523969129,18.6268548271106 -69.4059629456462,18.5722761066785 -69.3689325955592,18.5026926255837 -69.2845099006157,18.4877521143973 -69.237164524023,18.5423763493624 -69.2741765826641,18.6118955963624 -69.3585523969129,18.6268548271106</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd2cffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.4929617977607,17.9713689547112 -71.5418350667315,17.9149034929998 -71.5045654748319,17.8443083928706 -71.418434430726,17.8302410362769 -71.3696205738502,17.8867530476401 -71.4068782520233,17.9572858756621 -71.4929617977607,17.9713689547112</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd663fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.3235850629569,18.3923999516087 -71.3722805245371,18.3365443899395 -71.3350763023004,18.2664572460955 -71.2491889244795,18.2522874303475 -71.2005532007951,18.3081893687283 -71.2377450211697,18.3782147556539 -71.3235850629569,18.3923999516087</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8bb3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.6230987160138,19.3909044668121 -71.6717939283126,19.3361701417894 -71.6347139299183,19.2672476621496 -71.5489500101292,19.2531188859414 -71.5003131973586,19.3078993657834 -71.5373818089141,19.3767624737317 -71.6230987160138,19.3909044668121</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd6cffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.412067118447,18.8520303070352 -71.460733379859,18.7967127697208 -71.4235881504651,18.7271608545082 -71.3377886504431,18.7129872293764 -71.2891816595536,18.7683510456007 -71.326314802447,18.8378422164199 -71.412067118447,18.8520303070352</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd413fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.2208678608539,19.0916076992816 -70.2687532997838,19.0371850008377 -70.2317135241208,18.9680367857671 -70.1468039019252,18.9533733192291 -70.098981070667,19.0078417575148 -70.1360051631849,19.0769279341604 -70.2208678608539,19.0916076992816</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8963fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.2434738886174,19.265238211307 -71.2919633508259,19.2105289669831 -71.2548833713819,19.1414858444918 -71.1693264025124,19.1272121601212 -71.1208965298143,19.1819674679554 -71.157963941842,19.2509504047777 -71.2434738886174,19.265238211307</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c89cffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.3317476099007,19.7173469136676 -71.3802083751036,19.6631734881214 -71.343186831501,19.5946697215598 -71.2577166827647,19.580398531229 -71.2093150443353,19.6346178596609 -71.2463243333791,19.7030624825365 -71.3317476099007,19.7173469136676</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc2d3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.7522852185701,18.2033256747635 -68.7993663210636,18.1485197611054 -68.7623400627749,18.0785412027642 -68.6782527260365,18.0634345396681 -68.6312385764201,18.1182857663109 -68.6682447253611,18.1881983613386 -68.7522852185701,18.2033256747635</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf337fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.9438195001681,18.9911512573019 -68.9908905231642,18.9372530295351 -68.9539524781854,18.8681513252593 -68.8699627668318,18.8530119369125 -68.8229578160694,18.9069554633433 -68.8598764190248,18.9759930953358 -68.9438195001681,18.9911512573019</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd29bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.2119792753908,18.1821135659762 -71.2606445302491,18.1260475518039 -71.2234170383904,18.055725340524 -71.1375369625115,18.0415314772309 -71.088931871651,18.0976438675309 -71.126146597015,18.1679037552598 -71.2119792753908,18.1821135659762</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd5c3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.6120327339095,18.6715530338733 -69.6596013776266,18.6169018810416 -69.6225536799036,18.5473357716831 -69.537954791706,18.5324846060549 -69.4904506225644,18.5871813649265 -69.5274807784286,18.6566836978616 -69.6120327339095,18.6715530338733</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd69bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.1322412598572,19.0580800136643 -71.1807004472136,19.0031611453816 -71.1435975599512,18.9338798748254 -71.0580483190998,18.9195782438857 -71.0096491421,18.9745432091212 -71.0467391011715,19.0437637172138 -71.1322412598572,19.0580800136643</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c892ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.8646894033493,19.1388757866526 -70.9129696641634,19.0841919620121 -70.8758930386774,19.0150323353814 -70.7905497958404,19.0006175419107 -70.7423302905539,19.0553473328859 -70.7793931792841,19.1244459605502 -70.8646894033493,19.1388757866526</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf22bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.0559678662604,19.4995442372355 -70.103675037304,19.4457288289748 -70.0667047070171,19.3770841585823 -69.9820432411792,19.362316340463 -69.9343989419066,19.4161773016611 -69.9713531470475,19.4847605393613 -70.0559678662604,19.4995442372355</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd44bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.7534690822572,18.9313705690646 -70.8017178026415,18.8764771699415 -70.7646192499288,18.8070819457036 -70.6792859801138,18.7926417085061 -70.6310984311922,18.8475810976641 -70.6681828875548,18.9169147442957 -70.7534690822572,18.9313705690646</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c899bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.053070182832,19.9187272319837 -71.1013248121782,19.8649510750593 -71.0643458439763,19.796715254239 -70.9791252385561,19.7823147291865 -70.93093046396,19.8361366001651 -70.9678963468251,19.9043132895909 -71.053070182832,19.9187272319837</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd4b7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.712538447005,19.0030566074786 -69.7601134800543,18.9487780495962 -69.7231027591129,18.8795861910938 -69.6385341190537,18.8647358589694 -69.5910231304447,18.919059992048 -69.62801664874,18.9881888954991 -69.712538447005,19.0030566074786</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">85672597fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.8161871375004,18.7279478995804 -71.8651174651665,18.6722781381482 -71.827938461143,18.6025447465834 -71.7418398740028,18.5885414881872 -71.6929676458094,18.644257739242 -71.7301358079183,18.7139307663783 -71.8161871375004,18.7279478995804</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf303fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.3068105374508,19.2430373896668 -69.3540776522957,19.1892752094119 -69.317137743499,19.1204180004606 -69.2329489903824,19.1053860182535 -69.1857468829702,19.1591935706387 -69.2226684345004,19.2279877472833 -69.3068105374508,19.2430373896668</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf36ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.4695709102957,18.8349434969731 -69.5170174871932,18.7805738146602 -69.480005420871,18.7112168705012 -69.3955646282626,18.6962932728086 -69.3481828280104,18.750708476103 -69.3851769558772,18.8200017706828 -69.4695709102957,18.8349434969731</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd58ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.237164524023,18.5423763493624 -69.2845099006157,18.4877521143973 -69.2474796945848,18.4180881901432 -69.1631226821214,18.4031130974728 -69.1158428386153,18.4577828113796 -69.1528543873624,18.5273821549702 -69.237164524023,18.5423763493624</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd2d3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.4697900002176,18.224551624853 -71.5186039691259,18.1684144146231 -71.4813699786292,18.0981167313394 -71.3953338861976,18.0840181112828 -71.3465792891621,18.140201805 -71.3838013160811,18.2104376446233 -71.4697900002176,18.224551624853</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8823fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.7109615399464,19.8424479945455 -71.759626595281,19.7882493447767 -71.7226058065698,19.7198703109969 -71.6369309438133,19.705748268406 -71.5883238254408,19.7599928915991 -71.6253335370893,19.8283135895807 -71.7109615399464,19.8424479945455</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd667fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.2005532007951,18.3081893687283 -71.2491889244795,18.2522874303475 -71.2119792753908,18.1821135659762 -71.126146597015,18.1679037552598 -71.0775710155033,18.2238520365265 -71.1147678747153,18.2939637956903 -71.2005532007951,18.3081893687283</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd083fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.1529954474102,18.3862297263501 -70.2009635486292,18.3309427644704 -70.1638315339392,18.2609762569466 -70.078747296595,18.2463602713785 -70.0308423228038,18.3016931082698 -70.0679583677457,18.3715960690487 -70.1529954474102,18.3862297263501</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8bb7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.5003131973586,19.3078993657834 -71.5489500101292,19.2531188859414 -71.5118637676131,19.1841057255591 -71.4261523901156,19.1699327713712 -71.3775743827469,19.2247593947919 -71.4146488519097,19.2937128360723 -71.5003131973586,19.3078993657834</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd6d3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.3890602515747,19.1008295821557 -71.4376676461829,19.0458394082687 -71.4005578244843,18.9765865532345 -71.3148526478072,18.9623841741241 -71.2663044828687,19.0174205298918 -71.3034021695734,19.0866130908721 -71.3890602515747,19.1008295821557</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd417fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.098981070667,19.0078417575148 -70.1468039019252,18.9533733192291 -70.1097618592475,18.8841401517386 -70.0249129518771,18.8694378210308 -69.9771531062647,18.9239519769392 -70.0141790920473,18.993122758153 -70.098981070667,19.0078417575148</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8967fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.1208965298143,19.1819674679554 -71.1693264025124,19.1272121601212 -71.1322412598572,19.0580800136643 -71.0467391011715,19.0437637172138 -70.998369216719,19.0985650734723 -71.0354414084576,19.1676366864256 -71.1208965298143,19.1819674679554</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf263fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.3101476385376,19.5437012604004 -70.3580083496532,19.4898140006625 -70.3210247932707,19.4211945940161 -70.236195798661,19.4065234351667 -70.188397234141,19.4604563186409 -70.2253654269837,19.5290147476787 -70.3101476385376,19.5437012604004</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd483fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.0774525106378,19.2543137415275 -70.1252174502391,19.20017204232 -70.0882112931641,19.1312329495551 -70.0034561976791,19.1164974799172 -69.9557541868352,19.170684818611 -69.9927442527281,19.2395619992275 -70.0774525106378,19.2543137415275</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf33bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.1960093680251,19.0364466235791 -69.2432400676303,18.9824759501551 -69.2062823591633,18.913391433308 -69.1221125722003,18.8983412271153 -69.0749472710276,18.9523572806353 -69.1118862719224,19.0213781752406 -69.1960093680251,19.0364466235791</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc66bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.7422406944325,18.327803339041 -68.7892932202924,18.2731610358298 -68.7522852185701,18.2033256747635 -68.6682447253611,18.1881983613386 -68.6212591158428,18.2428859671018 -68.6582469980514,18.3126556017629 -68.7422406944325,18.327803339041</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd5c7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.4904506225644,18.5871813649265 -69.537954791706,18.5324846060549 -69.50090653112,18.462837001497 -69.4163719237135,18.4479502943196 -69.3689325955592,18.5026926255837 -69.4059629456462,18.5722761066785 -69.4904506225644,18.5871813649265</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd633fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.9208220997987,18.516537236165 -70.9692488635055,18.4610347329323 -70.9320830785399,18.3911332432551 -70.8465040647921,18.3767964045192 -70.7981381748095,18.4323450794085 -70.8352903306862,18.50218443196 -70.9208220997987,18.516537236165</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8933fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.8423163721509,19.3856263199741 -70.8905382477033,19.3312693225929 -70.8534971867055,19.2624071080771 -70.7682479364006,19.2479624338039 -70.7200867688429,19.3023653004812 -70.7571140506487,19.3711669812726 -70.8423163721509,19.3856263199741</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf22ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.9343989419066,19.4161773016611 -69.9820432411792,19.362316340463 -69.9450711130479,19.2935860915485 -69.8604710917912,19.2787785960453 -69.8128900369834,19.332685096226 -69.8498456697344,19.4013535647973 -69.9343989419066,19.4161773016611</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd44ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.6310984311922,18.8475810976641 -70.6792859801138,18.7926417085061 -70.6421836495326,18.7231601397237 -70.5569081537708,18.7086798966846 -70.5087821663276,18.7636652519812 -70.5458700205022,18.8330848950431 -70.6310984311922,18.8475810976641</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd4bbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.9664481792404,19.0474734531647 -70.0141790920473,18.993122758153 -69.9771531062647,18.9239519769392 -69.8924125641465,18.9091944009384 -69.8447449834944,18.9635907537488 -69.8817545230675,19.0326990373145 -69.9664481792404,19.0474734531647</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf373fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.4487338996697,19.0814700860761 -69.4961230078428,19.027427074949 -69.4591470751238,18.9583612348093 -69.374799912834,18.9434015899812 -69.327475516901,18.9974900619203 -69.3644334835061,19.066492731975 -69.4487338996697,19.0814700860761</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd593fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.2165658718649,18.7900279886975 -69.2638538482326,18.7357307392655 -69.2268599216388,18.6663562900797 -69.1425966144561,18.6513432100558 -69.0953741038724,18.7056858934108 -69.132349347895,18.77499623834 -69.2165658718649,18.7900279886975</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd2d7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.3465792891621,18.140201805 -71.3953338861976,18.0840181112828 -71.3580940406367,18.0136337080397 -71.2721118555209,17.9994952003736 -71.2234170383904,18.055725340524 -71.2606445302491,18.1260475518039 -71.3465792891621,18.140201805</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8827fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.5883238254408,19.7599928915991 -71.6369309438133,19.705748268406 -71.5999036807915,19.6372770376432 -71.5142806664012,19.6231091186092 -71.4657318905619,19.6773997137544 -71.5027476911715,19.7458122621244 -71.5883238254408,19.7599928915991</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd66bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.4582218453371,18.3506735501299 -71.5070062108109,18.2947003956611 -71.4697900002176,18.224551624853 -71.3838013160811,18.2104376446233 -71.3350763023004,18.2664572460955 -71.3722805245371,18.3365443899395 -71.4582218453371,18.3506735501299</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8bbbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.7576096348725,19.3502541021753 -71.8063922826969,19.2954025612976 -71.7693013107562,19.226420830238 -71.6834385680603,19.2123498978518 -71.6347139299183,19.2672476621496 -71.6717939283126,19.3361701417894 -71.7576096348725,19.3502541021753</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd6d7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.2663044828687,19.0174205298918 -71.3148526478072,18.9623841741241 -71.2777372399563,18.8930422616045 -71.1920860927716,18.8787973553413 -71.1435975599512,18.9338798748254 -71.1807004472136,19.0031611453816 -71.2663044828687,19.0174205298918</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd41bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.3537229153478,19.0518089459374 -70.4016996283483,18.9972685628137 -70.3646445627945,18.9280584222725 -70.2796279827985,18.9134506016546 -70.2317135241208,18.9680367857671 -70.2687532997838,19.0371850008377 -70.3537229153478,19.0518089459374</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c896bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.3775743827469,19.2247593947919 -71.4261523901156,19.1699327713712 -71.3890602515747,19.1008295821557 -71.3034021695734,19.0866130908721 -71.2548833713819,19.1414858444918 -71.2919633508259,19.2105289669831 -71.3775743827469,19.2247593947919</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf267fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.188397234141,19.4604563186409 -70.236195798661,19.4065234351667 -70.1992097320192,19.3378174394353 -70.1144407469736,19.3231056635137 -70.0667047070171,19.3770841585823 -70.103675037304,19.4457288289748 -70.188397234141,19.4604563186409</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd487fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.9557541868352,19.170684818611 -70.0034561976791,19.1164974799172 -69.9664481792404,19.0474734531647 -69.8817545230675,19.0326990373145 -69.8341158151711,19.086931996315 -69.8711073709306,19.1558937631849 -69.9557541868352,19.170684818611</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c89d7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.1866003170339,19.8793068512893 -71.234943559341,19.8254135696714 -71.1979519082898,19.7571187276501 -71.1126296040167,19.7427761955734 -71.0643458439763,19.796715254239 -71.1013248121782,19.8649510750593 -71.1866003170339,19.8793068512893</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc603fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.4607929830185,18.6536858707626 -68.5075976257669,18.5996066322698 -68.4706667370062,18.5301886796632 -68.386951994231,18.5149154382728 -68.3402148098502,18.5690398450013 -68.3771248263115,18.6383923430604 -68.4607929830185,18.6536858707626</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc66ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.6212591158428,18.2428859671018 -68.6682447253611,18.1881983613386 -68.6312385764201,18.1182857663109 -68.5472672122792,18.103126866827 -68.5003488672689,18.1578597304585 -68.5373345372144,18.2277062543138 -68.6212591158428,18.2428859671018</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd5cbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.7442638390437,18.6317168359607 -69.7919254931982,18.5769476967697 -69.7548606386744,18.5073179233491 -69.6701511975777,18.4925209673194 -69.6225536799036,18.5473357716831 -69.6596013776266,18.6169018810416 -69.7442638390437,18.6317168359607</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc6dbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.8128999264512,19.0297735300854 -68.8598764190248,18.9759930953358 -68.8229578160694,18.9069554633433 -68.7390824475573,18.8917624565242 -68.6921723415249,18.9455881364913 -68.7290711326773,19.0145615942591 -68.8128999264512,19.0297735300854</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd637fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.7981381748095,18.4323450794085 -70.8465040647921,18.3767964045192 -70.8093340125629,18.3068092391353 -70.7238119891962,18.2924332451263 -70.6755073682853,18.3480280592388 -70.7126634079047,18.4179527392802 -70.7981381748095,18.4323450794085</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8b87fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.7459298369567,19.4737734154453 -71.794683040831,19.4190852543616 -71.7576096348725,19.3502541021753 -71.6717939283126,19.3361701417894 -71.6230987160138,19.3909044668121 -71.6601611223986,19.4596765944699 -71.7459298369567,19.4737734154453</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd6a3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.7757808101591,18.6824814729189 -70.8240880534165,18.6272605932345 -70.7869537795689,18.5575691727761 -70.7015262237071,18.5431606772017 -70.6532802007869,18.5984276258986 -70.6904004199757,18.6680570118859 -70.7757808101591,18.6824814729189</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8937fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.7200867688429,19.3023653004812 -70.7682479364006,19.2479624338039 -70.731202858259,19.1790122388822 -70.6460106782316,19.1645258019077 -70.5979106085662,19.2189745241017 -70.6349415284863,19.2878638374336 -70.7200867688429,19.3023653004812</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf233fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.9130872438231,19.6604297085123 -69.9606739543771,19.6068946429016 -69.9237376574693,19.538458489929 -69.8392310888746,19.5236187096319 -69.7917075642132,19.5771992245935 -69.8286273333557,19.6455740819132 -69.9130872438231,19.6604297085123</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd453fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.6089619271875,19.0954882892287 -70.6570911257626,19.0408761084299 -70.6200245292417,18.9716904825844 -70.5348431582885,18.9571785109724 -70.4867754706327,19.0118365756457 -70.5238275506905,19.0809607384965 -70.6089619271875,19.0954882892287</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c89a3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.6978885526798,19.5481360020504 -70.7459915055171,19.4940596340956 -70.7089820058062,19.4254065427046 -70.6238836600813,19.4108902392997 -70.5758417559197,19.4650123626505 -70.6128370566016,19.5336050432671 -70.6978885526798,19.5481360020504</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf377fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.327475516901,18.9974900619203 -69.374799912834,18.9434015899812 -69.3378238732105,18.8742535560087 -69.253541681739,18.8592575257648 -69.2062823591633,18.913391433308 -69.2432400676303,18.9824759501551 -69.327475516901,18.9974900619203</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd597fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.0953741038724,18.7056858934108 -69.1425966144561,18.6513432100558 -69.1056032257786,18.5818883062316 -69.0214062862129,18.5668405525222 -68.9742495985198,18.6212286372951 -69.0112239411575,18.6906190904047 -69.0953741038724,18.7056858934108</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd2dbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.604693207314,18.1824724846966 -71.6535957917385,18.1262177252831 -71.616350254105,18.0558583315746 -71.5302135820227,18.0418154166726 -71.4813699786292,18.0981167313394 -71.5186039691259,18.1684144146231 -71.604693207314,18.1824724846966</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd603fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.1663449375841,18.6845415596005 -71.2148922539163,18.6291314879402 -71.1777360488455,18.5594034211885 -71.0920452919485,18.5451468762281 -71.0435580520648,18.6006031776351 -71.0807013976799,18.6702698037272 -71.1663449375841,18.6845415596005</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd66ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.3350763023004,18.2664572460955 -71.3838013160811,18.2104376446233 -71.3465792891621,18.140201805 -71.2606445302491,18.1260475518039 -71.2119792753908,18.1821135659762 -71.2491889244795,18.2522874303475 -71.3350763023004,18.2664572460955</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd08bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.2861084778499,18.3455217763739 -70.3341684992815,18.2901168053555 -70.2970209101053,18.220086871202 -70.2118287822078,18.2055253476773 -70.1638315339392,18.2609762569466 -70.2009635486292,18.3309427644704 -70.2861084778499,18.3455217763739</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd6dbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.5234261001734,19.0599986140278 -71.5721217575374,19.0048910503858 -71.5350002120721,18.935578023264 -71.4491946370932,18.9214327395083 -71.4005578244843,18.9765865532345 -71.4376676461829,19.0458394082687 -71.5234261001734,19.0599986140278</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8903fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.0869315922999,19.5517538894428 -71.1352737054422,19.4974886633284 -71.0982417127744,19.4288043776178 -71.0128805317763,19.4144451644326 -70.964598340308,19.4687562809086 -71.0016173144365,19.537380728269 -71.0869315922999,19.5517538894428</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c896ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.2548833713819,19.1414858444918 -71.3034021695734,19.0866130908721 -71.2663044828687,19.0174205298918 -71.1807004472136,19.0031611453816 -71.1322412598572,19.0580800136643 -71.1693264025124,19.1272121601212 -71.2548833713819,19.1414858444918</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf26bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.442896633587,19.5044438943629 -70.4908480916551,19.4504392064783 -70.4538495644145,19.3817589310546 -70.368914458734,19.3671442224183 -70.3210247932707,19.4211945940161 -70.3580083496532,19.4898140006625 -70.442896633587,19.5044438943629</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd48bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.2100332688767,19.2148679103157 -70.257889718893,19.1606085941139 -70.2208678608539,19.0916076992816 -70.1360051631849,19.0769279341604 -70.0882112931641,19.1312329495551 -70.1252174502391,19.20017204232 -70.2100332688767,19.2148679103157</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c89dbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.4427361866733,19.9221665921373 -71.4912264240558,19.8682020296513 -71.4542281998165,19.7999397816812 -71.3687515391401,19.7857006653301 -71.3203200079855,19.83971106942 -71.3573063365896,19.9079147545342 -71.4427361866733,19.9221665921373</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf343fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.6914421992069,19.2490689398913 -69.7389596391406,19.1951169169021 -69.7019849323131,19.1262175184338 -69.6175099299959,19.1113326313919 -69.5700564730457,19.1653301587802 -69.607013947049,19.2341670817903 -69.6914421992069,19.2490689398913</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc673fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.6013309067638,18.4911668346953 -68.6482595289048,18.4368062081131 -68.6112898976766,18.367179672326 -68.5274120578334,18.3519793744836 -68.4805506256907,18.4063852367098 -68.5174997590401,18.4759461792392 -68.6013309067638,18.4911668346953</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf3affffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.9336968898394,19.1138435891265 -68.980739419506,19.0601084260309 -68.9438195001681,18.9911512573019 -68.8598764190248,18.9759930953358 -68.8128999264512,19.0297735300854 -68.8498003926887,19.0986668707776 -68.9336968898394,19.1138435891265</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd5cffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.6225536799036,18.5473357716831 -69.6701511975777,18.4925209673194 -69.6330854098577,18.4228093514896 -69.5484395428134,18.4079765660032 -69.50090653112,18.462837001497 -69.537954791706,18.5324846060549 -69.6225536799036,18.5473357716831</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd63bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.0548841225997,18.475331754421 -71.1034007786652,18.419711523513 -71.0662217714545,18.349748021845 -70.9805392356883,18.335466773303 -70.9320830785399,18.3911332432551 -70.9692488635055,18.4610347329323 -71.0548841225997,18.475331754421</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd6a7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.6532802007869,18.5984276258986 -70.7015262237071,18.5431606772017 -70.6643881015095,18.4733835853211 -70.5790182993793,18.4589358360592 -70.5308338883656,18.5142488244985 -70.5679575745633,18.5839635337443 -70.6532802007869,18.5984276258986</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd0c3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.5418766754243,18.3890737648562 -70.5900903447488,18.3335968455737 -70.5529307685228,18.2635875350796 -70.4675722269339,18.2491181128575 -70.4194205847956,18.3046410711156 -70.456565364282,18.3745874246813 -70.5418766754243,18.3890737648562</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c893bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.9758438324978,19.3456715879931 -71.0241552242263,19.2911971615848 -70.9871007857483,19.2222745279078 -70.9017482395096,19.2078867486031 -70.8534971867055,19.2624071080771 -70.8905382477033,19.3312693225929 -70.9758438324978,19.3456715879931</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd457fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.4867754706327,19.0118365756457 -70.5348431582885,18.9571785109724 -70.4977731984043,18.88790655941 -70.4126503532806,18.8733544945341 -70.3646445627945,18.9280584222725 -70.4016996283483,18.9972685628137 -70.4867754706327,19.0118365756457</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">85672537fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.7397848248917,18.140219814185 -71.788775680576,18.0838475704429 -71.7515190144173,18.0134266011982 -71.6652825233857,17.9994394598291 -71.616350254105,18.0558583315746 -71.6535957917385,18.1262177252831 -71.7397848248917,18.140219814185</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c89a7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.5758417559197,19.4650123626505 -70.6238836600813,19.4108902392997 -70.5868705569446,19.3421492053514 -70.5018300337373,19.3275910630767 -70.4538495644145,19.3817589310546 -70.4908480916551,19.4504392064783 -70.5758417559197,19.4650123626505</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd4c3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.4648136699889,19.258762744438 -70.5128231812997,19.2044315833933 -70.4757889666163,19.1354553002405 -70.3907600818154,19.1208715312897 -70.3428124154522,19.1752484699121 -70.3798316973711,19.2441634104674 -70.4648136699889,19.258762744438</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">856725a3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.7163523541848,18.3928659096741 -71.7652838342162,18.3368217685332 -71.7280626105951,18.266699611439 -71.6419209905725,18.2526827508916 -71.5930480599599,18.3087734428461 -71.630258102596,18.3788344527611 -71.7163523541848,18.3928659096741</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf30ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.317137743499,19.1204180004606 -69.3644334835061,19.066492731975 -69.327475516901,18.9974900619203 -69.2432400676303,18.9824759501551 -69.1960093680251,19.0364466235791 -69.2329489903824,19.1053860182535 -69.317137743499,19.1204180004606</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf37bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.5805344413697,19.0423496712821 -69.62801664874,18.9881888954991 -69.5910231304447,18.919059992048 -69.506564902241,18.9041549414643 -69.4591470751238,18.9583612348093 -69.4961230078428,19.027427074949 -69.5805344413697,19.0423496712821</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd59bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.3481828280104,18.750708476103 -69.3955646282626,18.6962932728086 -69.3585523969129,18.6268548271106 -69.2741765826641,18.6118955963624 -69.2268599216388,18.6663562900797 -69.2638538482326,18.7357307392655 -69.3481828280104,18.750708476103</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd607fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.0435580520648,18.6006031776351 -71.0920452919485,18.5451468762281 -71.0548841225997,18.475331754421 -70.9692488635055,18.4610347329323 -70.9208220997987,18.516537236165 -70.9579700244499,18.5862905690863 -71.0435580520648,18.6006031776351</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c882ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.7226058065698,19.7198703109969 -71.7713002142395,19.6655086008651 -71.7342618998863,19.5969788034134 -71.6485401332461,19.5828692885933 -71.5999036807915,19.6372770376432 -71.6369309438133,19.705748268406 -71.7226058065698,19.7198703109969</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd673fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.3121055540677,18.518029854411 -71.3607714944605,18.46233827414 -71.3235850629569,18.3923999516087 -71.2377450211697,18.3782147556539 -71.1891387976031,18.4339526744149 -71.2263128033087,18.5038294599539 -71.3121055540677,18.518029854411</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8907fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.964598340308,19.4687562809086 -71.0128805317763,19.4144451644326 -70.9758438324978,19.3456715879931 -70.8905382477033,19.3312693225929 -70.8423163721509,19.3856263199741 -70.8793396721379,19.4543397104475 -70.964598340308,19.4687562809086</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd423fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.998595828325,18.6759786768334 -70.0464136322485,18.6211373071722 -70.0093336555123,18.5515268745276 -69.9244521809257,18.5368210273511 -69.8766977966407,18.5917081543452 -69.9137613770569,18.6612553844137 -69.998595828325,18.6759786768334</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8973fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.2320760177278,19.3886776479936 -71.2805361746756,19.3341318145939 -71.2434738886174,19.265238211307 -71.157963941842,19.2509504047777 -71.109563353038,19.3055422484585 -71.1466130484069,19.3743758963158 -71.2320760177278,19.3886776479936</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf26ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.3210247932707,19.4211945940161 -70.368914458734,19.3671442224183 -70.3319130468393,19.2983770101269 -70.2470372239131,19.2837213966642 -70.1992097320192,19.3378174394353 -70.236195798661,19.4065234351667 -70.3210247932707,19.4211945940161</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd48ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.0882112931641,19.1312329495551 -70.1360051631849,19.0769279341604 -70.098981070667,19.0078417575148 -70.0141790920473,18.993122758153 -69.9664481792404,19.0474734531647 -70.0034561976791,19.1164974799172 -70.0882112931641,19.1312329495551</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc60bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.5913821279754,18.6148474187169 -68.6382823027473,18.5606501394182 -68.6013309067638,18.4911668346953 -68.5174997590401,18.4759461792392 -68.4706667370062,18.5301886796632 -68.5075976257669,18.5996066322698 -68.5913821279754,18.6148474187169</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf347fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.5700564730457,19.1653301587802 -69.6175099299959,19.1113326313919 -69.5805344413697,19.0423496712821 -69.4961230078428,19.027427074949 -69.4487338996697,19.0814700860761 -69.4856917882986,19.1503902233353 -69.5700564730457,19.1653301587802</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc677fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.4805506256907,18.4063852367098 -68.5274120578334,18.3519793744836 -68.4904446640945,18.2822755727756 -68.4066366092431,18.2670435899015 -68.3598427113997,18.3214946461991 -68.3967892502212,18.391132509986 -68.4805506256907,18.4063852367098</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd5d3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.6015225560289,18.7954611120649 -69.6490623567389,18.7409735181595 -69.6120327339095,18.6715530338733 -69.5274807784286,18.6566836978616 -69.480005420871,18.7112168705012 -69.5170174871932,18.7805738146602 -69.6015225560289,18.7954611120649</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8b23fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.7927203650714,18.9778123353838 -71.8415915286207,18.9224701039507 -71.8044477779024,18.8530371045811 -71.7184436614935,18.8390062672132 -71.6696305616505,18.8943948881193 -71.7067634175011,18.9637679638572 -71.7927203650714,18.9778123353838</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd6abfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.9095726231742,18.6416291749615 -70.9579700244499,18.5862905690863 -70.9208220997987,18.516537236165 -70.8352903306862,18.50218443196 -70.7869537795689,18.5575691727761 -70.8240880534165,18.6272605932345 -70.9095726231742,18.6416291749615</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd0c7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.4194205847956,18.3046410711156 -70.4675722269339,18.2491181128575 -70.4304094608721,18.1790248737995 -70.3451101371922,18.164517910532 -70.2970209101053,18.220086871202 -70.3341684992815,18.2901168053555 -70.4194205847956,18.3046410711156</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf23bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.0452419723558,19.6216940252515 -70.0929203051755,19.5680415812469 -70.0559678662604,19.4995442372355 -69.9713531470475,19.4847605393613 -69.9237376574693,19.538458489929 -69.9606739543771,19.6068946429016 -70.0452419723558,19.6216940252515</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd45bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.7423302905539,19.0553473328859 -70.7905497958404,19.0006175419107 -70.7534690822572,18.9313705690646 -70.6681828875548,18.9169147442957 -70.6200245292417,18.9716904825844 -70.6570911257626,19.0408761084299 -70.7423302905539,19.0553473328859</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c89abfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.8311469431208,19.5085334542087 -70.8793396721379,19.4543397104475 -70.8423163721509,19.3856263199741 -70.7571140506487,19.3711669812726 -70.7089820058062,19.4254065427046 -70.7459915055171,19.4940596340956 -70.8311469431208,19.5085334542087</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd4c7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.3428124154522,19.1752484699121 -70.3907600818154,19.1208715312897 -70.3537229153478,19.0518089459374 -70.2687532997838,19.0371850008377 -70.2208678608539,19.0916076992816 -70.257889718893,19.1606085941139 -70.3428124154522,19.1752484699121</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd20bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.3811589059596,17.7595599290536 -71.4300024395045,17.7028837045329 -71.3927090541536,17.6320544704782 -71.3065843192376,17.6179643034769 -71.2578006282817,17.6746870618783 -71.295081732895,17.7454534638728 -71.3811589059596,17.7595599290536</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf313fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.2964938832315,19.3653482588756 -69.3437324036342,19.3117490464003 -69.3068105374508,19.2430373896668 -69.2226684345004,19.2279877472833 -69.1754948885478,19.2816322969602 -69.2123983845182,19.35028116576 -69.2964938832315,19.3653482588756</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">856725a7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.5930480599599,18.3087734428461 -71.6419209905725,18.2526827508916 -71.604693207314,18.1824724846966 -71.5186039691259,18.1684144146231 -71.4697900002176,18.224551624853 -71.5070062108109,18.2947003956611 -71.5930480599599,18.3087734428461</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc643fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.8431045283773,18.6603974912815 -68.8901664878525,18.6061274512067 -68.8531933815468,18.5366575939994 -68.7691780107276,18.5215226964355 -68.7221825453325,18.5758380481788 -68.7591358714029,18.6452430027659 -68.8431045283773,18.6603974912815</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd60bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.3006377586005,18.6433468998442 -71.3492742087768,18.5878192366669 -71.3121055540677,18.518029854411 -71.2263128033087,18.5038294599539 -71.1777360488455,18.5594034211885 -71.2148922539163,18.6291314879402 -71.3006377586005,18.6433468998442</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8833fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.6993290829858,19.9647119217207 -71.7479648164433,19.9106762151475 -71.7109615399464,19.8424479945455 -71.6253335370893,19.8283135895807 -71.5767557222928,19.8823952021255 -71.6137478960939,19.9505653190958 -71.6993290829858,19.9647119217207</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd677fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.1891387976031,18.4339526744149 -71.2377450211697,18.3782147556539 -71.2005532007951,18.3081893687283 -71.1147678747153,18.2939637956903 -71.0662217714545,18.349748021845 -71.1034007786652,18.419711523513 -71.1891387976031,18.4339526744149</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd093fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.1421704529122,18.5111728900076 -70.1901094381586,18.4560498021898 -70.1529954474102,18.3862297263501 -70.0679583677457,18.3715960690487 -70.0200824816217,18.4267650048247 -70.0571804850281,18.4965217630543 -70.1421704529122,18.5111728900076</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c890bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.2206897418959,19.5118041838429 -71.2691206242644,19.4574216575384 -71.2320760177278,19.3886776479936 -71.1466130484069,19.3743758963158 -71.0982417127744,19.4288043776178 -71.1352737054422,19.4974886633284 -71.2206897418959,19.5118041838429</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf207fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.034527009321,19.7435335815267 -70.0821765345632,19.6900439740675 -70.0452419723558,19.6216940252515 -69.9606739543771,19.6068946429016 -69.9130872438231,19.6604297085123 -69.950005647242,19.7287187091884 -70.034527009321,19.7435335815267</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd427fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.8766977966407,18.5917081543452 -69.9244521809257,18.5368210273511 -69.8873705570486,18.4671277037855 -69.8025512284202,18.4523850711567 -69.7548606386744,18.5073179233491 -69.7919254931982,18.5769476967697 -69.8766977966407,18.5917081543452</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8977fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.109563353038,19.3055422484585 -71.157963941842,19.2509504047777 -71.1208965298143,19.1819674679554 -71.0354414084576,19.1676366864256 -70.9871007857483,19.2222745279078 -71.0241552242263,19.2911971615848 -71.109563353038,19.3055422484585</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf273fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.2992815664615,19.6658970593695 -70.3471133539074,19.6121727900514 -70.3101476385376,19.5437012604004 -70.2253654269837,19.5290147476787 -70.1775957591316,19.5827845912506 -70.2145460927577,19.6511953835201 -70.2992815664615,19.6658970593695</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd493fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.0667047070171,19.3770841585823 -70.1144407469736,19.3231056635137 -70.0774525106378,19.2543137415275 -69.9927442527281,19.2395619992275 -69.9450711130479,19.2935860915485 -69.9820432411792,19.362316340463 -70.0667047070171,19.3770841585823</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc60ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.4706667370062,18.5301886796632 -68.5174997590401,18.4759461792392 -68.4805506256907,18.4063852367098 -68.3967892502212,18.391132509986 -68.3500237245216,18.4454201926933 -68.386951994231,18.5149154382728 -68.4706667370062,18.5301886796632</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd243fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.6397001151558,17.801690815584 -71.6886918474474,17.7449436090559 -71.6513929640734,17.674137672548 -71.565113720662,17.6601412975836 -71.516181027094,17.7169351566181 -71.5534684405136,17.7876787476382 -71.6397001151558,17.801690815584</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf34bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.8234975049679,19.2099634362 -69.8711073709306,19.1558937631849 -69.8341158151711,19.086931996315 -69.7495311534047,19.0721022835154 -69.7019849323131,19.1262175184338 -69.7389596391406,19.1951169169021 -69.8234975049679,19.2099634362</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc67bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.7322064750983,18.4519741435673 -68.7792304552737,18.3974953628339 -68.7422406944325,18.327803339041 -68.6582469980514,18.3126556017629 -68.6112898976766,18.367179672326 -68.6482595289048,18.4368062081131 -68.7322064750983,18.4519741435673</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd5d7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.480005420871,18.7112168705012 -69.5274807784286,18.6566836978616 -69.4904506225644,18.5871813649265 -69.4059629456462,18.5722761066785 -69.3585523969129,18.6268548271106 -69.3955646282626,18.6962932728086 -69.480005420871,18.7112168705012</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8b27fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.6696305616505,18.8943948881193 -71.7184436614935,18.8390062672132 -71.6812931593156,18.7694831669425 -71.5953407453567,18.7554089664267 -71.5465861203732,18.8108439572361 -71.5837253378472,18.8803067861349 -71.6696305616505,18.8943948881193</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd643fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.5581838421713,18.6857964319261 -71.6069679972016,18.6301976129709 -71.569793394592,18.5604354754496 -71.4838461891619,18.5463330057399 -71.4351209375715,18.601978218667 -71.4722838915238,18.6716795155433 -71.5581838421713,18.6857964319261</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd6affffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.7869537795689,18.5575691727761 -70.8352903306862,18.50218443196 -70.7981381748095,18.4323450794085 -70.7126634079047,18.4179527392802 -70.6643881015095,18.4733835853211 -70.7015262237071,18.5431606772017 -70.7869537795689,18.5575691727761</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8943fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.4772472757889,19.5545463227609 -71.5258253666652,19.5000925387958 -71.4887743724076,19.4313795543996 -71.4031570146141,19.4171796213956 -71.3546376896046,19.4716794341807 -71.3916768613086,19.5403331580123 -71.4772472757889,19.5545463227609</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c89affffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.7089820058062,19.4254065427046 -70.7571140506487,19.3711669812726 -70.7200867688429,19.3023653004812 -70.6349415284863,19.2878638374336 -70.5868705569446,19.3421492053514 -70.6238836600813,19.4108902392997 -70.7089820058062,19.4254065427046</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd4cbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.5979106085662,19.2189745241017 -70.6460106782316,19.1645258019077 -70.6089619271875,19.0954882892287 -70.5238275506905,19.0809607384965 -70.4757889666163,19.1354553002405 -70.5128231812997,19.2044315833933 -70.5979106085662,19.2189745241017</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc647fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.7221825453325,18.5758380481788 -68.7691780107276,18.5215226964355 -68.7322064750983,18.4519741435673 -68.6482595289048,18.4368062081131 -68.6013309067638,18.4911668346953 -68.6382823027473,18.5606501394182 -68.7221825453325,18.5758380481788</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd60ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.1777360488455,18.5594034211885 -71.2263128033087,18.5038294599539 -71.1891387976031,18.4339526744149 -71.1034007786652,18.419711523513 -71.0548841225997,18.475331754421 -71.0920452919485,18.5451468762281 -71.1777360488455,18.5594034211885</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8837fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.5767557222928,19.8823952021255 -71.6253335370893,19.8283135895807 -71.5883238254408,19.7599928915991 -71.5027476911715,19.7458122621244 -71.4542281998165,19.7999397816812 -71.4912264240558,19.8682020296513 -71.5767557222928,19.8823952021255</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd67bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.4466654968305,18.476482434708 -71.4954202898788,18.4206732813205 -71.4582218453371,18.3506735501299 -71.3722805245371,18.3365443899395 -71.3235850629569,18.3923999516087 -71.3607714944605,18.46233827414 -71.4466654968305,18.476482434708</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c890ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.0982417127744,19.4288043776178 -71.1466130484069,19.3743758963158 -71.109563353038,19.3055422484585 -71.0241552242263,19.2911971615848 -70.9758438324978,19.3456715879931 -71.0128805317763,19.4144451644326 -71.0982417127744,19.4288043776178</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd42bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.1313565341945,18.6358057024206 -70.1792664345017,18.5808464096182 -70.1421704529122,18.5111728900076 -70.0571804850281,18.4965217630543 -70.0093336555123,18.5515268745276 -70.0464136322485,18.6211373071722 -70.1313565341945,18.6358057024206</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c897bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.3661002010601,19.3483760039599 -71.4146488519097,19.2937128360723 -71.3775743827469,19.2247593947919 -71.2919633508259,19.2105289669831 -71.2434738886174,19.265238211307 -71.2805361746756,19.3341318145939 -71.3661002010601,19.3483760039599</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf277fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.1775957591316,19.5827845912506 -70.2253654269837,19.5290147476787 -70.188397234141,19.4604563186409 -70.103675037304,19.4457288289748 -70.0559678662604,19.4995442372355 -70.0929203051755,19.5680415812469 -70.1775957591316,19.5827845912506</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd497fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.9450711130479,19.2935860915485 -69.9927442527281,19.2395619992275 -69.9557541868352,19.170684818611 -69.8711073709306,19.1558937631849 -69.8234975049679,19.2099634362 -69.8604710917912,19.2787785960453 -69.9450711130479,19.2935860915485</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc613fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.4509293487333,18.776876790747 -68.4977056429745,18.7229607089373 -68.4607929830185,18.6536858707626 -68.3771248263115,18.6383923430604 -68.3304159524695,18.6923535768192 -68.3673077315301,18.7615632042504 -68.4509293487333,18.776876790747</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd247fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.516181027094,17.7169351566181 -71.565113720662,17.6601412975836 -71.5278084718297,17.5892493697717 -71.4415822955896,17.5752140048451 -71.3927090541536,17.6320544704782 -71.4300024395045,17.7028837045329 -71.516181027094,17.7169351566181</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf34ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.7019849323131,19.1262175184338 -69.7495311534047,19.0721022835154 -69.712538447005,19.0030566074786 -69.62801664874,18.9881888954991 -69.5805344413697,19.0423496712821 -69.6175099299959,19.1113326313919 -69.7019849323131,19.1262175184338</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd5dbfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.7336778844961,18.755806264855 -69.7813106340332,18.7012007493952 -69.7442638390437,18.6317168359607 -69.6596013776266,18.6169018810416 -69.6120327339095,18.6715530338733 -69.6490623567389,18.7409735181595 -69.7336778844961,18.755806264855</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd647fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.4351209375715,18.601978218667 -71.4838461891619,18.5463330057399 -71.4466654968305,18.476482434708 -71.3607714944605,18.46233827414 -71.3121055540677,18.518029854411 -71.3492742087768,18.5878192366669 -71.4351209375715,18.601978218667</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8b97fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.7342618998863,19.5969788034134 -71.7829856903892,19.5424539210546 -71.7459298369567,19.4737734154453 -71.6601611223986,19.4596765944699 -71.6114953053155,19.5142475792593 -71.6485401332461,19.5828692885933 -71.7342618998863,19.5969788034134</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd6b3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.7646192499288,18.8070819457036 -70.8128972162893,18.7520248484743 -70.7757808101591,18.6824814729189 -70.6904004199757,18.6680570118859 -70.6421836495326,18.7231601397237 -70.6792859801138,18.7926417085061 -70.7646192499288,18.8070819457036</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd0cffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.5529307685228,18.2635875350796 -70.6011737272322,18.2079466164573 -70.5639961842092,18.1377901958391 -70.478590366486,18.1233378876761 -70.4304094608721,18.1790248737995 -70.4675722269339,18.2491181128575 -70.5529307685228,18.2635875350796</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8947fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.3546376896046,19.4716794341807 -71.4031570146141,19.4171796213956 -71.3661002010601,19.3483760039599 -71.2805361746756,19.3341318145939 -71.2320760177278,19.3886776479936 -71.2691206242644,19.4574216575384 -71.3546376896046,19.4716794341807</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf243fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.5428226928458,19.8317331579674 -70.5907775789079,19.7781000571888 -70.5538178401983,19.7098042810044 -70.4689177586867,19.6952016570458 -70.4210242310976,19.7488803447152 -70.4579693352535,19.8171160786047 -70.5428226928458,19.8317331579674</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd463fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.3865213655653,18.6796243703756 -70.4345854037389,18.6245930750804 -70.3974765535766,18.5549408688601 -70.3123188071642,18.5403825917682 -70.2643171038093,18.5954597986622 -70.3014107202008,18.6650493830309 -70.3865213655653,18.6796243703756</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c89b3fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.6868063930247,19.6705537263742 -70.7348802845249,19.6166404348324 -70.6978885526798,19.5481360020504 -70.6128370566016,19.5336050432671 -70.5648241891186,19.5875640370786 -70.6018017016622,19.6560082964483 -70.6868063930247,19.6705537263742</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd4cffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.4757889666163,19.1354553002405 -70.5238275506905,19.0809607384965 -70.4867754706327,19.0118365756457 -70.4016996283483,18.9972685628137 -70.3537229153478,19.0518089459374 -70.3907600818154,19.1208715312897 -70.4757889666163,19.1354553002405</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">856725affffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.7280626105951,18.266699611439 -71.7770237629555,18.2104914425582 -71.7397848248917,18.140219814185 -71.6535957917385,18.1262177252831 -71.604693207314,18.1824724846966 -71.6419209905725,18.2526827508916 -71.7280626105951,18.266699611439</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf31bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.4279394653199,19.3267611944725 -69.4752712279377,19.2730444062738 -69.4383313682775,19.2042700643241 -69.3540776522957,19.1892752094119 -69.3068105374508,19.2430373896668 -69.3437324036342,19.3117490464003 -69.4279394653199,19.3267611944725</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc64bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.9742495985198,18.6212286372951 -69.0214062862129,18.5668405525222 -68.9844137715261,18.4973058984653 -68.900283891635,18.4822241426505 -68.8531933815468,18.5366575939994 -68.8901664878525,18.6061274512067 -68.9742495985198,18.6212286372951</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd613fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.1549654469116,18.8093670524821 -71.2034833560434,18.7541207966493 -71.1663449375841,18.6845415596005 -71.0807013976799,18.6702698037272 -71.0322435430065,18.7255622471963 -71.0693690790049,18.7950802681741 -71.1549654469116,18.8093670524821</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c883bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.8336439353904,19.9247637704139 -71.8823665200635,19.8706110934826 -71.845352552585,19.8023248833429 -71.759626595281,19.7882493447767 -71.7109615399464,19.8424479945455 -71.7479648164433,19.9106762151475 -71.8336439353904,19.9247637704139</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd09bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.2752072145347,18.4706461023618 -70.3232380614034,18.4154050511888 -70.2861084778499,18.3455217763739 -70.2009635486292,18.3309427644704 -70.1529954474102,18.3862297263501 -70.1901094381586,18.4560498021898 -70.2752072145347,18.4706461023618</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854c8913fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.0756329749214,19.674390829389 -71.1239458962135,19.6202887459171 -71.0869315922999,19.5517538894428 -71.0016173144365,19.537380728269 -70.9533642925493,19.5915286453305 -70.9903655555665,19.6600038978334 -71.0756329749214,19.674390829389</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf20ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.1668052909102,19.7048023117829 -70.2145460927577,19.6511953835201 -70.1775957591316,19.5827845912506 -70.0929203051755,19.5680415812469 -70.0452419723558,19.6216940252515 -70.0821765345632,19.6900439740675 -70.1668052909102,19.7048023117829</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd42ffffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.0093336555123,18.5515268745276 -70.0571804850281,18.4965217630543 -70.0200824816217,18.4267650048247 -69.9351539378116,18.4120768061876 -69.8873705570486,18.4671277037855 -69.9244521809257,18.5368210273511 -70.0093336555123,18.5515268745276</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf27bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.4319548612301,19.6268176799729 -70.4798773387343,19.57297605393 -70.442896633587,19.5044438943629 -70.3580083496532,19.4898140006625 -70.3101476385376,19.5437012604004 -70.3471133539074,19.6121727900514 -70.4319548612301,19.6268176799729</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cd49bfffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-70.1992097320192,19.3378174394353 -70.2470372239131,19.2837213966642 -70.2100332688767,19.2148679103157 -70.1252174502391,19.20017204232 -70.0774525106378,19.2543137415275 -70.1144407469736,19.3231056635137 -70.1992097320192,19.3378174394353</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cc617fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-68.3304159524695,18.6923535768192 -68.3771248263115,18.6383923430604 -68.3402148098502,18.5690398450013 -68.2566170714745,18.5537141546458 -68.2099759577788,18.6077205045665 -68.2468647393743,18.6770074471783 -68.3304159524695,18.6923535768192</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">854cf353fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-69.680910231886,19.371610899174 -69.7283989214178,19.3178219717929 -69.6914421992069,19.2490689398913 -69.607013947049,19.2341670817903 -69.5595892097438,19.2880014749931 -69.5965286841564,19.3566922732206 -69.680910231886,19.371610899174</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ind_esp_Acanthaceae">
+		<SimpleData name="h3_address">856721b7fffffff</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-71.6630977817433,17.546271774443 -71.7121491017198,17.4891961277793 -71.6748145855732,17.418093263968 -71.5884400693871,17.4041288169007 -71.5394478263533,17.4612511692853 -71.5767709245012,17.5322912729124 -71.6630977817433,17.546271774443</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

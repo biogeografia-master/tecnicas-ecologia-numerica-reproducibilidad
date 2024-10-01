@@ -1,293 +1,200 @@
 ---
-title: "Apoyo para la preparación de datos: matriz de comunidad y matriz ambiental"
-author: José Ramón Martínez Batlle
-date: 24-09-2024
-output: github_document
-bibliography: biblio.bib
-csl: ../ref/apa.csl
-editor_options: 
+title: "Apoyo para la preparación de datos de la PD02: matriz de comunidad y matriz ambiental<small><br>Biogeografía (GEO-131)<br>Universidad Autónoma de Santo Domingo (UASD)<br>Semestre 2024-02</small>"
+author: "El Tali"
+date: "`r format(Sys.Date(), '%Y-%m-%d')`"
+output:
+  # bookdown::github_document2:
+  #   number_sections: false
+  #   fig_caption: yes
+  bookdown::html_document2:
+    number_sections: false
+    code_folding: show
+    fig_caption: yes
+    md_extensions: "-fancy_lists"
+    toc: true
+    toc_depth: 3
+editor_options:
   chunk_output_type: console
+bibliography: biblio.bib
+csl: apa.csl
 ---
 
+
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = T, cache = F, out.width = '100%', dpi = 300)
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  out.width = '100%',
+  fig.retina = 4)
 ```
 
-
-# Paquetes
-
-```{r, message=F, warning=F}
-library(kableExtra)
-library(rgbif)
-library(terra)
-library(geodata)
-library(sf)
-library(h3jsr)
-library(tidyverse)
-library(units)
-library(devtools)
-library(CoordinateCleaner)
-library(countrycode)
-library(vegan)
-options(stringsAsFactors = FALSE)
-source_url('https://raw.githubusercontent.com/biogeografia-202202/material-de-apoyo/master/practicas/funciones.R')
+```{r, include=F}
+output_format <- knitr::opts_knit$get("rmarkdown.pandoc.to")
+repo_url <- system("git config --get remote.origin.url", intern = TRUE)
+repo_name <- sub(".git$", "", basename(repo_url))
+org_name <- basename(dirname(repo_url))
+rmd_filename <- tools::file_path_sans_ext(basename(knitr::current_input()))
+github_pages_url <- paste0("https://", org_name, ".github.io/", repo_name, "/", rmd_filename, ".html")
 ```
+
+```{r, results='asis', echo=F}
+if (grepl('gfm', output_format)) {
+  cat('Versión HTML (quizá más legible), [aquí](', github_pages_url, ')\n', sep = '')
+} else if (output_format == 'latex') {
+  cat('Versión HTML (quizá más legible), [aquí](', github_pages_url, ')\n', sep = '')
+}
+```
+
+# Generar las matrices de comunidad y ambiental
+
+Creé funciones de ayuda para generar las matrices de comunidad y ambiental a partir de datos de GBIF [@gbiforg2022what] y el repositorio de estadística zonal sobre RD de @jose_ramon_martinez_batlle_2022_7367180, usando como índice espacial hexágonos de la biblioteca H3. Todas las funciones de ayuda las encapsulé en una tubería o toolchain denominado `generar_mc_ma`. Ejemplos de uso a continuación.
 
 # Funciones
 
-Funciones para generar las matrices de comunidad y ambiental a partir de datos de GBIF [@gbiforg2022what] y el repositorio de estadística zonal sobre RD de @jose_ramon_martinez_batlle_2022_7367180, usando como índice espacial hexágonos de la biblioteca H3.
+Primero cargo las funciones con el `source` del siguiente bloque de código.
 
-## Función de ayuda para definir el área de interés, AOI
-
-```{r}
-crear_ind_esp_aoi <- function(ruta_archivo_aoi = 'rd.gpkg',
-                                         resolucion = 5, buffer_km = 2) {
-  aoi <- st_read(ruta_archivo_aoi)
-  aoi_extra <- st_buffer(aoi, dist = set_units(buffer_km, km))
-  ind_esp <- polygon_to_cells(aoi_extra, res = resolucion, simple = FALSE)
-  ind_esp <- cell_to_polygon(unlist(ind_esp$h3_addresses), simple = FALSE)
-  ind_esp_centroides <- ind_esp %>%
-  st_centroid() %>%
-  mutate(lon = unlist(map(geometry, 1)), lat = unlist(map(geometry, 2)))
-  return(list(
-    aoi = aoi,
-    aoi_extra = aoi_extra,
-    ind_esp = ind_esp,
-    ind_esp_centroides = ind_esp_centroides)
-  )
-}
+```{r, warning=F, message=F}
+source('matrices-de-comunidad-y-ambiental.R')
 ```
 
-## Función de ayuda para descargar reigstros de presencia desde GBIF por taxón
+# Evaluación de la función para una familia, Acanthaceae
 
-```{r}
-descargar_reg_pres_gbif <- function(taxon) {
-  occ_data(scientificName = taxon,
-           hasCoordinate = T,
-           country = 'DO',
-           limit = 100000)$data
-}
-```
+## Evaluar la función propiamente
 
-## Función de ayuda para limpiar registros de GBIF
+A modo de ejemplo, a continuación genero las matrices de comunidad y ambiental de la familia Acanthaceae evaluando la función `generar_mc_ma`.
 
-```{r}
-limpiar_reg_pres <- function(obj_registros) {
-  reg_pres_limpios <- obj_registros %>% 
-  # Quitar registros en centroides de país y sus proximidades
-  cc_cen(lon = 'decimalLongitude', lat = 'decimalLatitude', buffer = 2000) %>%
-  # Quitar registros en colecciones y sus proximidades
-  cc_inst(lon = 'decimalLongitude', lat = 'decimalLatitude', buffer = 2000) %>%
-  # Quitar registros en mar/oceáno
-  cc_sea(lon = 'decimalLongitude', lat = 'decimalLatitude')
-  return(reg_pres_limpios)
-}
-```
-
-## Función de ayuda para convertir registros de presencia a objeto geográfico (`sf`)
-
-```{r}
-convertir_reg_pres_a_sf <- function(obj_registros) {
-  reg_pres_sf <- st_as_sf(
-    x = obj_registros,
-    coords = c("decimalLongitude", "decimalLatitude"),
-    crs = 4326)
-  return(reg_pres_sf)
-}
-```
-
-## Función de ayuda para intersectar registros de presencia con hexágonos de biblioteca H3
-
-```{r}
-intersectar_reg_hex <- function(obj_registros, ind_esp) {
-  reg_hex_inter <- obj_registros %>%
-    st_intersection(st_union(ind_esp))
-  return(reg_hex_inter)
-}
-```
-
-## Función de ayuda para generar matriz de comunidad a partir de registros de presencia
-
-```{r}
-generar_mc <- function(
-    obj_reg_hex_inter,
-    ind_esp,
-    min_num_spp_hex, #Mínimo número de especies por hexágono
-    min_num_hex_sp #Mínimo número de hexágonos donde cada especie debe estar presente
-    ) {
-  mc <- obj_reg_hex_inter %>%
-    st_join(ind_esp) %>% 
-    select(acceptedScientificName, h3_address) %>% 
-    st_drop_geometry() %>% 
-    mutate(n = 1) %>% 
-    distinct() %>% 
-    pivot_wider(names_from = acceptedScientificName, values_from = n, values_fill = 0) %>% 
-    column_to_rownames('h3_address')
-  col_antes <- ncol(mc)
-  mc <- mc[, colSums(mc) >= min_num_hex_sp]
-  col_despues <- ncol(mc)
-  cat(
-    'El número de especies quitadas de la matriz por estar en menos de',
-    min_num_hex_sp, 'hexágonos fue de ',
-    col_antes - col_despues, '\n'
-  )
-  # Explicación: "min_especies_por_hex <- Y", donde Y es el número mínimo (inclusive) de especies
-  # que debe existir en cada hexágono. Por debajo de dicho valor, el hexágono es excluido.
-  filas_antes <- nrow(mc)
-  mc <- mc[rowSums(mc) >= min_num_spp_hex, ]
-  filas_despues <- nrow(mc)
-  cat(
-    'El número de hexágonos quitados de la matriz por tener menos de',
-    min_num_hex_sp, 'expecies representadas fue de ',
-    filas_antes - filas_despues, '\n'
-  )
-  return(mc)
-}
-```
-
-## Función para generar las matrices de comunidad y ambiental a partir de las anteriores
-
-```{r}
-generar_mc_ma <- function(
-    taxon, exportar_sf = F,
-    dir_salidas_rds = 'salidas_RDS/',
-    dir_salidas_sf = 'salidas_sf/',
-    extension_sf = '.kml',
-    exportar_mc = T,
-    dir_salidas_mc = 'salidas_mc/',
-    min_num_spp_hex = 3, #Mínimo número de especies por hexágono
-    min_num_hex_sp = 3 #Mínimo número de hexágonos donde cada especie debe estar presente
-    ) {
-  ind_esp_aoi <- crear_ind_esp_aoi()
-  reg_pres <- descargar_reg_pres_gbif(taxon = taxon)
-  reg_pres_limpios <- limpiar_reg_pres(reg_pres)
-  reg_pres_sf <- convertir_reg_pres_a_sf(obj_registros = reg_pres_limpios)
-  reg_hex_inter <- intersectar_reg_hex(obj_registros = reg_pres_sf, ind_esp = ind_esp_aoi$ind_esp)
-  aoi_reg_hex_inter_g <- ggplot(data = ind_esp_aoi$aoi) +
-    geom_sf(fill = 'antiquewhite1') +
-    geom_sf(data = ind_esp_aoi$ind_esp, fill = 'transparent') +
-    geom_text(data = ind_esp_aoi$ind_esp_centroides, aes(lon, lat, label = h3_address), size = 1) +
-    geom_sf(data = reg_hex_inter, size = 1, fill = 'green', color = 'green', alpha = 0.5) +
-    theme(legend.position = "none") +
-    theme_bw()
-  if(!dir.exists(dir_salidas_rds)) dir.create(dir_salidas_rds)
-  saveRDS(object = reg_hex_inter, file = paste0(dir_salidas_rds, 'reg_hex_inter_', taxon, '.RDS'))
-  saveRDS(object = ind_esp_aoi$ind_esp, file = paste0(dir_salidas_rds, 'ind_esp_', taxon, '.RDS'))
-  if(exportar_sf) {
-    if(!dir.exists(dir_salidas_sf)) dir.create(dir_salidas_sf)
-    st_write(
-      obj = reg_hex_inter %>% select(-networkKeys),
-      dsn = paste0(dir_salidas_sf, 'reg_hex_inter_', taxon, extension_sf),
-      delete_dsn = T)
-    st_write(
-      obj = ind_esp_aoi$ind_esp,
-      dsn = paste0(dir_salidas_sf, 'ind_esp_', taxon, extension_sf),
-      delete_dsn = T)
-  }
-  mc <- generar_mc(
-    obj_reg_hex_inter = reg_hex_inter,
-    ind_esp = ind_esp_aoi$ind_esp,
-    min_num_spp_hex = min_num_spp_hex,
-    min_num_hex_sp = min_num_hex_sp)
-  if(exportar_mc) {
-    if(!dir.exists(dir_salidas_mc)) dir.create(dir_salidas_mc)
-    saveRDS(object = mc, file = paste0(dir_salidas_mc, 'mc_', taxon, '.RDS'))
-  }
-  return(list(
-    reg_pres = reg_pres,
-    reg_pres_limpios = reg_pres_limpios,
-    reg_pres_sf = reg_pres_sf,
-    reg_hex_inter = reg_hex_inter,
-    aoi_reg_hex_inter_g = aoi_reg_hex_inter_g,
-    mc = mc
-    ))
-}
-```
-
-## Evaluación de la función para generar mc y ma para un taxón
-
-```{r}
+```{r, warning=F, message=F}
 # Llamada a la función
-emd <- generar_mc_ma(taxon = 'Emydidae', exportar_sf = T, exportar_mc = T)
+acanthaceae <- generar_mc_ma(
+  taxon = 'Acanthaceae',
+  exportar_sf = T,
+  exportar_mc = T,
+  min_num_spp_hex = 2,
+  min_num_hex_sp = 2)
 ```
 
-Revisar los directorios `salidas_RDS` (contiene archivos geográficos en formato R, para garantizar integridad y portabilidad), `salidas_sf` (contiene archivos geográficos para representar en QGIS o Google Earth) y `salidas_mc` (contiene archivos en formato R de la matriz de comunidad)
+Si la función se ejecutó correctamente, los directorios `salidas_RDS` y `salidas_sf` contienen archivos geográficos en formato `.RDS` y `.kml` (para abrir en QGIS o Google Earth) de los registros de presencia de GBIF, así como índice espacial de hexágonos H3. Los directorios `salidas_mc` y `salidas_ma` contienen archivos en formato `.RDS` de la matrices de comunidad y ambiental para cada taxon, respectivamente.
 
-A continuación, el mapa de distribución de registros de presencia de GBIF para el taxón, y los hexágonos de la biblioteca H3.
+## Mapa
+
+El objeto `acanthaceae` contiene todos los objetos creados por el *toolchain*. Uno de ellos consiste en un mapa de distribución de los registros de presencia de GBIF para el taxón, y los hexágonos de la biblioteca H3.
 
 ```{r}
 # Mapa
-emd$aoi_reg_hex_inter_g
-
-# Extracto de la matriz de comunidad
-{set.seed(999)
-  with(test,
-       mc[
-         sample(seq_len(nrow(mc)), 10),
-         sample(seq_len(ncol(mc)), ifelse(ncol(mc)<3, ncol(mc), 3))] %>%
-         kable())}
+acanthaceae$aoi_reg_hex_inter_g
 ```
 
-A partir de este punto, puedes responder a las siguientes preguntas:
-
--   Imprime en pantalla tu lista de especies en orden alfabético:
+La matriz de comunidad se puede imprimir con la función `kable` del paquete `kableExtra`.
 
 ```{r}
-sort(colnames(mc)) %>% kable(col.names = 'Especie', format="markdown")
+acanthaceae$mc %>% kableExtra::kable()
 ```
 
--   Número de sitios en la matriz:
+## Resumen de la matriz de comunidad y ambiental
+
+Finalmente, un método de la función `summary` genera un resumen básico de los datos de comunidad.
+
+```{r, results='asis', warning=F, message=F}
+summary.mc_ma(acanthaceae, nombres_cortos = F, tamano_rotulo = 6)
+```
+
+# De forma masiva, 20 familias bien representada en GBIF para RD
+
+## Selección de familias
 
 ```{r}
-nrow(mc)
+fam_sel <- c('Acanthaceae',
+             'Bromeliaceae',
+             'Cactaceae',
+             'Fabaceae',
+             'Myrtaceae',
+             'Orchidaceae',
+             'Asteraceae',
+             'Poaceae',
+             'Rubiaceae',
+             'Melastomataceae',
+             'Piperaceae',
+             'Solanaceae',
+             'Euphorbiaceae',
+             'Tyrannidae',
+             'Thraupidae',
+             'Trochilidae',
+             'Phyllostomidae',
+             'Eleutherodactylidae',
+             'Nymphalidae',
+             'Orthoptera'
+)
+fam_sel <- sort(fam_sel)
 ```
 
--   Riqueza numérica de especies (usando matriz de comunidad) por hexágonos (extractos):
+## Evaluar la función propiamente (*be careful*)
 
-```{r}
-num_esp <- specnumber(mc)
-num_esp_l <- length(num_esp)
-set.seed(999)
-num_esp_muestra <- if(num_esp_l > 10) sample(seq_len(num_esp_l), 10) else seq_len(num_esp_l)
-specnumber(mc) %>% 
-  as.data.frame() %>% 
-  rownames_to_column() %>% 
-  kable(col.names = c('Hexágono', 'S'), format="markdown")
-#sort(specnumber(mc)) # Ordenados ascendentemente
-summary(specnumber(mc)) # Resumen estadístico
+El cometido de este bloque de abajo fue realizar una consulta "masiva" a la base de datos de GBIF y obtener registros de presencia para 20 familias de plantas y animales bien representadas en RD, los cuales son requeridos para realizar la práctica PD02 y se encuentran en los directorios `salidas_*`. Por lo tanto, no es necesario re-ejecutar este bloque, sólo se deja aquí para fines de reproducibilidad.
+
+La consulta tomó varios minutos, y ocupó una buena porción de la RAM. Dado lo compleja de esta operación, la evaluación no se ejecutó con el tejido de este cuaderno (en el RMarkdown, el encabezado del código tiene `eval=F`), sino que se realizó de forma directa ejecutando el bloque de código.
+
+El "*be careful*" en el título está dirigido a personas que tuviesen interés de ejecutar este bloque por cuenta propia (e.g. para otra selección de familias), en cuyo caso hay que tener cuidado de seleccionar apropiadamente un número razonablemente pequeño de familias.
+
+```{r, eval=F, warning=F, message=F}
+mc_ma_familias_seleccionadas_l <- sapply(fam_sel, function(x) {
+  tryCatch(
+    {
+      generar_mc_ma(
+        taxon = x,
+        exportar_sf = TRUE,
+        exportar_mc = TRUE
+      )
+    },
+    error = function(e) {
+      message(paste("Error en la familia:", x, ":", e$message))
+      return(NULL)  # Retorna NULL en caso de error
+    })
+  }, simplify = FALSE)
+saveRDS(
+  object = mc_ma_familias_seleccionadas_l,
+  file = 'salidas_RDS/todos_los_objetos_todas_las_familias.RDS') # Añadido al .gitignore
 ```
 
--   Riqueza numérica de toda la "comunidad":
-
-```{r}
-specnumber(colSums(mc))
-```
-
--   Gráfico de mosaicos de la presencia de especie por hexágonos:
-
-```{r}
-pres_aus_sp <- crear_grafico_mosaico_de_mc(mc, tam_rotulo = 4)
-pres_aus_sp
-```
-
-## Ejercicio 3. Citar apropiadamente los datos de GBIF
-
-Existen varias manera de citar correctamente las fuentes en GBIF; te presento dos a continuación, para que elijas la que prefieras:
-
-1.  Usando el *dataset* derivado en R.
-
-2.  Citar usando la interfaz web de GBIF ([gbif.org](https://gbif.org)).
-
-Voy a explicarte sólamente cómo citar usando el *dataset* derivado en R. Primero es necesario crear una tabla con la que informar a GBIF qué fuentes se encuentran disponibles en la consulta que hiciste. En mi caso, busqué todas las Polygonaceae de RD que tuviesen coordenadas. GBIF consultó en su base de datos, y encontró varios registros de presencia pertenecientes a varios conjuntos.
+Al realizar la operación masiva anterior, se producen los mismos archivos que produje para el caso de la familia Acanthaceae, a saber: `salidas_RDS`, `salidas_sf`, `salidas_mc` y `salidas_ma`. Los archivos `.kml`, que se guardan en el directorio `salidas_sf` no se incluyeron en esta operación masiva `.kml`, porque son muy grandes (los generé pero no los subí al repo remoto para garantizar la manejabilidad). Recomiendo usar los archivos por familias del directorio `salidas_RDS`, y si se necesitase un `.kml` de registros de presencia depurados, generarlo al momento con el siguiente código (ejemplo para Acanthaceae):
 
 ```{r, eval=F}
-conteos_conjunto <- reg_pres_sf_ok %>% count(datasetKey, sort=TRUE) 
-write.table(x = conteos_conjunto %>% st_drop_geometry(), file = "conteos_por_conjuntos_de_datos.txt",
-            col.names=FALSE, row.names=FALSE, sep=",")
+library(sf)
+acanthaceae <- readRDS('salidas_RDS/todos_los_objetos_Acanthaceae.RDS')
+st_write(
+      obj = acanthaceae$reg_pres_sf %>% select(-networkKeys),
+      dsn = 'salidas_sf/reg_hex_inter_Acanthaceae.kml',
+      delete_dsn = T)
 ```
 
-El archivo `conteos_por_conjuntos_de_datos.txt` lo necesitarás para crear un registro persistente en GBIF, por lo que debes controlar dónde lo guardas en tu PC. La ruta `~/` significa "carpeta de usuario", por ejemplo `C:\Users\miusuario`. Ve a [esta ruta](https://www.gbif.org/derived-dataset/register) (necesitarás cuenta en GBIF). En el campo *Title* escribe un nombre que describa el conjunto de datos, por ejemplo, yo usé `Polygonaceae de RD hasta octubre 2022`. En el campo `URL of where derived dataset can be accessed` deberías colocar un repositorio persistente (por ejemplo, creado en Zenodo), donde alojes el conjunto de datos. De momento, escribe `https://gbif.org`, pero es importante que luego cambies dicha ruta por un DOI de Zenodo. En `Attach CSV file with dataset keys and occurrence counts`, presiona `Choose File` y sube el archivo `conteos_por_conjuntos_de_datos.txt`.
+A continuación se incluyen algunos resúmenes básicos de todas las familias.
 
-Finalmente, descarga el BibTeX desde GBIF. Si lo alojas en Zotero, antes de usar la entrada como cita, asegúrate de editar en Zotero el campo `Autor` para que ponga "GBIF.org", y en el campo `Fecha` coloca el año de descarga. Por ejemplo, la cita de los datos derivados usados en este script de ejemplo es esta [@gbiforg2022polygonaceae]; verifica que en la lista de Referencias se construyó apropiadamente, con el campo `Autor` y `Fecha` tal como los definiste manualmente.
+- Número de registros limpios por familia.
+
+```{r}
+registros_desde_rds <- sapply(
+  X = fam_sel,
+  function(x) {
+    readRDS(paste0('salidas_RDS/reg_hex_inter_', x, '.RDS'))
+  })
+as.data.frame(sapply(registros_desde_rds, nrow)) %>% 
+  rownames_to_column('Familia') %>% 
+  rename(`Número de registros de presencia en GBIF (limpios)` = names(.)[2]) %>% 
+  kable()
+```
+
+- Riqueza de especies por familia.
+
+```{r}
+mc_desde_rds <- sapply(
+  X = fam_sel,
+  function(x) {
+    readRDS(paste0('salidas_mc/mc_nombres_largos_', x, '.RDS'))
+  })
+as.data.frame(sapply(mc_desde_rds, function(x) specnumber(colSums(x)))) %>% 
+  rownames_to_column('Familia') %>% 
+  rename(`Riqueza de especies` = names(.)[2]) %>% 
+  kable()
+```
 
 # Referencias

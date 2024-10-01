@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+salidas_RDS/todos_los_objetos_todas_las_familias.RDS
+salidas_sf/*.kml
+!salidas_sf/ind_esp_Acanthaceae.kml
+!salidas_sf/reg_hex_inter_Acanthaceae.kml
