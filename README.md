@@ -190,9 +190,10 @@ Distribuye tu texto en las siguientes secciones:
   [matrices-de-comunidad-y-ambiental.Rmd](https://github.com/biogeografia-master/tecnicas-ecologia-numerica-reproducibilidad/blob/main/matrices-de-comunidad-y-ambiental.Rmd).
   Debes citar el repo oportunamente. Si hiciste el clonado, dicho
   archivo se encuentra tu repositorio clonado también. Puedes consultar
-  las versiones [HTML](matrices-de-comunidad-y-ambiental.html) y
-  [Markdown](matrices-de-comunidad-y-ambiental.md) que se encuentran en
-  este mismo repositorio.
+  las versiones
+  [HTML](https://biogeografia-master.github.io/tecnicas-ecologia-numerica-reproducibilidad/matrices-de-comunidad-y-ambiental.html)
+  y [Markdown](matrices-de-comunidad-y-ambiental.md) que se encuentran
+  en este mismo repositorio.
 
 Debes igualmente citar el software y hardware usado, y las referencias
 sobre la técnica o algoritmo empleados. Si incluyes un diagrama de flujo
