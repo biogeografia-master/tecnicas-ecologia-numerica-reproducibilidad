@@ -192,8 +192,6 @@ estad_basicos <- env %>%
 estad_basicos %>% estilo_kable(titulo = 'Matriz ambiental', nombres_filas = F, alinear = 'crrrr')
 ```
 
-
-
 Se muestra a continuación un diagrama de cajas que sólo incluye un grupo de variables ambientales. Son muchas variables ambientales, y si se incluyen todas, el servidor no aguantaría o el gráfico no sería legible. Es por ello que ves el comando `select(matches('^ESA'))`, el cual selecciona las columnas que comienzan por la cadena de caracteres 'ESA'. El Sufijo de grupo "^ESA", que se refiere a los datos de cobertura del suelo de la Agencia Espacial Europea (ESA 2021, imágenes Sentinel 1 y Sentinel 2 a 10 m de resolucion máximo). Se deben hacer gráficos para otros grupos de variables, ver la lista de grupos posibles en la columna "Sufijo del grupo" de la Tabla 1 de [este HTML](https://geofis.github.io/zonal-statistics/README.html). Otros grupos posibles: CH-BIO, CGL, G90, WCL, entre muchos otros.
 
 ```{r}
@@ -213,8 +211,6 @@ env %>%
   theme(legend.position="none", 
         axis.text.x = element_text(angle = 45, hjust = 1))
 ```
-
-Las medias calculadas de las variables `r vector_a_lista(colnames(env))` son, respectivamente, las siguientes: `r vector_a_lista(apply(env, 2, function(x) round(mean(x),2)))`. La variable que con la media más alta fue `r estad_basicos$Variable[which.max(estad_basicos$Media)]` (`r round(max(estad_basicos$Media), 2)`), y la más baja la obtuvo la variable `r estad_basicos$Variable[which.min(estad_basicos$Media)]` (`r round(min(estad_basicos$Media), 2)`). Por otra parte, la mitad de los sitios midieron menos de `r vector_a_lista(apply(env, 2, function(x) round(median(x),2)))`, para cada una de las variables `r vector_a_lista(estad_basicos$Variable)`, respectivamente. Finlamente, la variable con mayor dispersión fue `r estad_basicos$Variable[which.max(estad_basicos$Varianza)]` y la de menor dispersión fue `r estad_basicos$Variable[which.min(estad_basicos$Varianza)]`.
 
 Una verificación importante que debe realizarse es si las matrices de comunidad y ambiental tienen el mismo numero de filas y si las filas se encuentran en el mismo orden (e.g. consistencia entre matrices, donde cada fila en la matriz de comunidad se refiere al mismo sitio en la ambiental, y viceversa). Esto se puede comprobar por medio de los nombres de columnas y, en este caso, tras realizar la correspondiente comprobación, `r if(all(rownames(mc) == rownames(env))) '**esta condición se cumple, por lo que podemos continuar adelante con los siguientes análisis**' else '**esta condición no se cumple, por lo que deberíamos revisar la estructura de ambas matrices**'`
 

@@ -458,10 +458,8 @@ display: none;
 <ul>
 <li><a href="#fechahora-de-entrega" id="toc-fechahora-de-entrega">Fecha/hora de entrega</a></li>
 <li><a href="#objetivos" id="toc-objetivos">Objetivos</a></li>
-<li><a href="#mandato" id="toc-mandato">Mandato</a>
-<ul>
+<li><a href="#mandato" id="toc-mandato">Mandato</a></li>
 <li><a href="#referencias" id="toc-referencias">Referencias</a></li>
-</ul></li>
 </ul>
 </div>
 
@@ -481,7 +479,7 @@ display: none;
 <div id="mandato" class="section level1">
 <h1>Mandato</h1>
 <ol>
-<li>Elige un número entre el 2 y el 20, el cual representará tu familia elegida según la tabla que se muestra abajo. Anuncia en el foro el número que elijas. Normalmente, usarás la matriz de comunidad y la matriz ambiental asociadas a dicha familia. Los archivos fuente de donde obtendras dichas matrices se encuentran en el directorio <a href="salidas_RDS/">salidas_RDS/</a>. En el referido directorio hay muchos archivos, pero el que te interesa más es el que comienza por todos_los_objetos_NOMBREDEFAMILIA.RDS. Dichos archivos contienen todos los subproductos generados para la familia en cuestión, usando los datos de GBIF y del repositorio de estadística zonal sobre la familia elegida. El script con el que se generaron todos los subproductos se llama <a href="matrices-de-comunidad-y-ambiental.md">matrices-de-comunidad-y-ambiental.md</a> (tiene versión HTML también). Ocasionalmente podrían usarse los archivos de los directorios <a href="salidas_mc/">salidas_mc/</a> y <a href="salidas_ma/">salidas_ma/</a>, que son también las matrices de comunidad y ambiental, respectivamente, pero separadas del resto de objetos.</li>
+<li>Elige un número entre el 2 y el 20, el cual representará tu familia elegida según la tabla que se muestra abajo. Anuncia en el foro el número que elijas. Normalmente, usarás la matriz de comunidad y la matriz ambiental asociadas a dicha familia. Los archivos fuente de donde obtendras dichas matrices se encuentran en el directorio <code>salidas_RDS/</code>. En el referido directorio hay muchos archivos, pero el que te interesa más es el que comienza por todos_los_objetos_NOMBREDEFAMILIA.RDS. Dichos archivos contienen todos los subproductos generados para la familia en cuestión, usando los datos de GBIF y del repositorio de estadística zonal sobre la familia elegida. El script con el que se generaron todos los subproductos se llama <a href="https://biogeografia-master.github.io/tecnicas-ecologia-numerica-reproducibilidad/matrices-de-comunidad-y-ambiental.html">matrices-de-comunidad-y-ambiental.html</a> (tiene versión Markdown también). Ocasionalmente podrían usarse los archivos de los directorios <code>salidas_mc/</code> y <code>salidas_ma/</code>, que son también las matrices de comunidad y ambiental, respectivamente, pero separadas del resto de objetos.</li>
 </ol>
 <table>
 <thead>
@@ -574,7 +572,7 @@ display: none;
 </tbody>
 </table>
 <ol start="2">
-<li>Consulta el <a href="https://biogeografia-master.github.io/ejemplo-de-análisis.html">ejemplo de análisis</a> que realicé con los datos del conjunto 1, familia Acanthaceae. Te recomiendo que veas el código de R también, abriendo el documento <a href="ejemplo-de-análisis.Rmd">ejemplo-de-análisis.Rmd</a>; no te quedes sólo en el documento HTML, pues es más fácil usar el .Rmd para ejecutar, bloque a bloque, el código de R (recuerda desactivar el traductor para el servidor si aún lo tienes activado). Tal como lo lees, es importante ejecutar bloque a bloque, o línea a línea, para ver qué cosas producen las maravillosas líneas de R. Intentar comprenderlas también es importante, pero puede resultar abrumador. Lo más importante es que adaptes el código de dicho cuaderno a tu familia elegida, editando las líneas allí donde tengas que hacerlo (no son muchos lugares realmente que necesitas personalizar) sobre él propio cuaderno. Recuerda que el código en dicho cuaderno sigue una lógica secuencial, por lo que los bloques posteriores ocasionalmente podrían depender de los anteriores.</li>
+<li>Consulta el <a href="https://biogeografia-master.github.io/tecnicas-ecologia-numerica-reproducibilidad/ejemplo-de-analisis.html">ejemplo de análisis</a> que realicé con los datos del conjunto 1, familia Acanthaceae. Te recomiendo que veas el código de R también, abriendo el documento <code>ejemplo-de-análisis.Rmd</code> que se encuentra en este mismo repo o en el enlace <a href="https://github.com/biogeografia-master/tecnicas-ecologia-numerica-reproducibilidad/blob/main/ejemplo-de-analisis.Rmd">ejemplo-de-análisis.Rmd</a>; no te quedes sólo en el documento HTML, pues es más fácil usar el .Rmd para ejecutar, bloque a bloque, el código de R (recuerda desactivar el traductor para el servidor si aún lo tienes activado). Tal como lo lees, es importante ejecutar bloque a bloque, o línea a línea, para ver qué cosas producen las maravillosas líneas de R. Intentar comprenderlas también es importante, pero puede resultar abrumador. Lo más importante es que adaptes el código de dicho cuaderno a tu familia elegida, editando las líneas allí donde tengas que hacerlo (no son muchos lugares realmente que necesitas personalizar) sobre él propio cuaderno. Recuerda que el código en dicho cuaderno sigue una lógica secuencial, por lo que los bloques posteriores ocasionalmente podrían depender de los anteriores.</li>
 </ol>
 <p>En los vídeos a continuación muestro qué extraer de los análisis que ejecuta el código de ejemplo. Los vídeos muestran datos ficticios o referidos a otros subconjuntos de semestres anteriores, pero la explicación sobre los patrones potencialmente aprovechables es igualmente válida.</p>
 <ul>
@@ -593,7 +591,7 @@ display: none;
 <ul>
 <li>Dentro de esta sección, debes incluir al menos cinco citas. Los conceptos y afirmaciones ajenas, deben citarse bibliográficamente, y nunca deberás usar cita textual, pues se considera plagio. Las citas bibliográficas que incluyas, deberán estar respaldadas por su correspondiente lista referencias, que deberá aparecer en la sección final (Referencias), la cual el propio tejido de RMarkdown debería generar por ti, siempre que sigas las instrucciones correspondientes (vuelve al vídeo de la PD01 para refrescar). Las citas y la lista de referencias, deberán seguir el estándar APA 7ma edición (APA7), que es el que la propia plantilla tiene configurado por defecto; en principio, no tendrás que ocuparte de todos los detalles de sintaxis del formato APA7, pero no debes confiar ciegamente en lo que hace RMarkdown.</li>
 </ul></li>
-<li><p><strong>Materiales y métodos</strong> (tamaño recomendado: cinco párrafos). Explica cómo obtuviste los datos que usaste, y documenta en qué consiste la fuente. Los datos de este ejercicio se generaron con el cuaderno <a href="matrices-de-comunidad-y-ambiental.Rmd">https://github.com/biogeografia-master/tecnicas-ecologia-numerica-reproducibilidad/matrices-de-comunidad-y-ambiental.Rmd</a>. Debes citar el repo oportunamente. Si hiciste el clonado, dicho archivo se encuentra tu repositorio clonado también. Puedes consultar las versiones <a href="matrices-de-comunidad-y-ambiental.html">HTML</a> y <a href="matrices-de-comunidad-y-ambiental.md">Markdown</a> que se encuentran en este mismo repositorio.</p></li>
+<li><p><strong>Materiales y métodos</strong> (tamaño recomendado: cinco párrafos). Explica cómo obtuviste los datos que usaste, y documenta en qué consiste la fuente. Los datos de este ejercicio se generaron con el cuaderno <code>matrices-de-comunidad-y-ambiental.Rmd</code> que se encuentra en este mismo repo o que puedes leer en el enlace <a href="https://github.com/biogeografia-master/tecnicas-ecologia-numerica-reproducibilidad/blob/main/matrices-de-comunidad-y-ambiental.Rmd">matrices-de-comunidad-y-ambiental.Rmd</a>. Debes citar el repo oportunamente. Si hiciste el clonado, dicho archivo se encuentra tu repositorio clonado también. Puedes consultar las versiones <a href="matrices-de-comunidad-y-ambiental.html">HTML</a> y <a href="matrices-de-comunidad-y-ambiental.md">Markdown</a> que se encuentran en este mismo repositorio.</p></li>
 </ul>
 <p>Debes igualmente citar el software y hardware usado, y las referencias sobre la técnica o algoritmo empleados. Si incluyes un diagrama de flujo metodológico (“metodología gráfica”), te resultará más fácil explicar tu metodología. <strong>No adelantes resultados, sólo escribe que fuentes y herramientas usaste (materiales) y qué técnicas concretas o algoritmos utilizaste (métodos)</strong>. Toda figura y tabla que insertes debe citarse con referencia cruzada, que básicamente se construyen con (más instrucciones en el aula, por vídeos o por el foro). En el caso de los cuadernos RMarkdown, las figuras normalmente</p>
 <ul>
@@ -620,8 +618,9 @@ display: none;
 <p>La voz pasiva es común en la redacción científica porque a menudo se prefiere un tono más impersonal, enfocando la atención en los resultados y procedimientos en lugar de en quienes llevaron a cabo la investigación. También puede ser útil cuando no se quiere o no es relevante especificar quién realizó la acción.</p>
 <p><strong>En todas mis prácticas, está completamente permitido usar IA (e.g. chatGPT), pero te recomiendo que la uses más como tutor que como redactor</strong>. Tal como te sugerí arriba, no le pidas que te resuelva los problemas del mandato. Pídele que te dé ideas, y que luego tú las mejores o las descartes. No abuses tampoco del texto, pues mucha redacción no siempre es mejor; en redacción de ensayos “menos es más”. Cruza las redacciones que te ofrezca con tu conocimiento, y revisa si los términos o conceptos usados son descabellados (toda IA se inventa cosas, cuidate de no caer en esa trampa). Nunca le pidas referencias bibliográficas, porque se va equivocar.</p>
 </blockquote>
-<div id="referencias" class="section level2 unnumbered">
-<h2>Referencias</h2>
+</div>
+<div id="referencias" class="section level1 unnumbered">
+<h1>Referencias</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0" line-spacing="2">
 <div id="ref-borcard2018numerical" class="csl-entry">
 Borcard, D., Gillet, F. y Legendre, P. (2018). <em>Numerical ecology with R</em>. Springer.
@@ -631,7 +630,6 @@ GBIF.org. (2022). <em>What is GBIF?</em> <a href="https://www.gbif.org/what-is-g
 </div>
 <div id="ref-jose_ramon_martinez_batlle_2022_7367180" class="csl-entry">
 Martínez-Batlle, J. R. (2022). <em><span>geofis/zonal-statistics: Let there be environmental variables</span></em> (Versión v0.0.0.9000). Zenodo. <a href="https://doi.org/10.5281/zenodo.7367256">https://doi.org/10.5281/zenodo.7367256</a>
-</div>
 </div>
 </div>
 </div>

@@ -43,19 +43,18 @@ usando datos reales aplicados a RD.
     número que elijas. Normalmente, usarás la matriz de comunidad y la
     matriz ambiental asociadas a dicha familia. Los archivos fuente de
     donde obtendras dichas matrices se encuentran en el directorio
-    [salidas_RDS/](salidas_RDS/). En el referido directorio hay muchos
-    archivos, pero el que te interesa más es el que comienza por
+    `salidas_RDS/`. En el referido directorio hay muchos archivos, pero
+    el que te interesa más es el que comienza por
     todos_los_objetos_NOMBREDEFAMILIA.RDS. Dichos archivos contienen
     todos los subproductos generados para la familia en cuestión, usando
     los datos de GBIF y del repositorio de estadística zonal sobre la
     familia elegida. El script con el que se generaron todos los
     subproductos se llama
-    [matrices-de-comunidad-y-ambiental.md](matrices-de-comunidad-y-ambiental.md)
-    (tiene versión HTML también). Ocasionalmente podrían usarse los
-    archivos de los directorios [salidas_mc/](salidas_mc/) y
-    [salidas_ma/](salidas_ma/), que son también las matrices de
-    comunidad y ambiental, respectivamente, pero separadas del resto de
-    objetos.
+    [matrices-de-comunidad-y-ambiental.html](https://biogeografia-master.github.io/tecnicas-ecologia-numerica-reproducibilidad/matrices-de-comunidad-y-ambiental.html)
+    (tiene versión Markdown también). Ocasionalmente podrían usarse los
+    archivos de los directorios `salidas_mc/` y `salidas_ma/`, que son
+    también las matrices de comunidad y ambiental, respectivamente, pero
+    separadas del resto de objetos.
 
 | estudiante | familia             |
 |-----------:|:--------------------|
@@ -81,22 +80,24 @@ usando datos reales aplicados a RD.
 |         20 | Poaceae             |
 
 2.  Consulta el [ejemplo de
-    análisis](https://biogeografia-master.github.io/ejemplo-de-análisis.html)
+    análisis](https://biogeografia-master.github.io/tecnicas-ecologia-numerica-reproducibilidad/ejemplo-de-analisis.html)
     que realicé con los datos del conjunto 1, familia Acanthaceae. Te
     recomiendo que veas el código de R también, abriendo el documento
-    [ejemplo-de-análisis.Rmd](ejemplo-de-análisis.Rmd); no te quedes
-    sólo en el documento HTML, pues es más fácil usar el .Rmd para
-    ejecutar, bloque a bloque, el código de R (recuerda desactivar el
-    traductor para el servidor si aún lo tienes activado). Tal como lo
-    lees, es importante ejecutar bloque a bloque, o línea a línea, para
-    ver qué cosas producen las maravillosas líneas de R. Intentar
-    comprenderlas también es importante, pero puede resultar abrumador.
-    Lo más importante es que adaptes el código de dicho cuaderno a tu
-    familia elegida, editando las líneas allí donde tengas que hacerlo
-    (no son muchos lugares realmente que necesitas personalizar) sobre
-    él propio cuaderno. Recuerda que el código en dicho cuaderno sigue
-    una lógica secuencial, por lo que los bloques posteriores
-    ocasionalmente podrían depender de los anteriores.
+    `ejemplo-de-análisis.Rmd` que se encuentra en este mismo repo o en
+    el enlace
+    [ejemplo-de-análisis.Rmd](https://github.com/biogeografia-master/tecnicas-ecologia-numerica-reproducibilidad/blob/main/ejemplo-de-analisis.Rmd);
+    no te quedes sólo en el documento HTML, pues es más fácil usar el
+    .Rmd para ejecutar, bloque a bloque, el código de R (recuerda
+    desactivar el traductor para el servidor si aún lo tienes activado).
+    Tal como lo lees, es importante ejecutar bloque a bloque, o línea a
+    línea, para ver qué cosas producen las maravillosas líneas de R.
+    Intentar comprenderlas también es importante, pero puede resultar
+    abrumador. Lo más importante es que adaptes el código de dicho
+    cuaderno a tu familia elegida, editando las líneas allí donde tengas
+    que hacerlo (no son muchos lugares realmente que necesitas
+    personalizar) sobre él propio cuaderno. Recuerda que el código en
+    dicho cuaderno sigue una lógica secuencial, por lo que los bloques
+    posteriores ocasionalmente podrían depender de los anteriores.
 
 En los vídeos a continuación muestro qué extraer de los análisis que
 ejecuta el código de ejemplo. Los vídeos muestran datos ficticios o
@@ -178,7 +179,9 @@ igualmente válida.
 - **Materiales y métodos** (tamaño recomendado: cinco párrafos). Explica
   cómo obtuviste los datos que usaste, y documenta en qué consiste la
   fuente. Los datos de este ejercicio se generaron con el cuaderno
-  [https://github.com/biogeografia-master/tecnicas-ecologia-numerica-reproducibilidad/matrices-de-comunidad-y-ambiental.Rmd](matrices-de-comunidad-y-ambiental.Rmd).
+  `matrices-de-comunidad-y-ambiental.Rmd` que se encuentra en este mismo
+  repo o que puedes leer en el enlace
+  [matrices-de-comunidad-y-ambiental.Rmd](https://github.com/biogeografia-master/tecnicas-ecologia-numerica-reproducibilidad/blob/main/matrices-de-comunidad-y-ambiental.Rmd).
   Debes citar el repo oportunamente. Si hiciste el clonado, dicho
   archivo se encuentra tu repositorio clonado también. Puedes consultar
   las versiones [HTML](matrices-de-comunidad-y-ambiental.html) y
@@ -260,7 +263,7 @@ cuadernos RMarkdown, las figuras normalmente
 > cosas, cuidate de no caer en esa trampa). Nunca le pidas referencias
 > bibliográficas, porque se va equivocar.
 
-## Referencias
+# Referencias
 
 <div id="refs" class="references csl-bib-body hanging-indent"
 entry-spacing="0" line-spacing="2">
