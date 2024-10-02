@@ -3,7 +3,7 @@ reproducibilidad<small><br>Biogeografía (GEO-131)<br>Universidad
 Autónoma de Santo Domingo (UASD)<br>Semestre 2024-02</small>
 ================
 El Tali
-2024-10-01
+2024-10-02
 
 <!-- README.md se genera a partir de README.Rmd. Por favor, edita ese archivo. -->
 
@@ -17,30 +17,45 @@ Versión HTML (quizá más legible),
 # Objetivos
 
 Vamos a “calentar motores”. El objetivo de esta práctica de desarrollo
-es que demuestres o mejores lo siguiente: a) Tus capacidades de realizar
-análisis cuantaitativos con datos de comunidad y ambientales usando R;
-b) Tus capacidades de generar cuadernos reproducibles con RMarkdown; c)
-tus capacidades de redacción. Esto te preparará, a futuro, para el
-manuscrito.
+es que demuestres o mejores lo siguiente:
+
+1.  Tus capacidades de realizar análisis cuantaitativos con datos de
+    comunidad y ambientales usando R.
+
+2.  Tus capacidades de generar cuadernos reproducibles con RMarkdown.
+
+3.  Tus capacidades de redacción. Esto te preparará, a futuro, para el
+    manuscrito.
 
 Esta práctica tratará **sobre técnicas de ecología numérica usando datos
 de GBIF (GBIF.org, 2022) y el repositorio de estadística zonal sobre RD
 de Martínez-Batlle (2022)**, intentando que sea una investigación
 reproducible y bien redactada (nada de alto nivel, sólo estamos
-ensayando). Lo ideal es que presentes un un documento que cumpla con
-estilos de formato, uso apropiado de figuras, tablas, citas y
-referencias.
+ensayando, pues el objetivo es aprender, no elevar el *H-index*). Lo
+ideal es que presentes un un documento que cumpla con estilos de
+formato, uso apropiado de figuras, tablas, citas y referencias, pero
+usando datos reales aplicados a RD.
 
 # Mandato
 
-1.  Elige un número entre el 2 y el 20, y toma la matriz de comunidad y
-    la matriz ambiental asociadas a ese número, según la tabla que se
-    muestra abajo. Los archivos que usarás se encuentran en el
-    directorio [salidas_RDS/](salidas_RDS/), y ocasionalmente podrían
-    usarse los de los directorios [salidas_mc/](salidas_mc/) y
-    [salidas_ma/](salidas_ma/)que son las matrices de comunidad y
-    ambiental pero separadas del resto de objetos. Anuncia en el foro el
-    número que elijas.
+1.  Elige un número entre el 2 y el 20, el cual representará tu familia
+    elegida según la tabla que se muestra abajo. Anuncia en el foro el
+    número que elijas. Normalmente, usarás la matriz de comunidad y la
+    matriz ambiental asociadas a dicha familia. Los archivos fuente de
+    donde obtendras dichas matrices se encuentran en el directorio
+    [salidas_RDS/](salidas_RDS/). En el referido directorio hay muchos
+    archivos, pero el que te interesa más es el que comienza por
+    todos_los_objetos_NOMBREDEFAMILIA.RDS. Dichos archivos contienen
+    todos los subproductos generados para la familia en cuestión, usando
+    los datos de GBIF y del repositorio de estadística zonal sobre la
+    familia elegida. El script con el que se generaron todos los
+    subproductos se llama
+    [matrices-de-comunidad-y-ambiental.md](matrices-de-comunidad-y-ambiental.md)
+    (tiene versión HTML también). Ocasionalmente podrían usarse los
+    archivos de los directorios [salidas_mc/](salidas_mc/) y
+    [salidas_ma/](salidas_ma/), que son también las matrices de
+    comunidad y ambiental, respectivamente, pero separadas del resto de
+    objetos.
 
 | estudiante | familia             |
 |-----------:|:--------------------|
@@ -65,8 +80,46 @@ referencias.
 |         19 | Piperaceae          |
 |         20 | Poaceae             |
 
-2.  Consulta el [ejemplo de análisis](ejemplo%20de%20análisis.Rmd) que
-    realicé con los datos del conjunto 1, familia Acanthaceae .
+2.  Consulta el [ejemplo de
+    análisis](https://biogeografia-master.github.io/ejemplo-de-análisis.html)
+    que realicé con los datos del conjunto 1, familia Acanthaceae. Te
+    recomiendo que veas el código de R también, abriendo el documento
+    [ejemplo-de-análisis.Rmd](ejemplo-de-análisis.Rmd); no te quedes
+    sólo en el documento HTML, pues es más fácil usar el .Rmd para
+    ejecutar, bloque a bloque, el código de R (recuerda desactivar el
+    traductor para el servidor si aún lo tienes activado). Tal como lo
+    lees, es importante ejecutar bloque a bloque, o línea a línea, para
+    ver qué cosas producen las maravillosas líneas de R. Intentar
+    comprenderlas también es importante, pero puede resultar abrumador.
+    Lo más importante es que adaptes el código de dicho cuaderno a tu
+    familia elegida, editando las líneas allí donde tengas que hacerlo
+    (no son muchos lugares realmente que necesitas personalizar) sobre
+    él propio cuaderno. Recuerda que el código en dicho cuaderno sigue
+    una lógica secuencial, por lo que los bloques posteriores
+    ocasionalmente podrían depender de los anteriores.
+
+En los vídeos a continuación muestro qué extraer de los análisis que
+ejecuta el código de ejemplo. Los vídeos muestran datos ficticios o
+referidos a otros subconjuntos de semestres anteriores, pero la
+explicación sobre los patrones potencialmente aprovechables es
+igualmente válida.
+
+- [20240307-20240314-video-1-tutoriales-practica-3-tecnicas-de-ecologia-numerica-reproducibilidad-redaccion-estilos-citas-referencias.mp4.
+  **Del minuto 10 al
+  15**](https://drive.google.com/drive/u/2/folders/1i_ZO4-NLr-R0Yis5szQ7kBLYjjpklqg2)
+
+- [Práctica 4. Metodología y resultados de ecología numérica. Intro,
+  análisis exploratorio de
+  datos](https://www.youtube.com/watch?v=2E5G3eC3E_Y)
+
+- [Práctica 4. Metodología y resultados de ecología numérica. Análisis
+  de agrupamiento](https://www.youtube.com/watch?v=eJ8bMHDAyvE)
+
+- [Práctica 4. Metodología y resultados de ecología numérica. Técnicas
+  de ordenación](https://www.youtube.com/watch?v=YeZU9iZhvNg)
+
+- [Práctica 4. Metodología y resultados de ecología numérica. Análisis
+  de diversidad](https://www.youtube.com/watch?v=U5eImkQfwKk)
 
 3.  Desarrolla análisis aplicando **todas las técnicas de ecología
     numérica posibles** (el ejemplo es una buena base, pero puedes

@@ -17,7 +17,7 @@ editor:
 self_contained: true
 editor_options: 
   chunk_output_type: console
-bibliography: references.bib
+bibliography: biblio.bib
 params:
   estudiante: "Jose-Ramon-Martinez-Batlle"
 ---
@@ -92,14 +92,27 @@ mc %>% estilo_kable(
   nombres_filas = T, alinear = 'r')
 ```
 
+Puede ser que sea un poco inabarcable la matriz, porque podría tener muchas especies, en cuyo caso te recomiendo que selecciones columnas al azar y especifique se trata de un extracto.
+
+```{r}
+set.seed(99); mc[, sample(1:ncol(mc), 10)] %>% estilo_kable(
+  titulo = 'Matriz de comunidad',
+  nombres_filas = T, alinear = 'r')
+```
+
+Esta es la lista de especies.
+
 ```{r}
 data.frame(Especies = sort(names(mc))) %>%
   estilo_kable(titulo = 'Lista de especies', cubre_anchura = F, alinear = 'c') %>% 
   column_spec(column = 1, width = "15em")
 ```
 
+Y esta el número de sitios (hexágonos H3) donde fue reportada cada especie
+
 ```{r}
-data.frame(`Número de sitios donde fue reportada la especie` = sort(colSums(mc), decreasing = T),
+data.frame(
+  `Número de sitios donde fue reportada cada especie` = sort(colSums(mc), decreasing = T),
            check.names = F) %>%
   rownames_to_column('Especie') %>% 
   estilo_kable(
@@ -120,9 +133,26 @@ data.frame(`Riqueza por sitios` = rowSums(mc),
 La matriz de comunidad analizada se compone de `r nrow(mc)` sitios y `r specnumber(colSums(mc))` especies, donde el/los sitio/s más ricos es/son `r vector_a_lista(rownames(mc)[specnumber(mc)==max(specnumber(mc))])`. La/s especie/s más común/es es/son `r vector_a_lista(names(mc)[colSums(mc)==max(colSums(mc))])` y la/s más rara/s es/son `r vector_a_lista(names(mc)[colSums(mc)==min(colSums(mc))])`. El siguiente gráfico de mosaicos muestra la distribución de las especies según sitios.
 
 
-```{r, fig.cap='Distribución de las especies según sitios'}
-grafico_mosaico <- crear_grafico_mosaico_de_mc(mc, tam_rotulo = 12) + xlab('Sitios') + ylab('Especie')
+```{r, fig.cap='Distribución de las especies según sitios', fig.width=10, fig.height=7, dpi=300}
+grafico_mosaico <- crear_grafico_mosaico_de_mc(mc, tam_rotulo = 8) + xlab('Sitios') + ylab('Especie')
 grafico_mosaico
+```
+
+Si los rótulos del gráfico se superpponen o son ilegibles, puedes probar a exportar el gráfico con este código:
+
+```{r}
+jpeg('grafico_mosaico.jpg', width = 4000, height = 3000, res = 300)
+grafico_mosaico
+graphics.off()
+```
+
+Revisa el archivo `grafico_mosaico.jpg` y verifica si luce bien. Si luce bien, lo puedes llevar a tu manuscrito. ¡¡¡IMPORTANTE!!! Si estás ejecutando código interactivamente, no olvides ejecutar `graphics.off()` después de ejecutar `jpeg...` y `grafico_mosaico`, pues de lo contrario, el dispositivo gráfico quedará abierto en el archivo JPEG crado, y no se mostrarán más gráficos a continuación en la ventana gráfica.
+
+Puedes también generar otros gráficos. En `todos_los_objetos` se encuentran, como su nombre lo indica, todos los objetos creados por el *toolchain* del cuaderno `matrices-de-comunidad-y-ambiental.Rmd` que creé para ti. Uno de ellos consiste en un mapa de distribución de los registros de presencia de GBIF para el taxón, y los hexágonos de la biblioteca H3.
+
+```{r}
+# Mapa
+todos_los_objetos$aoi_reg_hex_inter_g
 ```
 
 ## Transformar la matriz de comunidad
@@ -162,8 +192,9 @@ estad_basicos <- env %>%
 estad_basicos %>% estilo_kable(titulo = 'Matriz ambiental', nombres_filas = F, alinear = 'crrrr')
 ```
 
-Se muestra a continuación un diagrama de cajas usando el Sufijo de grupo "^ESA", que se refiere a los 
-datos de cobertura del suelo de la Agencia Espacial Europea (ESA 2021, imágenes Sentinel 1 y Sentinel 2 a 10 m de resolucion máximo). Se deben hacer gráficos para otros grupos de variables, ver la lista de grupos posibles en la columna "Sufijo del grupo" de la Tabla 1 de [este HTML](https://geofis.github.io/zonal-statistics/README.html). Otros grupos posibles: CH-BIO, CGL, G90, WCL, entre muchos otros.
+
+
+Se muestra a continuación un diagrama de cajas que sólo incluye un grupo de variables ambientales. Son muchas variables ambientales, y si se incluyen todas, el servidor no aguantaría o el gráfico no sería legible. Es por ello que ves el comando `select(matches('^ESA'))`, el cual selecciona las columnas que comienzan por la cadena de caracteres 'ESA'. El Sufijo de grupo "^ESA", que se refiere a los datos de cobertura del suelo de la Agencia Espacial Europea (ESA 2021, imágenes Sentinel 1 y Sentinel 2 a 10 m de resolucion máximo). Se deben hacer gráficos para otros grupos de variables, ver la lista de grupos posibles en la columna "Sufijo del grupo" de la Tabla 1 de [este HTML](https://geofis.github.io/zonal-statistics/README.html). Otros grupos posibles: CH-BIO, CGL, G90, WCL, entre muchos otros.
 
 ```{r}
 env %>%
@@ -210,8 +241,7 @@ lista_cl <- list(
 )
 par(mfrow = c(2,2))
 invisible(map(names(lista_cl), function(x) plot(lista_cl[[x]], main = paste0(x, '\n(árbol de evaluación)'), hang = -1)))
-par(mfrow = c(1,1))  scale_x_discrete(labels = function(x) str_wrap(x, width = 10)) +  # Aplica str_wrap
-
+par(mfrow = c(1,1))
 ```
 
 A continuación, **calcularé la distancia y la correlación cofenéticas; esta última, la correlación cofenética,se utiliza como criterio flexible para elegir el método de agrupamiento idóneo, pero no debe usarse de manera estricta**. Se supone que el método con la mayor correlación cofenética explica mejor el agrupamiento de la comunidad. Si quieres comprender mejor esta técnica, consulta el vídeo que te referí en el párrafo anterior, así como los libros de referencia. Normalmente, el método UPGMA obtiene la mayor correlación cofenética, pero esto se debe a que su procedimiento de obtención maximiza precisamente dicha métrica. No es recomendable conservar un único método de agrupamiento, normalmente es bueno usar al menos dos. Ward es muchas veces recomendado como método de contraste, por basarse en procedimientos de cálculo muy distintos a los de UPGMA.
@@ -599,12 +629,15 @@ En el bloque siguiente, represento gráficamente la correlación entre la riquez
 
 ```{r, out.width='100%'}
 bind_cols(indices %>% select(N0), env %>%
+            select(matches('^ESA')) %>% 
             rename_with(.fn = ~ paste0('AMB_', .))) %>%
   ggpairs(
     labeller = label_wrap_gen(width=10),
-    upper = list(continuous = wrap("cor", size = 3))) +
+    upper = list(continuous = GGally::wrap("cor", size = 3))) +
   theme(text = element_text(size = 10))
 ```
+
+Nota que el panel de correlación anterior sólo incluye un grupo de variables ambientales. Son muchas variables ambientales, y si se incluyen todas, el servidor no aguantaría. Es por ello que ves el comando `select(matches('^ESA'))`, el cual selecciona las columnas que comienzan por la cadena de caracteres 'ESA'. Como bien explique arriba, 'ESA' se refiere a los datos de cobertura del suelo de la Agencia Espacial Europea (ESA 2021, imágenes Sentinel 1 y Sentinel 2 a 10 m de resolucion máximo). Se deben hacer más paneles de correlación para otros grupos de variables, ver la lista de grupos posibles en la columna "Sufijo del grupo" de la Tabla 1 de [este HTML](https://geofis.github.io/zonal-statistics/README.html). Otros grupos posibles: CH-BIO, CGL, G90, WCL, entre muchos otros.
 
 ## "Completitud de muestra" y curva de acumulación
 

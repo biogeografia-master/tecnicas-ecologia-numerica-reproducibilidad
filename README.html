@@ -11,7 +11,7 @@
 
 <meta name="author" content="El Tali" />
 
-<meta name="date" content="2024-10-01" />
+<meta name="date" content="2024-10-02" />
 
 <title>Práctica de desarrollo 2. PD02. Técnicas de ecología numérica, reproducibilidad Biogeografía (GEO-131) Universidad Autónoma de Santo Domingo (UASD) Semestre 2024-02</title>
 
@@ -450,7 +450,7 @@ display: none;
 
 <h1 class="title toc-ignore">Práctica de desarrollo 2. PD02. Técnicas de ecología numérica, reproducibilidad<small><br>Biogeografía (GEO-131)<br>Universidad Autónoma de Santo Domingo (UASD)<br>Semestre 2024-02</small></h1>
 <h4 class="author">El Tali</h4>
-<h4 class="date">2024-10-01</h4>
+<h4 class="date">2024-10-02</h4>
 
 </div>
 
@@ -472,13 +472,16 @@ display: none;
 </div>
 <div id="objetivos" class="section level1">
 <h1>Objetivos</h1>
-<p>Vamos a “calentar motores”. El objetivo de esta práctica de desarrollo es que demuestres o mejores lo siguiente: a) Tus capacidades de realizar análisis cuantaitativos con datos de comunidad y ambientales usando R; b) Tus capacidades de generar cuadernos reproducibles con RMarkdown; c) tus capacidades de redacción. Esto te preparará, a futuro, para el manuscrito.</p>
-<p>Esta práctica tratará <strong>sobre técnicas de ecología numérica usando datos de GBIF <span class="citation">(GBIF.org, 2022)</span> y el repositorio de estadística zonal sobre RD de <span class="citation">Martínez-Batlle (2022)</span></strong>, intentando que sea una investigación reproducible y bien redactada (nada de alto nivel, sólo estamos ensayando). Lo ideal es que presentes un un documento que cumpla con estilos de formato, uso apropiado de figuras, tablas, citas y referencias.</p>
+<p>Vamos a “calentar motores”. El objetivo de esta práctica de desarrollo es que demuestres o mejores lo siguiente:</p>
+<p>a. Tus capacidades de realizar análisis cuantaitativos con datos de comunidad y ambientales usando R.</p>
+<p>b. Tus capacidades de generar cuadernos reproducibles con RMarkdown.</p>
+<p>c. Tus capacidades de redacción. Esto te preparará, a futuro, para el manuscrito.</p>
+<p>Esta práctica tratará <strong>sobre técnicas de ecología numérica usando datos de GBIF <span class="citation">(GBIF.org, 2022)</span> y el repositorio de estadística zonal sobre RD de <span class="citation">Martínez-Batlle (2022)</span></strong>, intentando que sea una investigación reproducible y bien redactada (nada de alto nivel, sólo estamos ensayando, pues el objetivo es aprender, no elevar el <em>H-index</em>). Lo ideal es que presentes un un documento que cumpla con estilos de formato, uso apropiado de figuras, tablas, citas y referencias, pero usando datos reales aplicados a RD.</p>
 </div>
 <div id="mandato" class="section level1">
 <h1>Mandato</h1>
 <ol>
-<li>Elige un número entre el 2 y el 20, y toma la matriz de comunidad y la matriz ambiental asociadas a ese número, según la tabla que se muestra abajo. Los archivos que usarás se encuentran en el directorio <a href="salidas_RDS/">salidas_RDS/</a>, y ocasionalmente podrían usarse los de los directorios <a href="salidas_mc/">salidas_mc/</a> y <a href="salidas_ma/">salidas_ma/</a>que son las matrices de comunidad y ambiental pero separadas del resto de objetos. Anuncia en el foro el número que elijas.</li>
+<li>Elige un número entre el 2 y el 20, el cual representará tu familia elegida según la tabla que se muestra abajo. Anuncia en el foro el número que elijas. Normalmente, usarás la matriz de comunidad y la matriz ambiental asociadas a dicha familia. Los archivos fuente de donde obtendras dichas matrices se encuentran en el directorio <a href="salidas_RDS/">salidas_RDS/</a>. En el referido directorio hay muchos archivos, pero el que te interesa más es el que comienza por todos_los_objetos_NOMBREDEFAMILIA.RDS. Dichos archivos contienen todos los subproductos generados para la familia en cuestión, usando los datos de GBIF y del repositorio de estadística zonal sobre la familia elegida. El script con el que se generaron todos los subproductos se llama <a href="matrices-de-comunidad-y-ambiental.md">matrices-de-comunidad-y-ambiental.md</a> (tiene versión HTML también). Ocasionalmente podrían usarse los archivos de los directorios <a href="salidas_mc/">salidas_mc/</a> y <a href="salidas_ma/">salidas_ma/</a>, que son también las matrices de comunidad y ambiental, respectivamente, pero separadas del resto de objetos.</li>
 </ol>
 <table>
 <thead>
@@ -571,7 +574,17 @@ display: none;
 </tbody>
 </table>
 <ol start="2">
-<li><p>Consulta el <a href="ejemplo%20de%20análisis.Rmd">ejemplo de análisis</a> que realicé con los datos del conjunto 1, familia Acanthaceae .</p></li>
+<li>Consulta el <a href="https://biogeografia-master.github.io/ejemplo-de-análisis.html">ejemplo de análisis</a> que realicé con los datos del conjunto 1, familia Acanthaceae. Te recomiendo que veas el código de R también, abriendo el documento <a href="ejemplo-de-análisis.Rmd">ejemplo-de-análisis.Rmd</a>; no te quedes sólo en el documento HTML, pues es más fácil usar el .Rmd para ejecutar, bloque a bloque, el código de R (recuerda desactivar el traductor para el servidor si aún lo tienes activado). Tal como lo lees, es importante ejecutar bloque a bloque, o línea a línea, para ver qué cosas producen las maravillosas líneas de R. Intentar comprenderlas también es importante, pero puede resultar abrumador. Lo más importante es que adaptes el código de dicho cuaderno a tu familia elegida, editando las líneas allí donde tengas que hacerlo (no son muchos lugares realmente que necesitas personalizar) sobre él propio cuaderno. Recuerda que el código en dicho cuaderno sigue una lógica secuencial, por lo que los bloques posteriores ocasionalmente podrían depender de los anteriores.</li>
+</ol>
+<p>En los vídeos a continuación muestro qué extraer de los análisis que ejecuta el código de ejemplo. Los vídeos muestran datos ficticios o referidos a otros subconjuntos de semestres anteriores, pero la explicación sobre los patrones potencialmente aprovechables es igualmente válida.</p>
+<ul>
+<li><p><a href="https://drive.google.com/drive/u/2/folders/1i_ZO4-NLr-R0Yis5szQ7kBLYjjpklqg2">20240307-20240314-video-1-tutoriales-practica-3-tecnicas-de-ecologia-numerica-reproducibilidad-redaccion-estilos-citas-referencias.mp4. <strong>Del minuto 10 al 15</strong></a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=2E5G3eC3E_Y">Práctica 4. Metodología y resultados de ecología numérica. Intro, análisis exploratorio de datos</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=eJ8bMHDAyvE">Práctica 4. Metodología y resultados de ecología numérica. Análisis de agrupamiento</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=YeZU9iZhvNg">Práctica 4. Metodología y resultados de ecología numérica. Técnicas de ordenación</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=U5eImkQfwKk">Práctica 4. Metodología y resultados de ecología numérica. Análisis de diversidad</a></p></li>
+</ul>
+<ol start="3">
 <li><p>Desarrolla análisis aplicando <strong>todas las técnicas de ecología numérica posibles</strong> (el ejemplo es una buena base, pero puedes incluir otras técnicas). Al hacerlo, obtendrás un conjunto de resultados. Usa todos los apoyos que necesites, desde el libro de <span class="citation">Borcard et al. (2018)</span>, hasta inteligencia artificial (IA). Si usas IA, no le pidas que te resuelva el mandato tal cual y luego copiando&gt;pegando textos o código. Más bien, pídele que te explique cómo resolverlo y hazlo por tu cuenta (modo tutor). Revisa demostraciones y aplicaciones en <span class="citation">Borcard et al. (2018)</span>, así como la lista de reproducción <a href="https://www.youtube.com/playlist?list=PLDcT2n8UzsCRDqjqSeqHI1wsiNOqpYmsJ">Ecología numérica con R</a>, desde el vídeo número 10 (“ma_1: Medición de asociación, parte 1. Teoría sobre los modos Q y R, Orlóci”) en adelante.</p></li>
 <li><p>Redacta un miniartículo. Para el procesamiento de tu texto y tus análisis, usa la plantilla <code>manuscrito-tecnicas-ecologia-numerica-reproducibilidad.Rmd</code> que se encuentra en este mismo repositorio. Para hacerlo, deberás clonar este repositorio, yendo al <a href="https://github.com/biogeografia-202402">portal de la asignatura</a>, haz clic en el enlace de la PD02 y acepta la asignación. Deberás usar estilos de formato (los títulos debidamente escritos, el texto normal también, siguiendo lo aprendido en la práctica de desarrollo anterior), referencias bibliográficas, referencias cruzadas a figuras y tablas (es decir, necesitarás que las figuras y tablas tengan título o “<em>caption</em>”). No podrás desarrollar tu redacción usando listas de viñetas ni listas numeradas. Debes usar la plantilla mencionada en RStudio, preferiblemente en mi servidor, tal como hiciste en la PD anterior. Distribuye tu texto en las siguientes secciones:</p></li>
 </ol>
