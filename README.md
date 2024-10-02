@@ -107,7 +107,7 @@ igualmente válida.
 
 - [20240307-20240314-video-1-tutoriales-practica-3-tecnicas-de-ecologia-numerica-reproducibilidad-redaccion-estilos-citas-referencias.mp4.
   **Del minuto 10 al
-  15**](https://drive.google.com/drive/u/2/folders/1i_ZO4-NLr-R0Yis5szQ7kBLYjjpklqg2)
+  15**](https://drive.google.com/file/d/1LZeTjMnM5PFzG3zhLOC3Jaf22k1pnxlU/view?usp=sharing)
 
 - [Práctica 4. Metodología y resultados de ecología numérica. Intro,
   análisis exploratorio de
@@ -134,13 +134,15 @@ igualmente válida.
     lista de reproducción [Ecología numérica con
     R](https://www.youtube.com/playlist?list=PLDcT2n8UzsCRDqjqSeqHI1wsiNOqpYmsJ),
     desde el vídeo número 10 (“ma_1: Medición de asociación, parte 1.
-    Teoría sobre los modos Q y R, Orlóci”) en adelante.
+    Teoría sobre los modos Q y R, Orlóci”) en adelante (esta lista usaba
+    datos de la isla Barro Colorado, Panamá).
 
-4.  Redacta un miniartículo. Para el procesamiento de tu texto y tus
-    análisis, usa la plantilla
+4.  Redacta un manuscrito. Para el procesamiento de tu texto y la
+    redacción de tus análisis, usa la plantilla
     `manuscrito-tecnicas-ecologia-numerica-reproducibilidad.Rmd` que se
-    encuentra en este mismo repositorio. Para hacerlo, deberás clonar
-    este repositorio, yendo al [portal de la
+    encuentra en este mismo repositorio. Con esta plantilla generarás un
+    PDF que tejeras a usando RStudio. Para hacerlo, deberás clonar este
+    repositorio, yendo al [portal de la
     asignatura](https://github.com/biogeografia-202402), haz clic en el
     enlace de la PD02 y acepta la asignación. Deberás usar estilos de
     formato (los títulos debidamente escritos, el texto normal también,
@@ -150,7 +152,11 @@ igualmente válida.
     “*caption*”). No podrás desarrollar tu redacción usando listas de
     viñetas ni listas numeradas. Debes usar la plantilla mencionada en
     RStudio, preferiblemente en mi servidor, tal como hiciste en la PD
-    anterior. Distribuye tu texto en las siguientes secciones:
+    anterior. Cuando termines tu manuscrito con tus análisis
+    reproducibles, y lo tejas a PDF, no olvides hacer commit\>push de
+    todos tus cambios para subirlos a GitHub.
+
+Distribuye tu texto en las siguientes secciones:
 
 - **Introducción** (tamaño recomendado: 3 párrafos). Desde lo amplio,
   puedes comenzar escribiendo sobre GBIF y su potencial, el repositorio

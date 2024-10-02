@@ -82,7 +82,7 @@ df %>% kableExtra::kable()
 
   En los vídeos a continuación muestro qué extraer de los análisis que ejecuta el código de ejemplo. Los vídeos muestran datos ficticios o referidos a otros subconjuntos de semestres anteriores, pero la explicación sobre los patrones potencialmente aprovechables es igualmente válida.
   
-  - [20240307-20240314-video-1-tutoriales-practica-3-tecnicas-de-ecologia-numerica-reproducibilidad-redaccion-estilos-citas-referencias.mp4. **Del minuto 10 al 15**](https://drive.google.com/file/d/1LZeTjMnM5PFzG3zhLOC3Jaf22k1pnxlU/view?usp=drive_link)
+  - [20240307-20240314-video-1-tutoriales-practica-3-tecnicas-de-ecologia-numerica-reproducibilidad-redaccion-estilos-citas-referencias.mp4. **Del minuto 10 al 15**](https://drive.google.com/file/d/1LZeTjMnM5PFzG3zhLOC3Jaf22k1pnxlU/view?usp=sharing)
   
   - [Práctica 4. Metodología y resultados de ecología numérica. Intro, análisis exploratorio de datos](https://www.youtube.com/watch?v=2E5G3eC3E_Y)
   
