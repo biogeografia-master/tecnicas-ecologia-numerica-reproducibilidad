@@ -46,6 +46,7 @@ opts_chunk$set(
 Son muchos los paquetes empleados en estos análisis. Puedes consultar en el ChatGPT qué hace cada uno. Considera un aspecto también importante: algunas funciones escritas por mí se cargan con `source_url` y `source`; dentro de algunas de dichas funciones, también se cargan paquetes adicionales.
 
 ```{r}
+library(DT)
 library(vegan)
 library(sf)
 library(tidyverse)
@@ -68,8 +69,9 @@ library(GGally)
 library(vegetarian)
 
 gh_content <- 'https://raw.githubusercontent.com/'
-gh_zonal_stats <- paste0(gh_content,
-                         'geofis/zonal-statistics/0b2e95aaee87bf326cf132d28f4bd15220bb4ec7/out/')
+gh_zonal_stats <- paste0(
+  gh_content,
+  'geofis/zonal-statistics/0b2e95aaee87bf326cf132d28f4bd15220bb4ec7/out/')
 repo_analisis <- 'biogeografia-master/scripts-de-analisis-BCI/master'
 repo_sem202202 <- 'biogeografia-202202/material-de-apoyo/master/practicas/'
 devtools::source_url(paste0(gh_content, repo_analisis, '/biodata/funciones.R'))
@@ -92,7 +94,7 @@ mc %>% estilo_kable(
   nombres_filas = T, alinear = 'r')
 ```
 
-Puede ser que sea un poco inabarcable la matriz, porque podría tener muchas especies, en cuyo caso te recomiendo que selecciones columnas al azar y especifique se trata de un extracto.
+Puede ser que sea un poco inabarcable mostrar la matriz de comunidad, porque podría tener muchas especies (cada columna es una especie de la familia elegida), en cuyo caso te recomiendo, sólo para fines de exploración pero NO para incluir en el manuscrito, que selecciones columnas al azar (el código siguiente selecciona 10 columnas).
 
 ```{r}
 set.seed(99); mc[, sample(1:ncol(mc), 10)] %>% estilo_kable(
@@ -100,10 +102,13 @@ set.seed(99); mc[, sample(1:ncol(mc), 10)] %>% estilo_kable(
   nombres_filas = T, alinear = 'r')
 ```
 
-Esta es la lista de especies.
+Para fines de exploración, puedes usar la alternativa `mc %>% View()` para representarla en el visor de RStudio. Pero recuerda: no intentes colocar tablas grandes en el manuscrito, porque desbordarán el PDF y no serán legibles. Si una tabla es importante para el manuscrito, pero ocupa mucho espacio, puedes considerar incluirla en la sección de "Información suplementaria" del mismo.
+
+Esta es la lista de especies mostrada en forma de tabla (específicamente, usando una función personalizada basada en el paquete `kableExtra`).
 
 ```{r}
-data.frame(Especies = sort(names(mc))) %>%
+lista_especies <- data.frame(Especies = sort(names(mc)))
+lista_especies %>%
   estilo_kable(titulo = 'Lista de especies', cubre_anchura = F, alinear = 'c') %>% 
   column_spec(column = 1, width = "15em")
 ```
@@ -111,22 +116,49 @@ data.frame(Especies = sort(names(mc))) %>%
 Y esta el número de sitios (hexágonos H3) donde fue reportada cada especie
 
 ```{r}
-data.frame(
+num_sitios_especies <- data.frame(
   `Número de sitios donde fue reportada cada especie` = sort(colSums(mc), decreasing = T),
-           check.names = F) %>%
-  rownames_to_column('Especie') %>% 
+           check.names = F) %>% 
+  rownames_to_column('Especie')
+num_sitios_especies %>%
   estilo_kable(
-    titulo = 'Número de sitios en los que está presente cada especie (orden descendente por número de sitios)', 
+    titulo = paste('Número de sitios en los que está presente cada especie',
+                   '(orden descendente por número de sitios)'), 
+    nombres_filas = F, alinear = 'cr')
+```
+
+La tabla es grande, porque tiene tanta filas como especies. Un extracto podría ser útil en el manuscrito (siempre que lo cites dentro del mismo), por ejemplo, las primeras 10 filas ordenadas descendentemente por número de sitios.
+
+
+```{r}
+num_sitios_especies %>% 
+  slice_head(n = 10) %>%
+  estilo_kable(
+    titulo = paste('Número de sitios en los que estás presentes las 10 especies más comunes',
+                   '(orden descendente por número de sitios)'), 
     nombres_filas = F, alinear = 'cr')
 ```
 
 
+También se puede obtener la riqueza de especies por sitios.
+
 ```{r}
-data.frame(`Riqueza por sitios` = rowSums(mc),
+riqueza_por_sitios <- data.frame(`Riqueza por sitios` = rowSums(mc),
            check.names = F) %>%  rownames_to_column('Sitio') %>% 
-  arrange(desc(`Riqueza por sitios`)) %>% 
+  arrange(desc(`Riqueza por sitios`))
+riqueza_por_sitios %>% 
   estilo_kable(
     titulo = 'Riqueza por sitios (orden descendente por riqueza)', 
+    nombres_filas = F, alinear = 'cr')
+```
+
+Al igual que en casos anteriores, esta tabla podría desbordar la salida, pues en este caso tiene muchas filas. Puedes incluir este tipo de tablas-resumen en tu manucrito siempre que lo consideres relevante en tu texto (tabla que se incluya en el manuscrito, tabla que necesita referencia en el texto). Un buen extracto podría ser seleccionar las primeras filas (sólo lo insertarías en tu manuscrito si lo refieres debidamente); por ejemplo, las primeras 10 filas ordenadas descendentemente en función de la riqueza por sitios, no parecen desbordar mucho el PDF en mi caso.
+
+```{r}
+riqueza_por_sitios %>% 
+  slice_head(n = 10) %>%
+  estilo_kable(
+    titulo = 'Número de especies en los 10 sitios de mayor riqueza (orden descendente por riqueza)', 
     nombres_filas = F, alinear = 'cr')
 ```
 
@@ -138,15 +170,25 @@ grafico_mosaico <- crear_grafico_mosaico_de_mc(mc, tam_rotulo = 8) + xlab('Sitio
 grafico_mosaico
 ```
 
-Si los rótulos del gráfico se superpponen o son ilegibles, puedes probar a exportar el gráfico con este código:
+Si los rótulos del gráfico se superpponen o son ilegibles, puedes probar a exportar el gráfico con este código, integrarlo donde sea conveniente (ver párrafos posteriores):
 
 ```{r}
-jpeg('grafico_mosaico.jpg', width = 4000, height = 3000, res = 300)
+jpeg('grafico_mosaico.jpg', width = 4000, height = 2200, res = 350)
 grafico_mosaico
 graphics.off()
 ```
 
-Revisa el archivo `grafico_mosaico.jpg` y verifica si luce bien. Si luce bien, lo puedes llevar a tu manuscrito. ¡¡¡IMPORTANTE!!! Si estás ejecutando código interactivamente, no olvides ejecutar `graphics.off()` después de ejecutar `jpeg...` y `grafico_mosaico`, pues de lo contrario, el dispositivo gráfico quedará abierto en el archivo JPEG crado, y no se mostrarán más gráficos a continuación en la ventana gráfica.
+Revisa el archivo `grafico_mosaico.jpg` y verifica si luce bien. Si luce bien, lo puedes llevar a tu manuscrito. Juega con los argumentos `width`, `height` y `res` para ajustar el tamaño y la resolución del gráfico.
+
+> ¡¡¡IMPORTANTE!!! Si estás ejecutando código interactivamente, no olvides ejecutar `graphics.off()` después de ejecutar `jpeg...` y `grafico_mosaico`, pues de lo contrario, el dispositivo gráfico quedará abierto en el archivo JPEG creado, y no se mostrarán más gráficos a continuación en la ventana gráfica.
+
+Puedes insertar tu figura de múltiples formas. En la PD01 expliqué al menos dos formas. Esta es una de las que más control te ofrece sobre el gráfico.
+
+```{r grafico_mosaico, echo=F, fig.cap='Distribución de las especies (presencia/ausencia) según sitios'}
+knitr::include_graphics('grafico_mosaico.jpg')
+```
+
+Si tu familia elegida tiene muchas especies, o las especies están presentes en muchos sitios, el gráfico de mosaico podría no ser legible aun cambiando la resolución, anchura y altura. En ese caso, luego de probar opciones, consúltame para que intentemos colocar debidamente en tu manuscrito.
 
 Puedes también generar otros gráficos. En `todos_los_objetos` se encuentran, como su nombre lo indica, todos los objetos creados por el *toolchain* del cuaderno `matrices-de-comunidad-y-ambiental.Rmd` que creé para ti. Uno de ellos consiste en un mapa de distribución de los registros de presencia de GBIF para el taxón, y los hexágonos de la biblioteca H3.
 
@@ -154,6 +196,8 @@ Puedes también generar otros gráficos. En `todos_los_objetos` se encuentran, c
 # Mapa
 todos_los_objetos$aoi_reg_hex_inter_g
 ```
+
+Si notas que los elementos se empastan, prueba crear un JPEG conteniendo el mapa y ajusta el tamaño y la resolución del gráfico, tal como te mostré para el gráfico de mosaico. Si el mapa se ve bien, podrías usar el objeto `todos_los_objetos$aoi_reg_hex_inter_g` para llevarlo a tu manuscrito.
 
 ## Transformar la matriz de comunidad
 
@@ -176,8 +220,9 @@ env <- todos_los_objetos$ma
 env %>% estilo_kable(titulo = 'Matriz ambiental', nombres_filas = T, alinear = 'r')
 ```
 
-La matriz ambiental se compone de `r ncol(env)` variables de tipo numérico, conteniendo el valor de cada variable para cada uno de los `r nrow(env)` sitios. La siguiente tabla y el gráfico muestran un resumen de los estadísticos básicos de la matriz ambiental.
+Al igual que la matriz de comunidad, la ambiental tiene muchas columnas y filas. E, igualmente, no te recomiendo que la incluyas en el documento de manuscrito. Puedes seleccionar columnas al azar o de manera específica usando el índice de columnas (por ejemplo, `colnames(env)`), o usar la alternativa `env %>% View()` para representarla en el visor de RStudio.
 
+La matriz ambiental se compone de `r ncol(env)` variables de tipo numérico, conteniendo el valor de cada variable para cada uno de los `r nrow(env)` sitios. La siguiente tabla y el gráfico muestran un resumen de los estadísticos básicos de la matriz ambiental.
 
 ```{r}
 estad_basicos <- env %>%
@@ -192,7 +237,7 @@ estad_basicos <- env %>%
 estad_basicos %>% estilo_kable(titulo = 'Matriz ambiental', nombres_filas = F, alinear = 'crrrr')
 ```
 
-Se muestra a continuación un diagrama de cajas que sólo incluye un grupo de variables ambientales. Son muchas variables ambientales, y si se incluyen todas, el servidor no aguantaría o el gráfico no sería legible. Es por ello que ves el comando `select(matches('^ESA'))`, el cual selecciona las columnas que comienzan por la cadena de caracteres 'ESA'. El Sufijo de grupo "^ESA", que se refiere a los datos de cobertura del suelo de la Agencia Espacial Europea (ESA 2021, imágenes Sentinel 1 y Sentinel 2 a 10 m de resolucion máximo). Se deben hacer gráficos para otros grupos de variables, ver la lista de grupos posibles en la columna "Sufijo del grupo" de la Tabla 1 de [este HTML](https://geofis.github.io/zonal-statistics/README.html). Otros grupos posibles: CH-BIO, CGL, G90, WCL, entre muchos otros.
+Se muestra a continuación un diagrama de cajas que sólo incluye un grupo de variables ambientales. Son muchas variables ambientales, y si se incluyen todas, el servidor no aguantaría o el gráfico no sería legible. Es por ello que ves el comando `select(matches('^ESA'))`, el cual selecciona las columnas que comienzan por la cadena de caracteres 'ESA'. El Sufijo de grupo "^ESA", que se refiere a los datos de cobertura del suelo de la Agencia Espacial Europea (ESA 2021, imágenes Sentinel 1 y Sentinel 2 a 10 m de resolucion máximo). Se deben hacer gráficos para otros grupos de variables, ver la lista de grupos posibles en la columna "Sufijo del grupo" de la Tabla 1 de [este HTML](https://geofis.github.io/zonal-statistics/README.html). Otros grupos posibles son `r vector_a_lista(grep('ESA', gsub(' .*', '', colnames(env)) %>% unique(), invert = T, value = T))`. ES IMPRESCINDIBLE que visites el enlace anterior por dos razones: 1) Para que te ayude a comprender mejor las múltiples variables disponibles y cómo fueron estas derivadas; 2) Para que puedas citar debidamente cada fuente usada, pues no deberías quedarte sólo en citar mi repo, sino también, las fuentes originales.
 
 ```{r}
 env %>%
@@ -240,7 +285,26 @@ invisible(map(names(lista_cl), function(x) plot(lista_cl[[x]], main = paste0(x, 
 par(mfrow = c(1,1))
 ```
 
-A continuación, **calcularé la distancia y la correlación cofenéticas; esta última, la correlación cofenética,se utiliza como criterio flexible para elegir el método de agrupamiento idóneo, pero no debe usarse de manera estricta**. Se supone que el método con la mayor correlación cofenética explica mejor el agrupamiento de la comunidad. Si quieres comprender mejor esta técnica, consulta el vídeo que te referí en el párrafo anterior, así como los libros de referencia. Normalmente, el método UPGMA obtiene la mayor correlación cofenética, pero esto se debe a que su procedimiento de obtención maximiza precisamente dicha métrica. No es recomendable conservar un único método de agrupamiento, normalmente es bueno usar al menos dos. Ward es muchas veces recomendado como método de contraste, por basarse en procedimientos de cálculo muy distintos a los de UPGMA.
+Es probable que el árbol anterior no sea legible, o que se produzca un error si estás ejecutando código en la consola. En ese caso, te recomiendo que intentes guardar el árbol como archivo JPEG, y así lo podrás ver con claridad. Esto se haría de la misma forma que hice con el gráfico de mosaicos:
+
+```{r}
+jpeg('arboles_todos.jpg', width = 4000, height = 2200, res = 350)
+par(mfrow = c(2,2))
+invisible(
+  map(names(lista_cl),
+      function(x)
+        plot(lista_cl[[x]], main = paste0(x, '\n(árbol de evaluación)'), hang = -1)))
+graphics.off()
+```
+
+Para insertarlo, uso este bloque de código (nota que me refiero a Acanthaceae en el título o "*caption*", pero debes editar):
+
+```{r arboles_todos, echo=F, fig.cap='Agrupamiento jerárquico de sitios (hexágonos H3) en función de su riqueza de especies de Acanthaceae'}
+knitr::include_graphics('arboles_todos.jpg')
+```
+
+
+A continuación, **calcularé la distancia y la correlación cofenéticas; esta última, la correlación cofenética, se emplea como criterio flexible para elegir el método de agrupamiento idóneo, pero no debe usarse de manera estricta**. Se supone que el método con la mayor correlación cofenética explica mejor el agrupamiento de la comunidad. Si quieres comprender mejor esta técnica, consulta el vídeo que te referí en el párrafo anterior, así como los libros de referencia. Normalmente, el método UPGMA obtiene la mayor correlación cofenética, pero esto se debe a que su procedimiento de obtención maximiza precisamente dicha métrica. No es recomendable conservar un único método de agrupamiento, normalmente es bueno usar al menos dos. Ward es muchas veces recomendado como método de contraste, por basarse en procedimientos de cálculo muy distintos a los de UPGMA.
 
 ```{r}
 map_df(lista_cl, function(x) {
@@ -256,12 +320,12 @@ map_df(lista_cl, function(x) {
 
 ## Anchura de siluetas
 
-Ahora, calcularé **las anchuras de silueta, una métrica que ayuda a determinar en cuántos grupos se organiza la comunidad; las anchuras de silueta no deben usarse como método estricto, y sólo debe usarse de forma flexible para informarnos sobre el número máximo de grupos posibles**. Considera las siguientes reglas:
+Ahora, calcularé **las anchuras de siluetas, una métrica que ayuda a determinar en cuántos grupos se organiza la comunidad; las anchuras de silueta no deben usarse como método estricto, y sólo debe usarse de forma flexible para informarnos sobre el número máximo de grupos posibles**. Considera las siguientes reglas:
 
   - El número ideal es 3 grupos, de 4 a 5 grupos es aceptable, 6 o más grupos se considera difícil de interpretar, o es un resultado poco útil; 1 grupo es un resultado sin sentido.
   - Si obtienes distintos grupos, **pero uno o varios están compuestos por un único sitio, observa qué ocurre en ese sitio**, pues es probable que contenga especie raras sólo presentes en él. En este caso, es recomendable explorar dos alternativas para evitar el grupo formado por un único sitio: ver qué ocurre usando distintos métodos o elegir cortar el árbol en un número de grupos menor.
 
-### Anchuras de siluetas para método UPGMA
+### Anchuras de siluetas para el método UPGMA
 
 ```{r}
 # UPGMA
@@ -277,9 +341,9 @@ rect.hclust(
 resultado_evaluacion_upgma <- evaluar_arbol(u_dend_reord, anch_sil_upgma$n_grupos_optimo)
 ```
 
-Tras cortar el árbol, la evaluación practicada concluyó lo siguiente: **"`r resultado_evaluacion_upgma`"**
+Tras cortar el árbol, la evaluación practicada concluyó lo siguiente: **"`r resultado_evaluacion_upgma`"**.
 
-### Anchuras de siluetas para método Ward
+### Anchuras de siluetas para el método Ward
 
 ```{r}
 # Ward
@@ -296,6 +360,8 @@ resultado_evaluacion_ward <- evaluar_arbol(w_dend_reord, anch_sil_ward$n_grupos_
 ```
 
 Tras cortar el árbol, la evaluación practicada concluyó lo siguiente: "`r resultado_evaluacion_ward`".
+
+Observa cómo se comporta el agrupamiento con otros métodos de evaluación, como el remuestreo por *bootstrap* multiescalar.
 
 ## Remuestreo por *bootstrap* multiescalar
 
@@ -319,6 +385,8 @@ lines(cl_pvclust_upgma)
 pvrect(cl_pvclust_upgma, alpha = 0.90, border = 4)
 ```
 
+> Nota: al igual que en casos anteriores, si el gráfico es ilegible, opta por convertirlo a JPEG.
+
 Lo aplicaré también al árbol generado por el método Ward.
 
 ```{r}
@@ -339,7 +407,8 @@ pvrect(cl_pvclust_ward, alpha = 0.91, border = 4)
 
 ## Conclusión sobre selección de método de agrupamiento y número de grupos
 
-Basado en lo anterior, elegiré un método de agrupamiento y un número de grupos, y lo exportaré a un archivo que posteriormente podré reaprovechar. La lógica empleada para elegir método de agrupamiento y número de grupos, es la siguiente: si el árbol generado por el método UPGMA no es recomendable (por tener grupos formados 2 o menos elementos), pero Ward sí, se usar el árbol generado por el método Ward y el número de grupos idóneo sugerido por la anchura de silueta. Si UPGMA es recomendable pero Ward no lo es, se usar el árbol generado por el método UPGMA, cortado en el número de grupos sugerido por la anchura de siluetas. Si ambos métodos son recomendables y sugieren el mismo número de grupos, se opta por el arbol generado por el método Ward. Si ambos métodos son recomendables pero sugieren un número diferente de grupos, se elige el método que sugiere menos grupos. Finalmente, si ambos métodos, UPGMA y Ward, resultan ser poco idóneos porque generan grupos muy pequeños (dos o menos elementos), se opta, como último recurso, por elegir el árbol generado por el método Ward cortado en 3 grupos.
+Basado en lo anterior, elegiré un método de agrupamiento y un número de grupos, y lo exportaré a un archivo que posteriormente podré reaprovechar. La lógica empleada para elegir método de agrupamiento y número de grupos, es la siguiente: si el árbol generado por el método UPGMA no es recomendable (por tener grupos formados 2 o menos elementos), pero Ward sí, se usar el árbol generado por el método Ward y el número de grupos idóneo sugerido por la anchura de silueta. Si UPGMA es recomendable pero Ward no lo es, se usar el árbol generado por el método UPGMA, cortado en el número de grupos sugerido por la anchura de siluetas. Si ambos métodos son recomendables y sugieren el mismo número de grupos, se opta por el arbol generado por el método Ward. Si ambos métodos son recomendables pero sugieren un número diferente de grupos, se elige el método que sugiere menos grupos. Finalmente, si ambos métodos, UPGMA y Ward, resultan ser poco idóneos porque generan grupos muy pequeños (dos o menos elementos), se opta, como último recurso, por aplicar una alternativa "dura", que consiste en elegir el árbol generado por el método Ward cortado en 3 grupos. Este último recurso es normalmente una decisión de salvación final, porque siempre es preferible elegir un método de agrupamiento y un número de grupos usando criterios cuantitativos. Sin embargo, en caso de recurrir a la elección "dura", ésta debe justificarse expresamente en el manuscrito
+
 
 ```{r}
 grupos_seleccionados <- seleccionar_y_cortar_arbol(
@@ -380,9 +449,9 @@ plot(
 
 ## Grupos (clústers), variables ambientales
 
-Apliquemos el análisis de agrupamiento a la matriz ambiental. La clave en este punto es que, si la matriz ambiental presenta patrones parecidos a los de la matriz de comunidad, significa que el agrupamiento utilizado hace sentido entre ambos conjuntos de datos (comunidad y hábitat) de forma consistente. Si ambos conjuntos de datos son consistentes, significa que existe algún grado de asociación, aunque sea sólo una mera asociación estadística.
+Apliquemos el análisis de agrupamiento a la matriz ambiental. La idea central en este punto es que, si la matriz ambiental presenta patrones parecidos a los de la matriz de comunidad, significa que el agrupamiento utilizado hace sentido entre ambos conjuntos de datos (comunidad y hábitat) de forma consistente. Si ambos conjuntos de datos son consistentes, significa que existe algún grado de asociación, aunque sea sólo una mera asociación estadística. Por extensión, el hecho de que ambas matrices presenten patrones parecidos, significa que una podría tener poder explicativo sobre la otra (y viceversea), es decir, que las variables ambientales podrían ayudar a explicar la distribución de las especies de la familia elegida.
 
-Agrupar los sitios de muestreo de la matriz ambiental según los grupos previamente definidos.
+Agruparé los sitios de muestreo de la matriz ambiental según los grupos previamente definidos.
 
 ```{r}
 env_grupos <- env %>%
@@ -401,26 +470,83 @@ env_grupos_ak <- env_grupos %>%
     p_valor_k = tryCatch(kruskal.test(valor ~ grupos)$p.value, error = function(e) NA)
     ) %>%
   arrange(p_valor_a)
-env_grupos_ak %>% estilo_kable(alinear = 'crr')
+# env_grupos_ak %>% estilo_kable(alinear = 'crr')
+env_grupos_ak %>%
+  datatable(options = list(pageLength = 140, autoWidth = FALSE),
+            filter = 'top',) %>% 
+  formatSignif(columns = "p_valor_a", digits = 1) %>%
+  formatSignif(columns = "p_valor_k", digits = 1)
 ```
 
-Explora tus resultados.
+Interesan especialmente, aquellas variables que presentan efecto entre los grupos. En concreto, aquellas en las que la prueba de Kruskal-Wallis resulta significativa, pues esta prueba es más robusta que la ANOVA en ausencia normalidad y homocedasticidad. Se puede filtrar el resultado de la tabla anterior para mostrar sólo aquellas variables en las que la prueba de Kruskal-Wallis resulta significativa (nota que en la tabla anterior también puedes filtrar de forma interactiva).
+
+
+```{r}
+env_grupos_ak %>% 
+  filter(p_valor_k < umbral_alfa) %>%
+  datatable(options = list(pageLength = 140, autoWidth = FALSE),
+            filter = 'top',) %>% 
+  formatSignif(columns = "p_valor_a", digits = 1) %>%
+  formatSignif(columns = "p_valor_k", digits = 1)
+```
+
+En el ejemplo analizado, nota que las variables que muestran efecto son bioclimáticas (CH-BIO, WCL), horas de insolación, distancia a carretera (¿sesgo de muestreo?), algunas variables de cobertura del suelo (ESA, CGL) y otras de topografía/geomorfología (G90).
+
+
+Explora tus resultados también gráficamente, usando un panel de diagramas de cajas.
 
 ```{r, fig.width=9, fig.height=4.5, dpi=300}
-env_grupos %>% 
-        group_by(variable) %>% 
-        ggplot() + aes(x = grupos, y = valor, group = grupos, fill = grupos) + 
-        geom_boxplot(lwd = 0.2) + 
-        scale_fill_brewer(palette = 'Set1') +
-        theme_bw() +
-        theme(legend.position="none") +
-        facet_wrap(~ variable, scales = 'free_y', ncol = 8)
+env_grupos_p <- env_grupos %>% 
+  group_by(variable) %>% 
+  ggplot() + aes(x = grupos, y = valor, group = grupos, fill = grupos) + 
+  geom_boxplot(lwd = 0.2) + 
+  scale_fill_brewer(palette = 'Set1') +
+  theme_bw() +
+  theme(legend.position="none") +
+  facet_wrap(
+    ~ variable, 
+    scales = 'free_y',
+    ncol = 8, 
+    labeller = labeller(
+      variable = function(x)
+        str_trunc(x, width = 45, ellipsis = '...')))
+env_grupos_p
 ```
+
+El gráfico anterior, seguramente será ilegible en la pestaña de gráficos de RStudio, pero puedes hacerlo legible exportándolo como JPEG (los nombres de cada *facet* corresponde a cada una de las 140 variables, pero están truncados a partir del caracter 45; para ver los nombres completos, usa `unique(env_grupos$variable)` en la consola de R; el significado de cada variable se encuentra en el [repo fuente](https://geofis.github.io/zonal-statistics/README.html)):
+
+```{r}
+jpeg('env_grupos_p.jpg', width = 3000, height = 4000, res = 100)
+print(env_grupos_p)
+graphics.off()
+```
+
+Para insertarlo, uso este bloque de código (nota que me refiero a Acanthaceae en el título o "*caption*", pero debes editar):
+
+```{r env_grupos_p, echo=F, fig.cap='Variables ambientales de República Dominicana según agrupamiento de sitios en función de su riqueza de especies de Acanthaceae'}
+knitr::include_graphics('env_grupos_p.jpg')
+```
+
+Es útil representar, cartográficamente, los grupos de hexágonos en función de su riqueza de especies de la familia eleida, en este caso, Acanthaceae. Este código lo muestra.
+
+```{r}
+# Mapa
+todos_los_objetos$aoi_reg_hex_inter_g$layers[[2]]$data %>% left_join(
+  env_grupos %>%
+    select(h3_address = sitios_de_muestreo, grupos) %>%
+    as.data.frame()) %>%
+  ggplot() +
+  aes(fill = grupos) +
+  geom_sf(data = todos_los_objetos$aoi_reg_hex_inter_g$data, fill = NA) +
+  geom_sf() +
+  scale_fill_brewer(palette = 'Set1') +
+  theme_bw()
+```
+
 
 El objetivo de adjuntarle, a la matriz ambiental, el vector de agrupamiento generado a partir de datos de comunidad, consiste en caracterizar ambientalmente los hábitats de los subgrupos diferenciados según su composición. Observa los resultados de las pruebas estadísticas, de los diagramas de caja, y explora tus resultados:
 
 ## Especies con preferencia/fidelidad con grupos (clústers)
-
 
 Análisis de preferencia/fidelidad de especies con grupos (clusters), mediante el coeficiente de correlación biserial puntual (*phi*).
 
@@ -557,7 +683,7 @@ rda_mc_t_sc1 <- scores(rda_mc_t,
          scaling = escalado,
          display = "sp"
   )
-# text(mi_fam_t_rda, "species", col="red", cex=0.8, scaling=escalado)
+text(rda_mc_t, "species", col="red", cex=0.8, scaling=escalado)
 arrows(0, 0,
        rda_mc_t_sc1[, 1] * 0.9,
        rda_mc_t_sc1[, 2] * 0.9,
@@ -567,11 +693,14 @@ arrows(0, 0,
 )
 ```
 
+El gráfico, casi seguramente, es ilegible. Recuerda que puedes exportarlo como JPEG usando cualquiera de los casos de uso anteriores.
+
 # Análisis de diversidad + análisis de agrupamiento abreviado
 
 Me basaré en los scripts que comienzan por `di_` de este [repo](https://github.com/biogeografia-master/scripts-de-analisis-BCI), los cuales explico en los vídeos de "Análisis de diversidad" (vídeos 19 y 20) de la lista de reproducción ["Ecología Numérica con R" de mi canal](https://www.youtube.com/playlist?list=PLDcT2n8UzsCRDqjqSeqHI1wsiNOqpYmsJ). Dichos vídeos tienen aplicaciones ligeramente diferentes, pues los datos fuente usados en ellos son de abundancia, mientras que los tuyos son de presencia/ausencia.
 
 ```{r, include=F}
+# Necesitamos que las cadenas sean de tipo factor para que el código siguiente funcione bien
 options(stringsAsFactors = FALSE)
 ```
 
@@ -596,6 +725,7 @@ El objeto `mc` es la matriz de comunidad de presecia/ausencia. La función `alph
 
 ```{r}
 indices %>% 
+  select(sitio, N0, H, Hb2) %>%
   kable(booktabs=T) %>%
   kable_styling(latex_options = c("HOLD_position", "scale_down")) %>%
   gsub(' NA |NaN ', '', .) #Lista de especies
@@ -605,10 +735,59 @@ Los sitios ordenados en función de su riqueza:
 
 ```{r}
 indices %>%
+  select(sitio, N0, H, Hb2) %>%
   arrange(desc(N0)) %>% 
   kable(booktabs=T) %>%
   kable_styling(latex_options = c("HOLD_position", "scale_down")) %>%
   gsub(' NA |NaN ', '', .) #Lista de especies
+```
+
+Mapas representando la riqueza (N0) y los índices H y Hb2
+
+```{r}
+# Mapa para N0
+mapa_para_n0 <- todos_los_objetos$aoi_reg_hex_inter_g$layers[[2]]$data %>% left_join(
+  indices %>%
+    select(h3_address = sitio, N0) %>%
+    as.data.frame()) %>%
+  ggplot() +
+  aes(fill = N0) +
+  geom_sf(data = todos_los_objetos$aoi_reg_hex_inter_g$data, fill = NA) +
+  geom_sf() +
+  scale_fill_viridis_c(na.value = NA) +
+  theme_bw()
+mapa_para_n0
+```
+
+```{r}
+# Mapa para H
+mapa_para_h <- todos_los_objetos$aoi_reg_hex_inter_g$layers[[2]]$data %>% left_join(
+  indices %>%
+    select(h3_address = sitio, H) %>%
+    as.data.frame()) %>%
+  ggplot() +
+  aes(fill = H) +
+  geom_sf(data = todos_los_objetos$aoi_reg_hex_inter_g$data, fill = NA) +
+  geom_sf() +
+  scale_fill_viridis_c(na.value = NA) +
+  theme_bw()
+mapa_para_h
+```
+
+
+```{r}
+# Mapa para Hb2
+mapa_para_hb2 <- todos_los_objetos$aoi_reg_hex_inter_g$layers[[2]]$data %>% left_join(
+  indices %>%
+    select(h3_address = sitio, Hb2) %>%
+    as.data.frame()) %>%
+  ggplot() +
+  aes(fill = Hb2) +
+  geom_sf(data = todos_los_objetos$aoi_reg_hex_inter_g$data, fill = NA) +
+  geom_sf() +
+  scale_fill_viridis_c(na.value = NA) +
+  theme_bw()
+mapa_para_hb2
 ```
 
 ## Evaluar correlación entre riqueza y variables ambientales mediante matriz de correlación.
@@ -624,16 +803,17 @@ En el bloque siguiente, represento gráficamente la correlación entre la riquez
 - En el "triángulo inferior", que es un espejo del superior, se sitúan los gráficos de dispersión de las variables intersectadas. Si los puntos siguen un patrón de distribución formando una elipse imaginaria (organizados en torno a una línea recta imaginaria inclinada), entonces existe correlación.
 
 ```{r, out.width='100%'}
-bind_cols(indices %>% select(N0), env %>%
-            select(matches('^ESA')) %>% 
+panel_cor_riq_ch_bio <- bind_cols(indices %>% select(N0), env %>%
+            select(matches('^CH-BIO')) %>% 
             rename_with(.fn = ~ paste0('AMB_', .))) %>%
   ggpairs(
     labeller = label_wrap_gen(width=10),
     upper = list(continuous = GGally::wrap("cor", size = 3))) +
   theme(text = element_text(size = 10))
+panel_cor_riq_ch_bio
 ```
 
-Nota que el panel de correlación anterior sólo incluye un grupo de variables ambientales. Son muchas variables ambientales, y si se incluyen todas, el servidor no aguantaría. Es por ello que ves el comando `select(matches('^ESA'))`, el cual selecciona las columnas que comienzan por la cadena de caracteres 'ESA'. Como bien explique arriba, 'ESA' se refiere a los datos de cobertura del suelo de la Agencia Espacial Europea (ESA 2021, imágenes Sentinel 1 y Sentinel 2 a 10 m de resolucion máximo). Se deben hacer más paneles de correlación para otros grupos de variables, ver la lista de grupos posibles en la columna "Sufijo del grupo" de la Tabla 1 de [este HTML](https://geofis.github.io/zonal-statistics/README.html). Otros grupos posibles: CH-BIO, CGL, G90, WCL, entre muchos otros.
+Nota que el panel de correlación anterior sólo incluye un grupo de variables ambientales. Son muchas variables ambientales, y si se incluyen todas, el servidor no aguantaría. Es por ello que ves el comando `select(matches('^CH-BIO'))`, el cual selecciona las columnas que comienzan por la cadena de caracteres 'CH-BIO'. 'CH-BIO' se refiere a variables bioclimáticas del dataset CHELSA, 'WCL' son datos bioclimáticos del dataset WorldClim, 'ESA' se refiere a los datos de cobertura del suelo de la Agencia Espacial Europea (ESA 2021, imágenes Sentinel 1 y Sentinel 2 a 10 m de resolucion máximo), y así sucesivamente. Se deben hacer más paneles de correlación para otros grupos de variables, ver la lista de grupos posibles en la columna "Sufijo del grupo" de la Tabla 1 de [este HTML](https://geofis.github.io/zonal-statistics/README.html). Otros grupos posibles: CGL, G90, WCL, entre muchos otros. Tte convendrá elegir grupos donde hayas visto que las variables ambientales presentan efectos entre grupos, a partir de los resultados del análisis de Kruskal-Walis. Y como siempre, puedes exportar el panel como JPEG para mejorar su legibilidad.
 
 ## "Completitud de muestra" y curva de acumulación
 
@@ -648,45 +828,29 @@ riqueza_estimaciones <- data.frame(specpool(mc) %>% select(-matches('.se$'))) %>
          `Estimación por jackknife de segundo orden` = jack2,
          `Estimación por bootstrap` = boot) %>% 
   pivot_longer(cols = everything(), names_to = 'Variable', values_to = 'Valor') %>%
-  mutate(`Cobertura (%)` = Valor / (filter(., Variable == "Riqueza observada") %>% pull(Valor)) * 100) %>% 
+  mutate(`Cobertura (%)` = (filter(., Variable == "Riqueza observada") %>% pull(Valor)) / Valor * 100) %>% 
   mutate(`Cobertura (%)` = ifelse(Variable %in% c('Riqueza observada', 'Número de sitios'), NA, `Cobertura (%)`))
 riqueza_estimaciones %>% estilo_kable(alinear = 'lrr')
 ```
 
+Curva de acumulación de especies. La curva de acumulación de especies es una representación gráfica de la riqueza de especies en función del número de sitios muestreados. La curva de acumulación de especies es una herramienta útil para evaluar la eficacia de muestreo y la completitud de inventarios de biodiversidad. En general, se considera que una curva de acumulación de especies que se estabiliza indica que el muestreo ha sido suficiente para capturar la mayoría de las especies presentes en un área. En cambio, una curva que no se estabiliza sugiere que se necesitan más esfuerzos de muestreo para capturar la diversidad total de especies presentes en un área.
 
+A continuación, el análisis de estimación de riqueza de especies en la comunidad con índices mejorados de Chao.
 
 ```{r, eval=F}
-# Bug no resuelto:
-# Error in if (var_mle > 0) { : valor ausente donde TRUE/FALSE es necesario
-# Varios intentos frustrados por lograr que funcione. Entiendo que el problema
+df_spader <- data.frame(V1 = as.integer(c(nrow(mc), colSums(mc))))
+df_spader
+ChaoSpecies(df_spader, datatype = 'incidence_freq',
+            k = min(df_spader$V1), conf=0.95)
+# Podría aparecer el siguiente error:
+# "Error in if (var_mle > 0) { : valor ausente donde TRUE/FALSE es necesario"
+# "ENG: Error in if (var_mle > 0) { : missing value where TRUE/FALSE needed"
+# Si aparece, sólo comentar que entiendo que el problema
 # está en el número de doubletons (la matriz no tiene), pero no logré mejorar
 # la función interna SpecInciHomo para solucionarlo. La versión de SpadeR usada
 # en la aplicación Shiny https://chao.shinyapps.io/SpadeR/, no es la misma que 
 # la que se encuentra en GitHub ni en el CRAN, pues esa no tiene bug.
-df_spader <- data.frame(V1 = as.integer(c(nrow(mc), colSums(mc))))
-# También se puede crear con esta línea:
-# df_spader <- structure(
-#   list(V1 = c(15, 8, 9, 10, 9, 8, 9, 9, 8, 8, 6, 12, 9)),
-#   class = "data.frame", row.names = c(NA, -13L))
-df_spader
-#  V1
-#  15
-#   8
-#   9
-#  10
-#   9
-#   8
-#   9
-#   9
-#   8
-#   8
-#   6
-#  12
-#   9
-ChaoSpecies(df_spader, datatype = 'incidence_freq',
-            k = min(df_spader$V1), conf=0.95)
-# Error in if (var_mle > 0) { : valor ausente donde TRUE/FALSE es necesario
-# ENG: Error in if (var_mle > 0) { : missing value where TRUE/FALSE needed
+# No es un análisis crítico, pero si lo necesitas, puedes usar la aplicación Shiny.
 ```
 
 Graficaré la curva de acumulación de especies.
@@ -700,7 +864,7 @@ mc_general <- mc %>%
 nasin_raref <- iNEXT::iNEXT(
   x = t(mc_general),
   q=0,
-  knots = 2000,
+  knots = 500,
   datatype = 'incidence_freq')
 acumulacion_especies <- iNEXT::ggiNEXT(nasin_raref, type=1) +
   theme_bw() +
@@ -725,14 +889,15 @@ mc_grupos <- mc %>%
   mutate(g = grupos_seleccionados) %>%
   group_by(g) %>%
   summarise_all(sum) %>%
-  select(-g) %>% 
-  mutate(N = nrow(mc)) %>% 
-  relocate(N, .before = 1) %>% 
+  # select(-g) %>%
+  mutate(N = nrow(mc)) %>%
+  relocate(N, .before = 1) %>%
+  column_to_rownames('g') %>% 
   data.frame
 nasin_raref_general <- iNEXT::iNEXT(
   x = t(mc_grupos),
   q=0,
-  knots = 400,
+  knots = 100,
   datatype = 'incidence_freq')
 acumulacion_especies_grupos <- iNEXT::ggiNEXT(nasin_raref_general, type=1) +
   theme_bw() +
@@ -759,7 +924,6 @@ determinar_contrib_local_y_especie(
     nperm = 9999,
     metodo = 'sorensen')
 ```
-
 
 
 # Referencias

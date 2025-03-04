@@ -135,8 +135,11 @@ generar_ma <- function(
 # Función para generar las matrices de comunidad y ambiental a partir de las anteriores
 generar_mc_ma <- function(
     taxon,
+    archivo_reg_pres = F,
+    ruta_archivo_reg_pres = NULL,
     resolucion = 5,
     exportar_sf = F,
+    col_species_como_acceptedScientificName = F,
     dir_salidas_rds = 'salidas_RDS/',
     dir_salidas_sf = 'salidas_sf/',
     extension_sf = '.kml',
@@ -145,13 +148,21 @@ generar_mc_ma <- function(
     min_num_spp_hex = 3, #Mínimo número de especies por hexágono
     min_num_hex_sp = 3, #Mínimo número de hexágonos donde cada especie debe estar presente
     exportar_ma = T,
-    dir_salidas_ma = 'salidas_ma/'
+    dir_salidas_ma = 'salidas_ma/',
+    espera = 10
     ) {
   cat('\n\n### CREANDO ÍNDICE ESPACIAL H3 EN EL ÁREA DE INTERES (AOI) ###\n')
   ind_esp_aoi <- crear_ind_esp_aoi(resolucion = resolucion)
-  cat('\n\n### DESCARGANDO REGISTROS DE PRESENCIA DEL TAXÓN', taxon, 'DESDE GBIF ###\n')
-  reg_pres <- descargar_reg_pres_gbif(taxon = taxon)
-  Sys.sleep(10)
+  cat('\n\n### DESCARGANDO O IMPORTANDO REGISTROS DE PRESENCIA DEL TAXÓN', taxon, 'DESDE GBIF ###\n')
+  if(archivo_reg_pres) {
+    reg_pres <- read_delim(ruta_archivo_reg_pres)
+  } else {
+    reg_pres <- descargar_reg_pres_gbif(taxon = taxon)
+  }
+  Sys.sleep(espera)
+  if(col_species_como_acceptedScientificName) {
+    reg_pres <- reg_pres %>% rename(acceptedScientificName = species)
+  }
   cat('\n\n### LIMPIANDO REGISTROS DE PRESENCIA DEL TAXÓN ###\n')
   reg_pres_limpios <- limpiar_reg_pres(reg_pres)
   cat('\n\n### CONVIRTIENDO REGISTROS DE PRESENCIA A OBJETO sf ###\n')
@@ -173,10 +184,16 @@ generar_mc_ma <- function(
   if(exportar_sf) {
     cat('\n\n### GENERANDO SALIDAS .RDS DE LOS REGISTROS INTERSECTADOS Y EL ÍNDICE ESPACIAL ###\n')
     if(!dir.exists(dir_salidas_sf)) dir.create(dir_salidas_sf)
+    # Comprobando si la columna 'networkKeys' existe en el data.frame
+    if("networkKeys" %in% names(reg_hex_inter)) {
+      reg_hex_inter <- reg_hex_inter %>% select(-networkKeys)
+    }
+    # Ahora guardamos el objeto sin la columna 'networkKeys' (si existía)
     st_write(
-      obj = reg_hex_inter %>% select(-networkKeys),
+      obj = reg_hex_inter,
       dsn = paste0(dir_salidas_sf, 'reg_hex_inter_', taxon, extension_sf),
-      delete_dsn = T)
+      delete_dsn = T
+    )
     st_write(
       obj = ind_esp_aoi$ind_esp,
       dsn = paste0(dir_salidas_sf, 'ind_esp_', taxon, extension_sf),

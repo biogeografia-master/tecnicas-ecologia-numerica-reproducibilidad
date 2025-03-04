@@ -1,5 +1,5 @@
 ---
-title: "Apoyo para la preparación de datos de la PD02: matriz de comunidad y matriz ambiental<small><br>Biogeografía (GEO-131)<br>Universidad Autónoma de Santo Domingo (UASD)<br>Semestre 2024-02</small>"
+title: "Apoyo para la preparación de datos de la PD02: matriz de comunidad y matriz ambiental<small><br>Biogeografía (GEO-131)<br>Universidad Autónoma de Santo Domingo (UASD)<br>Semestre 2025-01</small>"
 author: "El Tali"
 date: "`r format(Sys.Date(), '%Y-%m-%d')`"
 output:
@@ -99,7 +99,7 @@ Finalmente, un método de la función `summary` genera un resumen básico de los
 summary.mc_ma(acanthaceae, nombres_cortos = F, tamano_rotulo = 6)
 ```
 
-# De forma masiva, 20 familias bien representada en GBIF para RD
+# Procesamiento por lotes de múltiples familias bien representada en GBIF para RD
 
 ## Selección de familias
 
@@ -119,41 +119,64 @@ fam_sel <- c('Acanthaceae',
              'Euphorbiaceae',
              'Tyrannidae',
              'Thraupidae',
-             'Trochilidae',
              'Phyllostomidae',
              'Eleutherodactylidae',
              'Nymphalidae',
-             'Orthoptera'
+             'Dactyloidae',
+             'Formicidae',
+             'Sphaerodactylidae',
+             'Leiocephalidae',
+             'Curculionidae',
+             'Cathartidae',
+             'Columbidae',
+             'Malvaceae',
+             'Erebidae',
+             'Apocynaceae'
 )
 fam_sel <- sort(fam_sel)
 ```
 
 ## Evaluar la función propiamente (*be careful*)
 
-El cometido de este bloque de abajo fue realizar una consulta "masiva" a la base de datos de GBIF y obtener registros de presencia para 20 familias de plantas y animales bien representadas en RD, los cuales son requeridos para realizar la práctica PD02 y se encuentran en los directorios `salidas_*`. Por lo tanto, no es necesario re-ejecutar este bloque, sólo se deja aquí para fines de reproducibilidad.
+El cometido de este bloque de abajo fue realizar una consulta "masiva" a la base de datos de GBIF y obtener registros de presencia para múltiples familias de plantas y animales bien representadas en RD, los cuales son requeridos para realizar la práctica PD02 y se encuentran en los directorios `salidas_*`. Por lo tanto, no es necesario re-ejecutar este bloque, sólo se deja aquí para fines de reproducibilidad.
 
 La consulta tomó varios minutos, y ocupó una buena porción de la RAM. Dado lo compleja de esta operación, la evaluación no se ejecutó con el tejido de este cuaderno (en el RMarkdown, el encabezado del código tiene `eval=F`), sino que se realizó de forma directa ejecutando el bloque de código.
 
-El "*be careful*" en el título está dirigido a personas que tuviesen interés de ejecutar este bloque por cuenta propia (e.g. para otra selección de familias), en cuyo caso hay que tener cuidado de seleccionar apropiadamente un número razonablemente pequeño de familias.
+El "*be careful*" en el título está dirigido a personas que tuviesen interés por ejecutar este bloque por cuenta propia (e.g. para otra selección de familias), en cuyo caso hay que tener cuidado de seleccionar apropiadamente un número razonablemente pequeño de familias.
 
 ```{r, eval=F, warning=F, message=F}
-mc_ma_familias_seleccionadas_l <- sapply(fam_sel, function(x) {
-  tryCatch(
-    {
-      generar_mc_ma(
-        taxon = x,
-        exportar_sf = TRUE,
-        exportar_mc = TRUE
-      )
-    },
-    error = function(e) {
-      message(paste("Error en la familia:", x, ":", e$message))
-      return(NULL)  # Retorna NULL en caso de error
-    })
-  }, simplify = FALSE)
-saveRDS(
-  object = mc_ma_familias_seleccionadas_l,
-  file = 'salidas_RDS/todos_los_objetos_todas_las_familias.RDS') # Añadido al .gitignore
+# mc_ma_familias_seleccionadas_l <- sapply(fam_sel, function(x) {
+#   tryCatch(
+#     {
+#       generar_mc_ma(
+#         taxon = x,
+#         exportar_sf = TRUE,
+#         exportar_mc = TRUE
+#       )
+#     },
+#     error = function(e) {
+#       message(paste("Error en la familia:", x, ":", e$message))
+#       return(NULL)  # Retorna NULL en caso de error
+#     })
+#   }, simplify = FALSE)
+# saveRDS(
+#   object = mc_ma_familias_seleccionadas_l,
+#   file = 'salidas_RDS/todos_los_objetos_todas_las_familias.RDS') # Añadido al .gitignore
+# # Cathartidae y Dactyloidae no funcionaron, descargados por separado
+# cathartidae <- generar_mc_ma(
+#   taxon = 'Cathartidae',
+#   exportar_sf = T,
+#   exportar_mc = T)
+# dactyloidae <- generar_mc_ma(
+#   taxon = 'Dactyloidae',
+#   archivo_reg_pres = T,
+#   ruta_archivo_reg_pres = 'ignorar/0002860-250227182400228.csv',
+#   col_species_como_acceptedScientificName = T,
+#   exportar_sf = T,
+#   exportar_mc = T)
+# Nota: quien use Dactyloidae debe ser consciente de que el archivo de registros de presencia
+# usado contenía sólo una columna "species" y no una "acceptedScientificName", lo cual
+# no es lo ideal, pero es lo que se tiene.
 ```
 
 Al realizar la operación masiva anterior, se producen los mismos archivos que produje para el caso de la familia Acanthaceae, a saber: `salidas_RDS`, `salidas_sf`, `salidas_mc` y `salidas_ma`. Los archivos `.kml`, que se guardan en el directorio `salidas_sf` no se incluyeron en esta operación masiva `.kml`, porque son muy grandes (los generé pero no los subí al repo remoto para garantizar la manejabilidad). Recomiendo usar los archivos por familias del directorio `salidas_RDS`, y si se necesitase un `.kml` de registros de presencia depurados, generarlo al momento con el siguiente código (ejemplo para Acanthaceae):
@@ -175,11 +198,14 @@ A continuación se incluyen algunos resúmenes básicos de todas las familias.
 registros_desde_rds <- sapply(
   X = fam_sel,
   function(x) {
-    readRDS(paste0('salidas_RDS/reg_hex_inter_', x, '.RDS'))
-  })
-as.data.frame(sapply(registros_desde_rds, nrow)) %>% 
-  rownames_to_column('Familia') %>% 
-  rename(`Número de registros de presencia en GBIF (limpios)` = names(.)[2]) %>% 
+    nrow(readRDS(paste0('salidas_RDS/reg_hex_inter_', x, '.RDS')))
+  }, simplify = F)
+plyr::ldply(
+  registros_desde_rds) %>%
+  setNames(
+    c(
+      'Familia',
+      'Número de registros de presencia en GBIF (limpios)')) %>% 
   kable()
 ```
 

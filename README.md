@@ -1,9 +1,9 @@
 Práctica de desarrollo 2. PD02. Técnicas de ecología numérica,
 reproducibilidad<small><br>Biogeografía (GEO-131)<br>Universidad
-Autónoma de Santo Domingo (UASD)<br>Semestre 2024-02</small>
+Autónoma de Santo Domingo (UASD)<br>Semestre 2025-01</small>
 ================
 El Tali
-2024-10-02
+2025-03-04
 
 <!-- README.md se genera a partir de README.Rmd. Por favor, edita ese archivo. -->
 
@@ -12,12 +12,14 @@ Versión HTML (quizá más legible),
 
 # Fecha/hora de entrega
 
-**8 de octubre de 2024, 11:59 pm.**
+**[VER PORTAL DE LA
+ASIGNATURA](https://github.com/biogeografia-202501)**
 
 # Objetivos
 
-Vamos a “calentar motores”. El objetivo de esta práctica de desarrollo
-es que demuestres o mejores lo siguiente:
+Vamos a “calentar motores”, si aún no se han calentado lo suficiente. El
+objetivo de esta práctica de desarrollo es que demuestres o mejores lo
+siguiente:
 
 1.  Tus capacidades de realizar análisis cuantaitativos con datos de
     comunidad y ambientales usando R.
@@ -27,57 +29,70 @@ es que demuestres o mejores lo siguiente:
 3.  Tus capacidades de redacción. Esto te preparará, a futuro, para el
     manuscrito.
 
-Esta práctica tratará **sobre técnicas de ecología numérica usando datos
-de GBIF (GBIF.org, 2022) y el repositorio de estadística zonal sobre RD
-de Martínez-Batlle (2022)**, intentando que sea una investigación
-reproducible y bien redactada (nada de alto nivel, sólo estamos
-ensayando, pues el objetivo es aprender, no elevar el *H-index*). Lo
-ideal es que presentes un un documento que cumpla con estilos de
-formato, uso apropiado de figuras, tablas, citas y referencias, pero
-usando datos reales aplicados a RD.
+Esta práctica tratará **sobre técnicas de ecología numérica usando tanto
+datos de GBIF (GBIF.org, 2022) como del repositorio de estadística zonal
+sobre RD de Martínez-Batlle (2022)**, intentando que sea una
+investigación reproducible y bien redactada (nada de alto nivel, sólo
+estamos ensayando, pues el objetivo es aprender, no elevar el
+*H-index*). Lo ideal es que presentes un un documento que cumpla con
+estilos de formato, uso apropiado de figuras, tablas, citas y
+referencias, pero usando datos reales aplicados a RD.
 
 # Mandato
 
-1.  Elige un número entre el 2 y el 20, el cual representará tu familia
-    elegida según la tabla que se muestra abajo. Anuncia en el foro el
-    número que elijas. Normalmente, usarás la matriz de comunidad y la
-    matriz ambiental asociadas a dicha familia. Los archivos fuente de
-    donde obtendras dichas matrices se encuentran en el directorio
-    `salidas_RDS/`. En el referido directorio hay muchos archivos, pero
-    el que te interesa más es el que comienza por
-    todos_los_objetos_NOMBREDEFAMILIA.RDS. Dichos archivos contienen
-    todos los subproductos generados para la familia en cuestión, usando
-    los datos de GBIF y del repositorio de estadística zonal sobre la
-    familia elegida. El script con el que se generaron todos los
-    subproductos se llama
+1.  Elige una familia de plantas o animales de entre las que verás en la
+    tabla de abajo, excluyendo a Acanthaceae, que está reservada para el
+    tali. Inmediatemente, anuncia en el foro la familia que elijas.
+    Analizarás datos de la comunidad propiamente (e.g. considerando tu
+    familia elegida como una comunidad), así como datos ambientales de
+    la misma. Usarás la matriz de comunidad y la matriz ambiental
+    asociadas a dicha familia. Los archivos fuente de donde obtendras
+    dichas matrices se encuentran en el directorio `salidas_RDS/`. En el
+    referido directorio hay muchos archivos, pero el que te interesa es
+    el que tiene este patrón `todos_los_objetos_NOMBREDEFAMILIA.RDS`. El
+    archivo contiene todos los subproductos generados para la familia en
+    cuestión, usando datos de GBIF y del repositorio de estadística
+    zonal sobre la familia elegida. El script con el que se generaron
+    todos los subproductos se llama
     [matrices-de-comunidad-y-ambiental.html](https://biogeografia-master.github.io/tecnicas-ecologia-numerica-reproducibilidad/matrices-de-comunidad-y-ambiental.html)
-    (tiene versión Markdown también). Ocasionalmente podrían usarse los
-    archivos de los directorios `salidas_mc/` y `salidas_ma/`, que son
-    también las matrices de comunidad y ambiental, respectivamente, pero
-    separadas del resto de objetos.
+    (tiene versión Markdown también), y tiene, potencialmente, muchas
+    aplicaciones fuera de esta práctica, siempre que necesites procesar
+    datos de GBIF (escribí muchas funciones para generar los productos
+    que necesitarás). Ocasionalmente podrían usarse los archivos de los
+    directorios `salidas_mc/` y `salidas_ma/`, que son también las
+    matrices de comunidad y ambiental, respectivamente, pero
+    convenientemente separadas del resto de objetos.
 
-| estudiante | familia             |
-|-----------:|:--------------------|
-|          1 | Acanthaceae         |
-|          2 | Solanaceae          |
-|          3 | Asteraceae          |
-|          4 | Phyllostomidae      |
-|          5 | Fabaceae            |
-|          6 | Tyrannidae          |
-|          7 | Euphorbiaceae       |
-|          8 | Cactaceae           |
-|          9 | Orchidaceae         |
-|         10 | Bromeliaceae        |
-|         11 | Rubiaceae           |
-|         12 | Eleutherodactylidae |
-|         13 | Nymphalidae         |
-|         14 | Melastomataceae     |
-|         15 | Myrtaceae           |
-|         16 | Trochilidae         |
-|         17 | Orthoptera          |
-|         18 | Thraupidae          |
-|         19 | Piperaceae          |
-|         20 | Poaceae             |
+| conjuntos_id | familia             |
+|-------------:|:--------------------|
+|            1 | Acanthaceae         |
+|            2 | Apocynaceae         |
+|            3 | Asteraceae          |
+|            4 | Bromeliaceae        |
+|            5 | Cactaceae           |
+|            6 | Cathartidae         |
+|            7 | Columbidae          |
+|            8 | Curculionidae       |
+|            9 | Dactyloidae         |
+|           10 | Eleutherodactylidae |
+|           11 | Erebidae            |
+|           12 | Euphorbiaceae       |
+|           13 | Fabaceae            |
+|           14 | Formicidae          |
+|           15 | Leiocephalidae      |
+|           16 | Malvaceae           |
+|           17 | Melastomataceae     |
+|           18 | Myrtaceae           |
+|           19 | Nymphalidae         |
+|           20 | Orchidaceae         |
+|           21 | Phyllostomidae      |
+|           22 | Piperaceae          |
+|           23 | Poaceae             |
+|           24 | Rubiaceae           |
+|           25 | Solanaceae          |
+|           26 | Sphaerodactylidae   |
+|           27 | Thraupidae          |
+|           28 | Tyrannidae          |
 
 2.  Consulta el [ejemplo de
     análisis](https://biogeografia-master.github.io/tecnicas-ecologia-numerica-reproducibilidad/ejemplo-de-analisis.html)
@@ -88,22 +103,34 @@ usando datos reales aplicados a RD.
     [ejemplo-de-análisis.Rmd](https://github.com/biogeografia-master/tecnicas-ecologia-numerica-reproducibilidad/blob/main/ejemplo-de-analisis.Rmd);
     no te quedes sólo en el documento HTML, pues es más fácil usar el
     .Rmd para ejecutar, bloque a bloque, el código de R (recuerda
-    desactivar el traductor para el servidor si aún lo tienes activado).
-    Tal como lo lees, es importante ejecutar bloque a bloque, o línea a
-    línea, para ver qué cosas producen las maravillosas líneas de R.
-    Intentar comprenderlas también es importante, pero puede resultar
-    abrumador. Lo más importante es que adaptes el código de dicho
-    cuaderno a tu familia elegida, editando las líneas allí donde tengas
-    que hacerlo (no son muchos lugares realmente que necesitas
-    personalizar) sobre él propio cuaderno. Recuerda que el código en
-    dicho cuaderno sigue una lógica secuencial, por lo que los bloques
-    posteriores ocasionalmente podrían depender de los anteriores.
+    desactivar el traductor cuando uses el servidor si aún lo tienes
+    activado). Tal como lo lees, es importante ejecutar bloque a bloque,
+    o línea a línea, para ver qué cosas producen las maravillosas líneas
+    de R. Intentar comprenderlas también es importante, pero puede
+    resultar abrumador. Lo más importante es que adaptes el código de
+    dicho cuaderno a tu familia elegida, editando las líneas allí donde
+    tengas que hacerlo (realmente, no son muchos los lugares que
+    necesitas personalizar) sobre él propio cuaderno. Recuerda que el
+    código en dicho cuaderno sigue una lógica secuencial, por lo que los
+    bloques posteriores ocasionalmente podrían depender de los
+    anteriores.
 
 En los vídeos a continuación muestro qué extraer de los análisis que
-ejecuta el código de ejemplo. Los vídeos muestran datos ficticios o
-referidos a otros subconjuntos de semestres anteriores, pero la
-explicación sobre los patrones potencialmente aprovechables es
+ejecuta el código de ejemplo (archivo `ejemplo-de-analisis.Rmd`, el cual
+se teje a `ejemplo-de-analisis.html`). Los primeros vídeos son demos con
+datos reales del semestre anterior. Los otros (sobre todo los que tienen
+al inicio del título “Práctica 4…”), muestro análisis con datos
+ficticios o referidos a otros subconjuntos de semestres anteriores, pero
+la explicación sobre los patrones potencialmente aprovechables es
 igualmente válida.
+
+- [20241022-demo-rstudio-script-reproducible-pd02.mp4](https://drive.google.com/file/d/1soVvPJ5mxkk-s8OSdcbsLohkdqD6ksl0/view?usp=drive_link)
+
+- [20241016-vamo-a-fundi-codigo-de-R-demo-larga-de-como-reproducir-cuadernos-usando-objetos-de-otro-cuaderno.mp4](https://drive.google.com/file/d/18PHCtUg9nvJAEC5EucHVbtRg-v2Coqpj/view?usp=sharing).
+  Este vídeo es una demostración de cómo fundir código de R de un
+  cuaderno a otro, en este caso, de un cuaderno de ejemplo a tu cuaderno
+  de manuscrito. Al final del mismo, notarán que me dejaron solo (*e’ke
+  tali, ‘tábano jaltoses ya’*).
 
 - [20240307-20240314-video-1-tutoriales-practica-3-tecnicas-de-ecologia-numerica-reproducibilidad-redaccion-estilos-citas-referencias.mp4.
   **Del minuto 10 al
@@ -123,13 +150,15 @@ igualmente válida.
   de diversidad](https://www.youtube.com/watch?v=U5eImkQfwKk)
 
 3.  Desarrolla análisis aplicando **todas las técnicas de ecología
-    numérica posibles** (el ejemplo es una buena base, pero puedes
-    incluir otras técnicas). Al hacerlo, obtendrás un conjunto de
-    resultados. Usa todos los apoyos que necesites, desde el libro de
-    Borcard et al. (2018), hasta inteligencia artificial (IA). Si usas
-    IA, no le pidas que te resuelva el mandato tal cual y luego
-    copiando\>pegando textos o código. Más bien, pídele que te explique
-    cómo resolverlo y hazlo por tu cuenta (modo tutor). Revisa
+    numérica posibles** (el ejemplo de análisis es una buena base, pero
+    puedes incluir otras técnicas si quisieras). Al hacerlo, obtendrás
+    un conjunto de resultados. Usa todos los apoyos que necesites, desde
+    el libro de Borcard et al. (2018), hasta inteligencia artificial
+    (IA). Si usas IA, no le pidas que te resuelva el mandato tal cual
+    para luego copiar\>pegar textos o código a ciegas, porque
+    seguramente no funcionará bien. Más bien, pídele que te explique
+    cómo resolver los problemas que tengas, y usa lo que te devuelva
+    para, conscientemente, abordar tus necesidades (modo tutor). Revisa
     demostraciones y aplicaciones en Borcard et al. (2018), así como la
     lista de reproducción [Ecología numérica con
     R](https://www.youtube.com/playlist?list=PLDcT2n8UzsCRDqjqSeqHI1wsiNOqpYmsJ),
@@ -141,20 +170,30 @@ igualmente válida.
     redacción de tus análisis, usa la plantilla
     `manuscrito-tecnicas-ecologia-numerica-reproducibilidad.Rmd` que se
     encuentra en este mismo repositorio. Con esta plantilla generarás un
-    PDF que tejeras a usando RStudio. Para hacerlo, deberás clonar este
-    repositorio, yendo al [portal de la
-    asignatura](https://github.com/biogeografia-202402), haz clic en el
-    enlace de la PD02 y acepta la asignación. Deberás usar estilos de
-    formato (los títulos debidamente escritos, el texto normal también,
-    siguiendo lo aprendido en la práctica de desarrollo anterior),
-    referencias bibliográficas, referencias cruzadas a figuras y tablas
-    (es decir, necesitarás que las figuras y tablas tengan título o
-    “*caption*”). No podrás desarrollar tu redacción usando listas de
-    viñetas ni listas numeradas. Debes usar la plantilla mencionada en
-    RStudio, preferiblemente en mi servidor, tal como hiciste en la PD
-    anterior. Cuando termines tu manuscrito con tus análisis
-    reproducibles, y lo tejas a PDF, no olvides hacer commit\>push de
-    todos tus cambios para subirlos a GitHub.
+    PDF que tejeras usando RStudio. Para hacerlo, clona este repositorio
+    de la siguiente manera: asegúrate de haber iniciado sesión en
+    GitHub, asegúrate de pertenecer a la organizción
+    biogeografia-master, ve al [portal de la
+    asignatura](https://github.com/biogeografia-master), haz clic en el
+    enlace de la PD02 y acepta la asignación.
+
+En la redacción, deberás usar estilos de formato (los títulos
+debidamente escritos, el texto normal también, siguiendo lo aprendido en
+la PD01), introducir citas, crear lista de referencias bibliográficas,
+insertar referencias cruzadas a figuras y tablas (es decir, necesitarás
+que las figuras y tablas tengan título o “*caption*”). No podrás
+desarrollar tu redacción usando listas de viñetas ni listas numeradas.
+Debes usar la plantilla
+`manuscrito-tecnicas-ecologia-numerica-reproducibilidad.Rmd` desde
+RStudio, preferiblemente en mi servidor, tal como hiciste en la PD
+anterior. Cuando termines tu manuscrito con tus análisis reproducibles,
+y lo tejas a PDF, no olvides hacer commit\>push de todos tus cambios
+para subirlos a GitHub. **No subas el PDF tejido a GitHub desde la
+web**. Desde RStudio, debes subir todo tu repo a GitHub, incluyendo tus
+análisis y resultados, así como el manuscrito propiamente, tanto el
+cuaderno RMarkdown del manuscrito como el PDF tedjido. Se considerará
+finalizada la práctica cuando tu repo esté subido a GitHub con todos los
+requisitos mencionados.
 
 Distribuye tu texto en las siguientes secciones:
 
